@@ -13,7 +13,7 @@ SET MODE=%2
 SET TEST_MODE=Online
 IF "%MODE%" EQU "D" SET TEST_MODE=Offline
 SET PROJECT=ML
-SET SUITE_NAME=ML_PostProcess
+SET SUITE_NAME=ML_Robocal
 SET BUILD=MP
 SET CSV_NAME=%PROJECT%_%TYPE%.csv
 SET CFG_NAME=config.xml
@@ -152,7 +152,7 @@ set /p SN=<SN.dat
 echo %SN%>SN.DAT
 cd %~dp0%FOLDER%
 IF DEFINED TEST_RUN_MARKER DEL /Q "%TEST_RUN_MARKER%" 2>nul
-SET "TEST_RUN_MARKER=%TEMP%\ML_PreProcess_run_%RANDOM%_%RANDOM%.tmp"
+SET "TEST_RUN_MARKER=%TEMP%\ML_Robocal_run_%RANDOM%_%RANDOM%.tmp"
 TYPE NUL >"%TEST_RUN_MARKER%"
 Chopper-diag.exe -NoHotKey -LD TcsTestSuiteDuration %PROJECT% -c -si -CGV -opf op.dat -SNF SN.dat -sip -TSRID -lock -RL -f %CFG_NAME% -as -ae -SNP "^[0-9,A-Z]{%SN_LEN%}$" -tidf tid.dat -lf ..\DiagPGM\tidlog.xml /r
 IF %ERRORLEVEL% EQU 0 GOTO TestPass
@@ -272,7 +272,7 @@ SET "LOG_ARCHIVE_RESULT=%ERRORLEVEL%"
 DEL /Q "%TEST_RUN_MARKER%" 2>nul
 SET "TEST_RUN_MARKER="
 IF NOT "%LOG_ARCHIVE_RESULT%" EQU "0" EXIT /B 1
-SET "GOOGLE_DRIVE_UPLOAD_STATUS=%TEMP%\ML_PreProcess_gdrive_status_%RANDOM%_%RANDOM%.tmp"
+SET "GOOGLE_DRIVE_UPLOAD_STATUS=%TEMP%\ML_Robocal_gdrive_status_%RANDOM%_%RANDOM%.tmp"
 DEL /Q "%GOOGLE_DRIVE_UPLOAD_STATUS%" "%GOOGLE_DRIVE_UPLOAD_STATUS%.new" 2>nul
 START "" /B CMD.EXE /D /C CALL "%~f0" __UPLOAD_GRR_WORKER
 IF %ERRORLEVEL% NEQ 0 >"%GOOGLE_DRIVE_UPLOAD_STATUS%" ECHO 1
@@ -312,9 +312,9 @@ IF DEFINED GOOGLE_DRIVE_UPLOAD_COMPLETE IF NOT "%GOOGLE_DRIVE_UPLOAD_EXITCODE%" 
 )
 
 SET "ADB_DEVICE_CONNECTED="
-adb devices >"%TEMP%\ML_PreProcess_adb_devices.tmp" 2>nul
-IF %ERRORLEVEL% EQU 0 FOR /F "usebackq skip=1 tokens=1" %%A IN ("%TEMP%\ML_PreProcess_adb_devices.tmp") DO SET "ADB_DEVICE_CONNECTED=TRUE"
-DEL /Q "%TEMP%\ML_PreProcess_adb_devices.tmp" 2>nul
+adb devices >"%TEMP%\ML_Robocal_adb_devices.tmp" 2>nul
+IF %ERRORLEVEL% EQU 0 FOR /F "usebackq skip=1 tokens=1" %%A IN ("%TEMP%\ML_Robocal_adb_devices.tmp") DO SET "ADB_DEVICE_CONNECTED=TRUE"
+DEL /Q "%TEMP%\ML_Robocal_adb_devices.tmp" 2>nul
 IF NOT DEFINED ADB_DEVICE_CONNECTED SET "DUT_DISCONNECTED=TRUE"
 
 IF DEFINED GOOGLE_DRIVE_UPLOAD_COMPLETE IF DEFINED DUT_DISCONNECTED (
@@ -333,7 +333,7 @@ EXIT /B 0
 :ARCHIVE_COMPLETED_LOGS_RUN
 SET "LOG_ARCHIVE_SOURCE=%LOG_ROOT%\%LOG_IDENTIFIER%"
 SET "LOG_ARCHIVE_DESTINATION=%LOG_ARCHIVE_ROOT%\%LOG_IDENTIFIER%\Robocal"
-SET "LOG_ARCHIVE_ROBOCOPY_LOG=%TEMP%\ML_PreProcess_archive_%RANDOM%_%RANDOM%.log"
+SET "LOG_ARCHIVE_ROBOCOPY_LOG=%TEMP%\ML_Robocal_archive_%RANDOM%_%RANDOM%.log"
 IF NOT EXIST "%LOG_ARCHIVE_DESTINATION%\" MKDIR "%LOG_ARCHIVE_DESTINATION%" 2>nul
 IF NOT EXIST "%LOG_ARCHIVE_DESTINATION%\" GOTO ARCHIVE_COMPLETED_LOGS_FAIL
 CALL :ARCHIVE_LOG_COMPONENT DGC
@@ -353,7 +353,7 @@ RD /S /Q "%LOG_ARCHIVE_SOURCE%" 2>nul
 SET "ROBOCAL_OUTPUT_SOURCE=%LOG_ROOT%\robocal_output"
 SET "ROBOCAL_OUTPUT_DESTINATION=%LOG_ARCHIVE_DESTINATION%"
 SET "ROBOCAL_OUTPUT_ARCHIVE_COUNT=0"
-SET "ROBOCAL_OUTPUT_ARCHIVE_COUNT_FILE=%TEMP%\ML_PreProcess_robocal_count_%RANDOM%_%RANDOM%.tmp"
+SET "ROBOCAL_OUTPUT_ARCHIVE_COUNT_FILE=%TEMP%\ML_Robocal_robocal_count_%RANDOM%_%RANDOM%.tmp"
 IF NOT EXIST "%TEST_RUN_MARKER%" EXIT /B 0
 DEL /Q "%ROBOCAL_OUTPUT_ARCHIVE_COUNT_FILE%" 2>nul
 powershell.exe -NoProfile -Command "$marker=(Get-Item -LiteralPath $env:TEST_RUN_MARKER).LastWriteTimeUtc; $source=$env:ROBOCAL_OUTPUT_SOURCE; $destination=$env:ROBOCAL_OUTPUT_DESTINATION; $count=0; $failed=$false; if(Test-Path -LiteralPath $source){foreach($file in Get-ChildItem -LiteralPath $source -Recurse -File){if(($file.Name -like 'log_file_*.log' -or $file.Name -like 'log_file_*.txt') -and $file.LastWriteTimeUtc -ge $marker){$relative=$file.FullName.Substring($source.Length).TrimStart('\'); $target=Join-Path $destination $relative; try{New-Item -ItemType Directory -Path (Split-Path -Parent $target) -Force -ErrorAction Stop | Out-Null; Copy-Item -LiteralPath $file.FullName -Destination $target -Force -ErrorAction Stop; $archived=Get-Item -LiteralPath $target -ErrorAction Stop; if($archived.Length -ne $file.Length){throw 'Archived file size does not match the source'}; $count++}catch{Write-Error ('Failed to archive ' + $file.FullName + ': ' + $_.Exception.Message); $failed=$true}}}}; Set-Content -LiteralPath $env:ROBOCAL_OUTPUT_ARCHIVE_COUNT_FILE -Value $count -NoNewline; if($failed){exit 1}"
@@ -388,16 +388,16 @@ TIMEOUT /T 1 /NOBREAK >nul
 
 :WAIT_DUT_DISCONNECT_CHECK
 SET "ADB_DEVICE_CONNECTED="
-adb devices >"%TEMP%\ML_PreProcess_adb_devices.tmp" 2>nul
+adb devices >"%TEMP%\ML_Robocal_adb_devices.tmp" 2>nul
 IF %ERRORLEVEL% NEQ 0 GOTO WAIT_DUT_DISCONNECT_RETRY
-FOR /F "usebackq skip=1 tokens=1" %%A IN ("%TEMP%\ML_PreProcess_adb_devices.tmp") DO SET "ADB_DEVICE_CONNECTED=TRUE"
-DEL /Q "%TEMP%\ML_PreProcess_adb_devices.tmp" 2>nul
+FOR /F "usebackq skip=1 tokens=1" %%A IN ("%TEMP%\ML_Robocal_adb_devices.tmp") DO SET "ADB_DEVICE_CONNECTED=TRUE"
+DEL /Q "%TEMP%\ML_Robocal_adb_devices.tmp" 2>nul
 IF DEFINED ADB_DEVICE_CONNECTED GOTO WAIT_DUT_DISCONNECT_RETRY
 taskkill /IM Screen-diag.exe
 EXIT /B 0
 
 :WAIT_DUT_DISCONNECT_RETRY
-DEL /Q "%TEMP%\ML_PreProcess_adb_devices.tmp" 2>nul
+DEL /Q "%TEMP%\ML_Robocal_adb_devices.tmp" 2>nul
 TIMEOUT /T 1 /NOBREAK >nul
 GOTO WAIT_DUT_DISCONNECT_CHECK
 
