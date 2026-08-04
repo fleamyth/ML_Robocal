@@ -526,3 +526,744 @@ Elapsed time:        39.7s
 2026/08/04 22:04:56 INFO  : 20260804_210056/capture/assets/additive_primaries/green.png: Copied (new)
 2026/08/04 22:04:59 INFO  : 20260804_210056/capture/assets/additive_primaries/red.png: Copied (new)
 2026/08/04 22:05:00 INFO  : 20260804_210056/capture/assets/additive_primaries/white.png: Copied (new)
+2026/08/04 22:05:43 INFO  : 20260804_210056/uniformity_validation/capture/white/right/right_white.png: Copied (new)
+2026/08/04 23:31:44 NOTICE: gdrive{iWtD9}: This remote uses rclone's shared Google Drive client_id, which is being retired and will stop working during 2026. Create your own client_id to avoid interruption: https://rclone.org/drive/#making-your-own-client-id
+2026/08/04 23:31:45 NOTICE: gdrive{iWtD9}: This remote uses rclone's shared Google Drive client_id, which is being retired and will stop working during 2026. Create your own client_id to avoid interruption: https://rclone.org/drive/#making-your-own-client-id
+2026/08/04 23:31:46 INFO  : Google drive root 'S6A67340005M': Making directory
+2026/08/04 23:31:46 NOTICE: gdrive{iWtD9}: This remote uses rclone's shared Google Drive client_id, which is being retired and will stop working during 2026. Create your own client_id to avoid interruption: https://rclone.org/drive/#making-your-own-client-id
+2026/08/04 23:31:49 ERROR : error listing: directory not found
+2026/08/04 23:31:49 NOTICE: Failed to lsf with 2 errors: last error was: error in ListJSON: directory not found
+2026/08/04 23:31:49 NOTICE: gdrive{iWtD9}: This remote uses rclone's shared Google Drive client_id, which is being retired and will stop working during 2026. Create your own client_id to avoid interruption: https://rclone.org/drive/#making-your-own-client-id
+2026/08/04 23:31:57 ERROR : error listing: directory not found
+2026/08/04 23:31:57 NOTICE: Failed to lsf with 2 errors: last error was: error in ListJSON: directory not found
+2026/08/04 23:31:57 NOTICE: gdrive{5SXnH}: This remote uses rclone's shared Google Drive client_id, which is being retired and will stop working during 2026. Create your own client_id to avoid interruption: https://rclone.org/drive/#making-your-own-client-id
+2026/08/04 23:32:38 INFO  : Robocal/DCC/20260804_232025/dcc_capture.zip: Copied (new)
+2026/08/04 23:32:38 INFO  : Robocal/DCC/20260804_232025/dcc_config.json: Copied (new)
+2026/08/04 23:32:38 INFO  : Robocal/DCC/20260804_232025/dcc_white_point.zip: Copied (new)
+2026/08/04 23:32:38 INFO  : Robocal/DCC/20260804_232025/dcc_uniformity_validation.zip: Copied (new)
+2026/08/04 23:32:39 INFO  : Robocal/DCC/20260804_232025/dcc_uniformity.zip: Copied (new)
+2026/08/04 23:32:39 INFO  : Robocal/DCC/20260804_232025/dcc_apply_color_cal.zip: Copied (new)
+2026/08/04 23:32:39 INFO  : Robocal/log_file_20260804_232025.log: Copied (new)
+2026/08/04 23:32:47 INFO  : Robocal/DCC/20260804_232025/whitepoint_ok2cal/capture/right_irradiance.cal: Copied (new)
+2026/08/04 23:32:48 INFO  : Robocal/DCC/20260804_232025/whitepoint_ok2cal/capture/right_mask_scaling_factor.yaml: Copied (new)
+2026/08/04 23:32:48 INFO  : Robocal/DCC/20260804_232025/whitepoint_ok2cal_capture.zip: Copied (new)
+2026/08/04 23:32:50 INFO  : Robocal/DCC/20260804_232025/autoexposure_debug/ae_right_iter_00_it_66664_max_37337.0.csv: Copied (new)
+2026/08/04 23:32:54 INFO  : Robocal/DCC/20260804_232025/white_point_calibration/post_cal_capture/right_irradiance.cal: Copied (new)
+2026/08/04 23:32:54 INFO  : Robocal/DCC/20260804_232025/white_point_calibration/post_cal_capture/right_mask_scaling_factor.yaml: Copied (new)
+2026/08/04 23:32:56 INFO  : Robocal/DCC/20260804_232025/white_point_calibration/corrected_rgb_primaries/blue.png: Copied (new)
+2026/08/04 23:32:56 INFO  : Robocal/DCC/20260804_232025/white_point_calibration/corrected_rgb_primaries/macbeth20.png: Copied (new)
+2026/08/04 23:32:56 INFO  : Robocal/DCC/20260804_232025/white_point_calibration/corrected_rgb_primaries/green.png: Copied (new)
+2026/08/04 23:32:57 INFO  : Robocal/DCC/20260804_232025/white_point_calibration/corrected_rgb_primaries/macbeth22.png: Copied (new)
+2026/08/04 23:32:57 INFO  : Robocal/DCC/20260804_232025/white_point_calibration/corrected_rgb_primaries/red.png: Copied (new)
+2026/08/04 23:33:02 INFO  : Robocal/DCC/20260804_232025/white_point_calibration/correction/right/color_correction.textproto: Copied (new)
+2026/08/04 23:33:36 INFO  : Robocal/DCC/20260804_232025/white_point_calibration/correction/right/corrected_color.csv: Copied (new)
+2026/08/04 23:33:36 INFO  : Robocal/DCC/20260804_232025/apply_color_cal/uniformity/062P0141_cal.hdf5: Copied (new)
+2026/08/04 23:33:53 INFO  : Robocal/DCC/20260804_232025/uniformity_validation/capture/image_capture_metadata.yaml: Copied (new)
+2026/08/04 23:33:57 INFO  : Robocal/DCC/20260804_232025/high_freq_mura_capture/geometry/dataset.yaml: Copied (new)
+2026/08/04 23:33:57 INFO  : Robocal/DCC/20260804_232025/high_freq_mura_capture/geometry/image_capture_metadata.yaml: Copied (new)
+2026/08/04 23:33:59 INFO  : Robocal/DCC/20260804_232025/white_point_calibration/corrected_rgb_primaries/white.png: Copied (new)
+2026/08/04 23:35:56 INFO  : Robocal/DCC/20260804_232025/whitepoint_ok2cal/capture/device_metadata/blue.yaml: Copied (new)
+2026/08/04 23:35:57 INFO  : Robocal/DCC/20260804_232025/whitepoint_ok2cal/capture/device_metadata/green.yaml: Copied (new)
+2026/08/04 23:36:00 INFO  : Robocal/DCC/20260804_232025/whitepoint_ok2cal/capture/device_metadata/white.yaml: Copied (new)
+2026/08/04 23:36:00 INFO  : Robocal/DCC/20260804_232025/whitepoint_ok2cal/capture/device_metadata/red.yaml: Copied (new)
+2026/08/04 23:36:00 INFO  : Robocal/DCC/20260804_232025/high_freq_mura_calibration/uniformity/right_correction_map.png: Copied (new)
+2026/08/04 23:36:00 INFO  : Robocal/DCC/20260804_232025/uniformity_validation/cropped/0/red_right_white.png: Copied (new)
+2026/08/04 23:36:00 INFO  : Robocal/DCC/20260804_232025/uniformity_validation/cropped/0/blue_right_white.png: Copied (new)
+2026/08/04 23:36:01 INFO  : Robocal/DCC/20260804_232025/uniformity_validation/cropped/0/green_right_white.png: Copied (new)
+2026/08/04 23:39:43 INFO  : Robocal/DCC/20260804_232025/white_point_calibration/post_cal_capture/device_metadata/blue.yaml: Copied (new)
+2026/08/04 23:39:46 INFO  : Robocal/DCC/20260804_232025/white_point_calibration/post_cal_capture/device_metadata/red.yaml: Copied (new)
+2026/08/04 23:39:49 INFO  : Robocal/DCC/20260804_232025/white_point_calibration/post_cal_capture/device_metadata/white.yaml: Copied (new)
+2026/08/04 23:39:58 INFO  : Robocal/DCC/20260804_232025/uniformity_validation/capture/red/right/right_white.png: Copied (new)
+2026/08/04 23:39:59 INFO  : Robocal/DCC/20260804_232025/white_point_calibration/post_cal_capture/device_metadata/macbeth20.yaml: Copied (new)
+2026/08/04 23:39:59 INFO  : Robocal/DCC/20260804_232025/white_point_calibration/post_cal_capture/device_metadata/green.yaml: Copied (new)
+2026/08/04 23:39:59 INFO  : Robocal/DCC/20260804_232025/white_point_calibration/post_cal_capture/device_metadata/macbeth22.yaml: Copied (new)
+2026/08/04 23:40:00 INFO  : Robocal/DCC/20260804_232025/uniformity_validation/cropped/0/white_right_white.png: Copied (new)
+2026/08/04 23:40:29 INFO  : Robocal/DCC/20260804_232025/uniformity_validation/cropped/4/blue_right_white.png: Copied (new)
+2026/08/04 23:40:30 INFO  : Robocal/DCC/20260804_232025/uniformity_validation/cropped/4/green_right_white.png: Copied (new)
+2026/08/04 23:40:30 INFO  : Robocal/DCC/20260804_232025/uniformity_validation/cropped/4/white_right_white.png: Copied (new)
+2026/08/04 23:40:33 INFO  : Robocal/DCC/20260804_232025/high_freq_mura_calibration/uniformity/right_correction_map.tiff: Copied (new)
+2026/08/04 23:40:36 INFO  : Robocal/DCC/20260804_232025/high_freq_mura_capture/uniformity/uncorrected/image_capture_metadata.yaml: Copied (new)
+2026/08/04 23:40:39 INFO  : Robocal/DGC/20260804_232025.zip: Copied (new)
+2026/08/04 23:40:41 INFO  : Robocal/DCC/20260804_232025/uniformity_validation/capture/green/right/right_white.png: Copied (new)
+2026/08/04 23:40:42 INFO  : Robocal/DCC/20260804_232025/uniformity_validation/cropped/4/red_right_white.png: Copied (new)
+2026/08/04 23:40:46 INFO  : Robocal/DCC/20260804_232025/uniformity_validation/capture/white/right/right_white.png: Copied (new)
+2026/08/04 23:40:48 INFO  : Robocal/DCC/20260804_232025/high_freq_mura_calibration/geometry/right/geometry_map.tiff: Copied (new)
+2026/08/04 23:40:51 INFO  : Robocal/DCC/20260804_232025/apply_color_cal/uniformity/result/right/rj1cal_panel_right.json.gz: Copied (new)
+2026/08/04 23:40:52 INFO  : Robocal/DCC/20260804_232025/apply_color_cal/uniformity/result/right/right_correction_map.png: Copied (new)
+2026/08/04 23:40:52 INFO  : Robocal/DCC/20260804_232025/apply_color_cal/uniformity/result/right/062P0141_cal.hdf5: Copied (new)
+2026/08/04 23:40:53 INFO  : Robocal/DCC/20260804_232025/apply_color_cal/uniformity/result/right/rj1cal_panel_right_readable.json: Copied (new)
+2026/08/04 23:40:57 INFO  : Robocal/DCC/20260804_232025/high_freq_mura_calibration/uniformity/uniformity_map/right/correction_map.tiff: Copied (new)
+2026/08/04 23:41:48 INFO  : Robocal/DCC/20260804_232025/uniformity_validation/capture/blue/right/right_white.png: Copied (new)
+2026/08/04 23:41:48 INFO  : Robocal/DCC/20260804_232025/high_freq_mura_capture/geometry/blue/right/right_l2_fine.png: Copied (new)
+2026/08/04 23:41:48 INFO  : Robocal/DCC/20260804_232025/high_freq_mura_capture/geometry/red/right/right_l1_fine.png: Copied (new)
+2026/08/04 23:41:48 INFO  : Robocal/DCC/20260804_232025/high_freq_mura_capture/geometry/red/right/right_l2_fine.png: Copied (new)
+2026/08/04 23:41:50 INFO  : Robocal/DCC/20260804_232025/high_freq_mura_capture/geometry/red/right/right_coarse.png: Copied (new)
+2026/08/04 23:41:53 INFO  : Robocal/DCC/20260804_232025/apply_color_cal/uniformity/result/right/tmp_hdf5/062P0141_cal.hdf5: Copied (new)
+2026/08/04 23:42:03 INFO  : Robocal/DCC/20260804_232025/high_freq_mura_capture/geometry/green/right/right_l2_fine.png: Copied (new)
+2026/08/04 23:42:04 INFO  : Robocal/DCC/20260804_232025/high_freq_mura_capture/geometry/green/right/right_coarse.png: Copied (new)
+2026/08/04 23:44:42 INFO  : Robocal/DCC/20260804_232025/high_freq_mura_calibration/uniformity/uniformity_map/right/simulated_white_after_correction.png: Copied (new)
+2026/08/04 23:44:44 INFO  : Robocal/DCC/20260804_232025/high_freq_mura_capture/uniformity/uncorrected/blue/right/right_white_sRGB.png: Copied (new)
+2026/08/04 23:44:48 INFO  : Robocal/DCC/20260804_232025/high_freq_mura_capture/uniformity/uncorrected/green/right/right_white.png: Copied (new)
+2026/08/04 23:44:56 INFO  : Robocal/DCC/20260804_232025/high_freq_mura_capture/uniformity/uncorrected/green/right/right_white_sRGB.png: Copied (new)
+2026/08/04 23:44:59 INFO  : Robocal/DCC/20260804_232025/high_freq_mura_capture/uniformity/uncorrected/red/right/right_white.png: Copied (new)
+2026/08/05 00:15:11 NOTICE: gdrive{iWtD9}: This remote uses rclone's shared Google Drive client_id, which is being retired and will stop working during 2026. Create your own client_id to avoid interruption: https://rclone.org/drive/#making-your-own-client-id
+2026/08/05 00:15:46 NOTICE: gdrive{iWtD9}: This remote uses rclone's shared Google Drive client_id, which is being retired and will stop working during 2026. Create your own client_id to avoid interruption: https://rclone.org/drive/#making-your-own-client-id
+2026/08/05 00:15:47 INFO  : Google drive root 'S6A67340005M': Making directory
+2026/08/05 00:15:51 NOTICE: gdrive{iWtD9}: This remote uses rclone's shared Google Drive client_id, which is being retired and will stop working during 2026. Create your own client_id to avoid interruption: https://rclone.org/drive/#making-your-own-client-id
+2026/08/05 00:15:54 ERROR : error listing: directory not found
+2026/08/05 00:15:54 NOTICE: Failed to lsf with 2 errors: last error was: error in ListJSON: directory not found
+2026/08/05 00:15:54 NOTICE: gdrive{iWtD9}: This remote uses rclone's shared Google Drive client_id, which is being retired and will stop working during 2026. Create your own client_id to avoid interruption: https://rclone.org/drive/#making-your-own-client-id
+2026/08/05 00:15:57 ERROR : error listing: directory not found
+2026/08/05 00:15:57 NOTICE: Failed to lsf with 2 errors: last error was: error in ListJSON: directory not found
+2026/08/05 00:15:57 NOTICE: gdrive{5SXnH}: This remote uses rclone's shared Google Drive client_id, which is being retired and will stop working during 2026. Create your own client_id to avoid interruption: https://rclone.org/drive/#making-your-own-client-id
+2026/08/05 00:16:56 INFO  : Robocal/log_file_20260804_232025.log: Copied (new)
+2026/08/05 00:17:49 INFO  : Robocal/log_file_20260805_000524.log: Copied (new)
+2026/08/05 00:17:50 INFO  : Robocal/DCC/20260804_234559/dcc_config.json: Copied (new)
+2026/08/05 00:17:50 INFO  : Robocal/DCC/20260804_234559/dcc_uniformity.zip: Copied (new)
+2026/08/05 00:17:51 INFO  : Robocal/DCC/20260805_000524/dcc_config.json: Copied (new)
+2026/08/05 00:17:52 INFO  : Robocal/DCC/20260805_000524/dcc_capture.zip: Copied (new)
+2026/08/05 00:17:57 INFO  : Robocal/DCC/20260805_000524/dcc_uniformity.zip: Copied (new)
+2026/08/05 00:17:58 INFO  : Robocal/DCC/20260805_000524/whitepoint_ok2cal_capture.zip: Copied (new)
+2026/08/05 00:17:58 INFO  : Robocal/DCC/20260804_234559/high_freq_mura_calibration/geometry/right/geometry_map.tiff: Copied (new)
+2026/08/05 00:17:59 INFO  : Robocal/DCC/20260805_000524/dcc_apply_color_cal.zip: Copied (new)
+2026/08/05 00:17:59 INFO  : Robocal/DCC/20260805_000524/autoexposure_debug/ae_right_iter_00_it_66664_max_36833.0.csv: Copied (new)
+2026/08/05 00:18:00 INFO  : Robocal/DCC/20260805_000524/dcc_uniformity_validation.zip: Copied (new)
+2026/08/05 00:18:01 INFO  : Robocal/DCC/20260805_000524/capture/right_irradiance.cal: Copied (new)
+2026/08/05 00:18:51 INFO  : Robocal/DCC/20260805_000524/capture/dcc_smoke_test/dcc_golden_spectra.yaml: Copied (new)
+2026/08/05 00:18:51 INFO  : Robocal/DCC/20260805_000524/capture/dcc_smoke_test/left_dcc_latest_spectra.png: Copied (new)
+2026/08/05 00:18:51 INFO  : Robocal/DCC/20260805_000524/capture/dcc_smoke_test/left_dcc_golden_spectra.png: Copied (new)
+2026/08/05 00:18:51 INFO  : Robocal/DCC/20260805_000524/capture/dcc_smoke_test/right_dcc_golden_spectra.png: Copied (new)
+2026/08/05 00:18:51 INFO  : Robocal/DCC/20260805_000524/capture/dcc_smoke_test/right_dcc_latest_spectra.png: Copied (new)
+2026/08/05 00:18:52 INFO  : Robocal/DCC/20260805_000524/apply_color_cal/uniformity/062P0141_cal.hdf5: Copied (new)
+2026/08/05 00:18:52 INFO  : Robocal/DCC/20260805_000524/dcc_white_point.zip: Copied (new)
+2026/08/05 00:18:52 INFO  : Robocal/DCC/20260805_000524/capture/right_mask_scaling_factor.yaml: Copied (new)
+2026/08/05 00:18:56 INFO  : Robocal/DCC/20260805_000524/capture/device_metadata/blue.yaml: Copied (new)
+2026/08/05 00:18:57 INFO  : Robocal/DCC/20260805_000524/capture/device_metadata/p3_macbeth_10.yaml: Copied (new)
+2026/08/05 00:18:57 INFO  : Robocal/DCC/20260805_000524/capture/device_metadata/green.yaml: Copied (new)
+2026/08/05 00:18:57 INFO  : Robocal/DCC/20260805_000524/capture/device_metadata/p3_macbeth_12.yaml: Copied (new)
+2026/08/05 00:18:57 INFO  : Robocal/DCC/20260805_000524/capture/device_metadata/white.yaml: Copied (new)
+2026/08/05 00:18:58 INFO  : Robocal/DCC/20260805_000524/capture/device_metadata/red.yaml: Copied (new)
+2026/08/05 00:18:58 INFO  : Robocal/DCC/20260805_000524/capture/device_metadata/p3_macbeth_04.yaml: Copied (new)
+2026/08/05 00:18:59 INFO  : Robocal/DCC/20260805_000524/capture/device_metadata/p3_macbeth_23.yaml: Copied (new)
+2026/08/05 00:19:01 INFO  : Robocal/DCC/20260804_234559/high_freq_mura_calibration/uniformity/right_correction_map.png: Copied (new)
+2026/08/05 00:19:41 INFO  : Robocal/DCC/20260804_234559/high_freq_mura_calibration/uniformity/right_correction_map.tiff: Copied (new)
+2026/08/05 00:19:44 INFO  : Robocal/DCC/20260805_000524/high_freq_mura_capture/geometry/image_capture_metadata.yaml: Copied (new)
+2026/08/05 00:19:44 INFO  : Robocal/DCC/20260805_000524/high_freq_mura_calibration/uniformity/right_correction_map.png: Copied (new)
+2026/08/05 00:19:45 INFO  : Robocal/DCC/20260805_000524/high_freq_mura_calibration/uniformity/right_correction_map.tiff: Copied (new)
+2026/08/05 00:19:47 INFO  : Robocal/DCC/20260805_000524/uniformity_validation/capture/image_capture_metadata.yaml: Copied (new)
+2026/08/05 00:19:51 INFO  : Robocal/DCC/20260805_000524/high_freq_mura_capture/geometry/dataset.yaml: Copied (new)
+2026/08/05 00:19:52 INFO  : Robocal/DCC/20260805_000524/white_point_calibration/corrected_rgb_primaries/blue.png: Copied (new)
+2026/08/05 00:19:52 INFO  : Robocal/DCC/20260805_000524/white_point_calibration/corrected_rgb_primaries/green.png: Copied (new)
+2026/08/05 00:19:55 INFO  : Robocal/DCC/20260805_000524/white_point_calibration/corrected_rgb_primaries/macbeth20.png: Copied (new)
+2026/08/05 00:19:55 INFO  : Robocal/DCC/20260805_000524/whitepoint_ok2cal/capture/right_irradiance.cal: Copied (new)
+2026/08/05 00:19:56 INFO  : Robocal/DCC/20260805_000524/white_point_calibration/corrected_rgb_primaries/macbeth22.png: Copied (new)
+2026/08/05 00:19:57 INFO  : Robocal/DCC/20260805_000524/white_point_calibration/corrected_rgb_primaries/white.png: Copied (new)
+2026/08/05 00:20:00 INFO  : Robocal/DCC/20260805_000524/capture/assets/additive_primaries/blue.png: Copied (new)
+2026/08/05 00:20:00 INFO  : Robocal/DCC/20260805_000524/whitepoint_ok2cal/capture/right_mask_scaling_factor.yaml: Copied (new)
+2026/08/05 00:20:01 INFO  : Robocal/DCC/20260805_000524/white_point_calibration/corrected_rgb_primaries/red.png: Copied (new)
+2026/08/05 00:20:39 INFO  : Robocal/DCC/20260805_000524/high_freq_mura_calibration/geometry/right/geometry_map.tiff: Copied (new)
+2026/08/05 00:20:57 INFO  : Robocal/DCC/20260805_000524/white_point_calibration/post_cal_capture/right_mask_scaling_factor.yaml: Copied (new)
+2026/08/05 00:24:27 NOTICE: gdrive{iWtD9}: This remote uses rclone's shared Google Drive client_id, which is being retired and will stop working during 2026. Create your own client_id to avoid interruption: https://rclone.org/drive/#making-your-own-client-id
+2026/08/05 00:24:28 NOTICE: gdrive{iWtD9}: This remote uses rclone's shared Google Drive client_id, which is being retired and will stop working during 2026. Create your own client_id to avoid interruption: https://rclone.org/drive/#making-your-own-client-id
+2026/08/05 00:24:29 INFO  : Google drive root 'S6A67340005M': Making directory
+2026/08/05 00:24:29 NOTICE: gdrive{iWtD9}: This remote uses rclone's shared Google Drive client_id, which is being retired and will stop working during 2026. Create your own client_id to avoid interruption: https://rclone.org/drive/#making-your-own-client-id
+2026/08/05 00:24:32 ERROR : error listing: directory not found
+2026/08/05 00:24:32 NOTICE: Failed to lsf with 2 errors: last error was: error in ListJSON: directory not found
+2026/08/05 00:24:32 NOTICE: gdrive{iWtD9}: This remote uses rclone's shared Google Drive client_id, which is being retired and will stop working during 2026. Create your own client_id to avoid interruption: https://rclone.org/drive/#making-your-own-client-id
+2026/08/05 00:24:38 ERROR : error listing: directory not found
+2026/08/05 00:24:38 NOTICE: Failed to lsf with 2 errors: last error was: error in ListJSON: directory not found
+2026/08/05 00:24:38 NOTICE: gdrive{kbg6m}: This remote uses rclone's shared Google Drive client_id, which is being retired and will stop working during 2026. Create your own client_id to avoid interruption: https://rclone.org/drive/#making-your-own-client-id
+2026/08/05 00:24:55 INFO  : 20260805_000524/nominal_workflow_calibration_capture_set.yaml: Copied (new)
+2026/08/05 00:24:58 INFO  : 20260805_000524/station_id.yaml: Copied (new)
+2026/08/05 00:25:01 INFO  : 20260805_000524/stereo.textproto: Copied (new)
+2026/08/05 00:25:12 INFO  :   288.003 MiB / 2.089 GiB, 13%, 11.442 MiB/s, ETA 2m41s (xfr#3/90)
+2026/08/05 00:25:29 INFO  : 20260805_000524/nominal_workflow_calibration/calibration_specs.yaml: Copied (new)
+2026/08/05 00:25:32 INFO  : 20260805_000524/nominal_workflow_calibration/display_geometry_calibrator.log: Copied (new)
+2026/08/05 00:25:35 INFO  : 20260805_000524/nominal_workflow_calibration/display_profile.textproto: Copied (new)
+2026/08/05 00:25:42 INFO  :   843.680 MiB / 2.089 GiB, 39%, 17.631 MiB/s, ETA 1m13s (xfr#6/90)
+2026/08/05 00:25:49 INFO  : 20260805_000524/calibration_captures/left_0_0_0_right_0_0_0/right_grid_blue.png: Copied (new)
+2026/08/05 00:25:57 INFO  : 20260805_000524/calibration_captures/left_0_0_0_right_0_0_0/right_grid_green.png: Copied (new)
+2026/08/05 00:25:58 INFO  : 20260805_000524.zip: Copied (new)
+2026/08/05 00:26:12 INFO  :     1.107 GiB / 2.089 GiB, 53%, 7.092 MiB/s, ETA 2m21s (xfr#9/90)
+2026/08/05 00:26:41 INFO  : 20260805_000524/calibration_captures/left_2_0_0_right_-2_0_0/right_grid_blue.png: Copied (new)
+2026/08/05 00:26:42 INFO  :     1.150 GiB / 2.089 GiB, 55%, 3.030 MiB/s, ETA 5m17s (xfr#10/90)
+2026/08/05 00:26:50 INFO  : 20260805_000524/calibration_captures/left_2_0_0_right_-2_0_0/right_grid_green.png: Copied (new)
+2026/08/05 00:26:57 INFO  : 20260805_000524/calibration_captures/left_0_0_0_right_0_0_0/right_grid_red.png: Copied (new)
+2026/08/05 00:26:58 INFO  : 20260805_000524/calibration_captures/left_2_0_0_right_-2_0_0/right_grid_red.png: Copied (new)
+2026/08/05 00:27:03 INFO  : 20260805_000524/nominal_workflow_calibration/debug/side_right_channel_blue_depth_grid.csv: Copied (new)
+2026/08/05 00:27:03 INFO  : 20260805_000524/nominal_workflow_calibration/debug/side_right_channel_blue_display_pixel_depth_grid.csv: Copied (new)
+2026/08/05 00:27:12 INFO  :     1.278 GiB / 2.089 GiB, 61%, 2.568 MiB/s, ETA 5m23s (xfr#15/90)
+2026/08/05 00:27:37 INFO  : 20260805_000524/nominal_workflow_calibration/debug/side_right_channel_green_depth_grid.csv: Copied (new)
+2026/08/05 00:27:38 INFO  : 20260805_000524/nominal_workflow_calibration/debug/side_right_channel_green_display_pixel_depth_grid.csv: Copied (new)
+2026/08/05 00:27:40 INFO  : 20260805_000524/nominal_workflow_calibration/debug/side_right_channel_red_depth_grid.csv: Copied (new)
+2026/08/05 00:27:41 INFO  : 20260805_000524/nominal_workflow_calibration/debug/side_right_channel_red_display_pixel_depth_grid.csv: Copied (new)
+2026/08/05 00:27:42 INFO  :     1.278 GiB / 2.089 GiB, 61%, 379.975 KiB/s, ETA 37m15s (xfr#19/90)
+2026/08/05 00:27:46 INFO  : 20260805_000524/verification_assets/nominal_workflow_calibration/virtual_image_position.yaml: Copied (new)
+2026/08/05 00:27:49 INFO  : 20260805_000524/verification_assets/nominal_workflow_calibration/left_0_0_0_right_0_0_0/undistorted_blue_calibu_4512x4512_80_80_11_16_1.png: Copied (new)
+2026/08/05 00:27:49 INFO  : 20260805_000524/verification_assets/nominal_workflow_calibration/left_0_0_0_right_0_0_0/undistorted_green_calibu_4512x4512_80_80_11_16_1.png: Copied (new)
+2026/08/05 00:27:49 ERROR : 20260805_000524/verification_captures/nominal/left_-3_0_0_right_3_0_0/right_ver_blue.png: Failed to copy: failed to open source object: GetFileAttributesEx \\?\D:\logs\S6A67340005M\Robocal\DGC\20260805_000524\verification_captures\nominal\left_-3_0_0_right_3_0_0\right_ver_blue.png: The system cannot find the path specified.
+2026/08/05 00:27:49 ERROR : 20260805_000524/verification_captures/nominal/left_-3_0_0_right_3_0_0/right_ver_green.png: Failed to copy: failed to open source object: GetFileAttributesEx \\?\D:\logs\S6A67340005M\Robocal\DGC\20260805_000524\verification_captures\nominal\left_-3_0_0_right_3_0_0\right_ver_green.png: The system cannot find the path specified.
+2026/08/05 00:27:49 ERROR : 20260805_000524/verification_captures/nominal/left_-3_0_0_right_3_0_0/right_ver_red.png: Failed to copy: failed to open source object: GetFileAttributesEx \\?\D:\logs\S6A67340005M\Robocal\DGC\20260805_000524\verification_captures\nominal\left_-3_0_0_right_3_0_0\right_ver_red.png: The system cannot find the path specified.
+2026/08/05 00:27:49 ERROR : 20260805_000524/verification_captures/nominal/left_0_0_0_right_0_0_0/right_ver_blue.png: Failed to copy: failed to open source object: GetFileAttributesEx \\?\D:\logs\S6A67340005M\Robocal\DGC\20260805_000524\verification_captures\nominal\left_0_0_0_right_0_0_0\right_ver_blue.png: The system cannot find the path specified.
+2026/08/05 00:27:49 ERROR : 20260805_000524/verification_captures/nominal/left_0_0_0_right_0_0_0/right_ver_green.png: Failed to copy: failed to open source object: GetFileAttributesEx \\?\D:\logs\S6A67340005M\Robocal\DGC\20260805_000524\verification_captures\nominal\left_0_0_0_right_0_0_0\right_ver_green.png: The system cannot find the path specified.
+2026/08/05 00:27:49 ERROR : 20260805_000524/verification_captures/nominal/left_0_0_0_right_0_0_0/right_ver_red.png: Failed to copy: failed to open source object: GetFileAttributesEx \\?\D:\logs\S6A67340005M\Robocal\DGC\20260805_000524\verification_captures\nominal\left_0_0_0_right_0_0_0\right_ver_red.png: The system cannot find the path specified.
+2026/08/05 00:27:49 ERROR : 20260805_000524/verification_captures/nominal/left_0_0_6_right_0_0_6/right_ver_blue.png: Failed to copy: failed to open source object: GetFileAttributesEx \\?\D:\logs\S6A67340005M\Robocal\DGC\20260805_000524\verification_captures\nominal\left_0_0_6_right_0_0_6\right_ver_blue.png: The system cannot find the path specified.
+2026/08/05 00:27:49 ERROR : 20260805_000524/verification_captures/nominal/left_0_0_6_right_0_0_6/right_ver_green.png: Failed to copy: failed to open source object: GetFileAttributesEx \\?\D:\logs\S6A67340005M\Robocal\DGC\20260805_000524\verification_captures\nominal\left_0_0_6_right_0_0_6\right_ver_green.png: The system cannot find the path specified.
+2026/08/05 00:27:49 ERROR : 20260805_000524/verification_captures/nominal/left_0_0_6_right_0_0_6/right_ver_red.png: Failed to copy: failed to open source object: GetFileAttributesEx \\?\D:\logs\S6A67340005M\Robocal\DGC\20260805_000524\verification_captures\nominal\left_0_0_6_right_0_0_6\right_ver_red.png: The system cannot find the path specified.
+2026/08/05 00:27:49 ERROR : 20260805_000524/verification_captures/nominal/left_2_0_0_right_-2_0_0/right_ver_blue.png: Failed to copy: failed to open source object: GetFileAttributesEx \\?\D:\logs\S6A67340005M\Robocal\DGC\20260805_000524\verification_captures\nominal\left_2_0_0_right_-2_0_0\right_ver_blue.png: The system cannot find the path specified.
+2026/08/05 00:27:49 ERROR : 20260805_000524/feature_detection/nominal_workflow_calibration/device_feature_set.textproto: Failed to copy: failed to open source object: GetFileAttributesEx \\?\D:\logs\S6A67340005M\Robocal\DGC\20260805_000524\feature_detection\nominal_workflow_calibration\device_feature_set.textproto: The system cannot find the path specified.
+2026/08/05 00:27:49 ERROR : 20260805_000524/verification_captures/nominal/left_2_0_0_right_-2_0_0/right_ver_green.png: Failed to copy: failed to open source object: GetFileAttributesEx \\?\D:\logs\S6A67340005M\Robocal\DGC\20260805_000524\verification_captures\nominal\left_2_0_0_right_-2_0_0\right_ver_green.png: The system cannot find the path specified.
+2026/08/05 00:27:49 ERROR : 20260805_000524/feature_detection/nominal_workflow_calibration/feature_detection.log: Failed to copy: failed to open source object: GetFileAttributesEx \\?\D:\logs\S6A67340005M\Robocal\DGC\20260805_000524\feature_detection\nominal_workflow_calibration\feature_detection.log: The system cannot find the path specified.
+2026/08/05 00:27:49 ERROR : 20260805_000524/verification_captures/nominal/left_2_0_0_right_-2_0_0/right_ver_red.png: Failed to copy: failed to open source object: GetFileAttributesEx \\?\D:\logs\S6A67340005M\Robocal\DGC\20260805_000524\verification_captures\nominal\left_2_0_0_right_-2_0_0\right_ver_red.png: The system cannot find the path specified.
+2026/08/05 00:27:49 ERROR : 20260805_000524/verification_captures/nominal/left_0_0_3_right_0_0_3/right_ver_blue.png: Failed to copy: failed to open source object: GetFileAttributesEx \\?\D:\logs\S6A67340005M\Robocal\DGC\20260805_000524\verification_captures\nominal\left_0_0_3_right_0_0_3\right_ver_blue.png: The system cannot find the path specified.
+2026/08/05 00:27:49 ERROR : 20260805_000524/verification_captures/nominal/left_0_0_3_right_0_0_3/right_ver_green.png: Failed to copy: failed to open source object: GetFileAttributesEx \\?\D:\logs\S6A67340005M\Robocal\DGC\20260805_000524\verification_captures\nominal\left_0_0_3_right_0_0_3\right_ver_green.png: The system cannot find the path specified.
+2026/08/05 00:27:49 ERROR : 20260805_000524/verification_captures/nominal/left_0_0_3_right_0_0_3/right_ver_red.png: Failed to copy: failed to open source object: GetFileAttributesEx \\?\D:\logs\S6A67340005M\Robocal\DGC\20260805_000524\verification_captures\nominal\left_0_0_3_right_0_0_3\right_ver_red.png: The system cannot find the path specified.
+2026/08/05 00:27:49 ERROR : 20260805_000524/device_to_station_extrinsic_calibration/station_camera_captures/left_0_0_0_right_0_0_0/left_station.png: Failed to copy: failed to open source object: GetFileAttributesEx \\?\D:\logs\S6A67340005M\Robocal\DGC\20260805_000524\device_to_station_extrinsic_calibration\station_camera_captures\left_0_0_0_right_0_0_0\left_station.png: The system cannot find the path specified.
+2026/08/05 00:27:49 ERROR : 20260805_000524/device_to_station_extrinsic_calibration/station_camera_captures/left_0_0_0_right_0_0_0/right_station.png: Failed to copy: failed to open source object: GetFileAttributesEx \\?\D:\logs\S6A67340005M\Robocal\DGC\20260805_000524\device_to_station_extrinsic_calibration\station_camera_captures\left_0_0_0_right_0_0_0\right_station.png: The system cannot find the path specified.
+2026/08/05 00:27:49 ERROR : 20260805_000524/feature_detection/nominal_workflow_calibration/debug/eyebox_0_0_0_side_right_color_blue/after_medianblur.png: Failed to copy: failed to open source object: GetFileAttributesEx \\?\D:\logs\S6A67340005M\Robocal\DGC\20260805_000524\feature_detection\nominal_workflow_calibration\debug\eyebox_0_0_0_side_right_color_blue\after_medianblur.png: The system cannot find the path specified.
+2026/08/05 00:27:49 ERROR : 20260805_000524/feature_detection/nominal_workflow_calibration/debug/eyebox_0_0_0_side_right_color_blue/bfs.png: Failed to copy: failed to open source object: GetFileAttributesEx \\?\D:\logs\S6A67340005M\Robocal\DGC\20260805_000524\feature_detection\nominal_workflow_calibration\debug\eyebox_0_0_0_side_right_color_blue\bfs.png: The system cannot find the path specified.
+2026/08/05 00:27:49 ERROR : 20260805_000524/feature_detection/nominal_workflow_calibration/debug/eyebox_0_0_0_side_right_color_blue/binary_img.png: Failed to copy: failed to open source object: GetFileAttributesEx \\?\D:\logs\S6A67340005M\Robocal\DGC\20260805_000524\feature_detection\nominal_workflow_calibration\debug\eyebox_0_0_0_side_right_color_blue\binary_img.png: The system cannot find the path specified.
+2026/08/05 00:27:49 ERROR : 20260805_000524/feature_detection/nominal_workflow_calibration/debug/eyebox_0_0_0_side_right_color_blue/detected_fiducials.png: Failed to copy: failed to open source object: GetFileAttributesEx \\?\D:\logs\S6A67340005M\Robocal\DGC\20260805_000524\feature_detection\nominal_workflow_calibration\debug\eyebox_0_0_0_side_right_color_blue\detected_fiducials.png: The system cannot find the path specified.
+2026/08/05 00:27:49 ERROR : 20260805_000524/feature_detection/nominal_workflow_calibration/debug/eyebox_0_0_0_side_right_color_blue/input.png: Failed to copy: failed to open source object: GetFileAttributesEx \\?\D:\logs\S6A67340005M\Robocal\DGC\20260805_000524\feature_detection\nominal_workflow_calibration\debug\eyebox_0_0_0_side_right_color_blue\input.png: The system cannot find the path specified.
+2026/08/05 00:27:49 ERROR : 20260805_000524/feature_detection/nominal_workflow_calibration/debug/eyebox_0_0_0_side_right_color_blue/labels1.svg: Failed to copy: failed to open source object: GetFileAttributesEx \\?\D:\logs\S6A67340005M\Robocal\DGC\20260805_000524\feature_detection\nominal_workflow_calibration\debug\eyebox_0_0_0_side_right_color_blue\labels1.svg: The system cannot find the path specified.
+2026/08/05 00:27:49 ERROR : 20260805_000524/feature_detection/nominal_workflow_calibration/debug/eyebox_0_0_0_side_right_color_blue/labels2.svg: Failed to copy: failed to open source object: GetFileAttributesEx \\?\D:\logs\S6A67340005M\Robocal\DGC\20260805_000524\feature_detection\nominal_workflow_calibration\debug\eyebox_0_0_0_side_right_color_blue\labels2.svg: The system cannot find the path specified.
+2026/08/05 00:27:49 ERROR : 20260805_000524/feature_detection/nominal_workflow_calibration/debug/eyebox_0_0_0_side_right_color_blue/opened_img.png: Failed to copy: failed to open source object: GetFileAttributesEx \\?\D:\logs\S6A67340005M\Robocal\DGC\20260805_000524\feature_detection\nominal_workflow_calibration\debug\eyebox_0_0_0_side_right_color_blue\opened_img.png: The system cannot find the path specified.
+2026/08/05 00:27:49 ERROR : 20260805_000524/feature_detection/nominal_workflow_calibration/debug/eyebox_0_0_0_side_right_color_green/after_medianblur.png: Failed to copy: failed to open source object: GetFileAttributesEx \\?\D:\logs\S6A67340005M\Robocal\DGC\20260805_000524\feature_detection\nominal_workflow_calibration\debug\eyebox_0_0_0_side_right_color_green\after_medianblur.png: The system cannot find the path specified.
+2026/08/05 00:27:49 ERROR : 20260805_000524/feature_detection/nominal_workflow_calibration/debug/eyebox_0_0_0_side_right_color_green/bfs.png: Failed to copy: failed to open source object: GetFileAttributesEx \\?\D:\logs\S6A67340005M\Robocal\DGC\20260805_000524\feature_detection\nominal_workflow_calibration\debug\eyebox_0_0_0_side_right_color_green\bfs.png: The system cannot find the path specified.
+2026/08/05 00:27:49 ERROR : 20260805_000524/feature_detection/nominal_workflow_calibration/debug/eyebox_0_0_0_side_right_color_green/binary_img.png: Failed to copy: failed to open source object: GetFileAttributesEx \\?\D:\logs\S6A67340005M\Robocal\DGC\20260805_000524\feature_detection\nominal_workflow_calibration\debug\eyebox_0_0_0_side_right_color_green\binary_img.png: The system cannot find the path specified.
+2026/08/05 00:27:49 ERROR : 20260805_000524/feature_detection/nominal_workflow_calibration/debug/eyebox_0_0_0_side_right_color_green/detected_fiducials.png: Failed to copy: failed to open source object: GetFileAttributesEx \\?\D:\logs\S6A67340005M\Robocal\DGC\20260805_000524\feature_detection\nominal_workflow_calibration\debug\eyebox_0_0_0_side_right_color_green\detected_fiducials.png: The system cannot find the path specified.
+2026/08/05 00:27:49 ERROR : 20260805_000524/feature_detection/nominal_workflow_calibration/debug/eyebox_0_0_0_side_right_color_green/input.png: Failed to copy: failed to open source object: GetFileAttributesEx \\?\D:\logs\S6A67340005M\Robocal\DGC\20260805_000524\feature_detection\nominal_workflow_calibration\debug\eyebox_0_0_0_side_right_color_green\input.png: The system cannot find the path specified.
+2026/08/05 00:27:49 ERROR : 20260805_000524/feature_detection/nominal_workflow_calibration/debug/eyebox_0_0_0_side_right_color_green/labels1.svg: Failed to copy: failed to open source object: GetFileAttributesEx \\?\D:\logs\S6A67340005M\Robocal\DGC\20260805_000524\feature_detection\nominal_workflow_calibration\debug\eyebox_0_0_0_side_right_color_green\labels1.svg: The system cannot find the path specified.
+2026/08/05 00:27:49 ERROR : 20260805_000524/feature_detection/nominal_workflow_calibration/debug/eyebox_0_0_0_side_right_color_green/labels2.svg: Failed to copy: failed to open source object: GetFileAttributesEx \\?\D:\logs\S6A67340005M\Robocal\DGC\20260805_000524\feature_detection\nominal_workflow_calibration\debug\eyebox_0_0_0_side_right_color_green\labels2.svg: The system cannot find the path specified.
+2026/08/05 00:27:49 ERROR : 20260805_000524/feature_detection/nominal_workflow_calibration/debug/eyebox_0_0_0_side_right_color_green/opened_img.png: Failed to copy: failed to open source object: GetFileAttributesEx \\?\D:\logs\S6A67340005M\Robocal\DGC\20260805_000524\feature_detection\nominal_workflow_calibration\debug\eyebox_0_0_0_side_right_color_green\opened_img.png: The system cannot find the path specified.
+2026/08/05 00:27:49 ERROR : 20260805_000524/feature_detection/nominal_workflow_calibration/debug/eyebox_0_0_0_side_right_color_red/after_medianblur.png: Failed to copy: failed to open source object: GetFileAttributesEx \\?\D:\logs\S6A67340005M\Robocal\DGC\20260805_000524\feature_detection\nominal_workflow_calibration\debug\eyebox_0_0_0_side_right_color_red\after_medianblur.png: The system cannot find the path specified.
+2026/08/05 00:27:49 ERROR : 20260805_000524/feature_detection/nominal_workflow_calibration/debug/eyebox_0_0_0_side_right_color_red/bfs.png: Failed to copy: failed to open source object: GetFileAttributesEx \\?\D:\logs\S6A67340005M\Robocal\DGC\20260805_000524\feature_detection\nominal_workflow_calibration\debug\eyebox_0_0_0_side_right_color_red\bfs.png: The system cannot find the path specified.
+2026/08/05 00:27:49 ERROR : 20260805_000524/feature_detection/nominal_workflow_calibration/debug/eyebox_0_0_0_side_right_color_red/binary_img.png: Failed to copy: failed to open source object: GetFileAttributesEx \\?\D:\logs\S6A67340005M\Robocal\DGC\20260805_000524\feature_detection\nominal_workflow_calibration\debug\eyebox_0_0_0_side_right_color_red\binary_img.png: The system cannot find the path specified.
+2026/08/05 00:27:49 ERROR : 20260805_000524/feature_detection/nominal_workflow_calibration/debug/eyebox_0_0_0_side_right_color_red/detected_fiducials.png: Failed to copy: failed to open source object: GetFileAttributesEx \\?\D:\logs\S6A67340005M\Robocal\DGC\20260805_000524\feature_detection\nominal_workflow_calibration\debug\eyebox_0_0_0_side_right_color_red\detected_fiducials.png: The system cannot find the path specified.
+2026/08/05 00:27:49 ERROR : 20260805_000524/feature_detection/nominal_workflow_calibration/debug/eyebox_0_0_0_side_right_color_red/input.png: Failed to copy: failed to open source object: GetFileAttributesEx \\?\D:\logs\S6A67340005M\Robocal\DGC\20260805_000524\feature_detection\nominal_workflow_calibration\debug\eyebox_0_0_0_side_right_color_red\input.png: The system cannot find the path specified.
+2026/08/05 00:27:49 ERROR : 20260805_000524/feature_detection/nominal_workflow_calibration/debug/eyebox_0_0_0_side_right_color_red/labels1.svg: Failed to copy: failed to open source object: GetFileAttributesEx \\?\D:\logs\S6A67340005M\Robocal\DGC\20260805_000524\feature_detection\nominal_workflow_calibration\debug\eyebox_0_0_0_side_right_color_red\labels1.svg: The system cannot find the path specified.
+2026/08/05 00:27:49 ERROR : 20260805_000524/feature_detection/nominal_workflow_calibration/debug/eyebox_0_0_0_side_right_color_red/labels2.svg: Failed to copy: failed to open source object: GetFileAttributesEx \\?\D:\logs\S6A67340005M\Robocal\DGC\20260805_000524\feature_detection\nominal_workflow_calibration\debug\eyebox_0_0_0_side_right_color_red\labels2.svg: The system cannot find the path specified.
+2026/08/05 00:27:49 ERROR : 20260805_000524/feature_detection/nominal_workflow_calibration/debug/eyebox_0_0_0_side_right_color_red/opened_img.png: Failed to copy: failed to open source object: GetFileAttributesEx \\?\D:\logs\S6A67340005M\Robocal\DGC\20260805_000524\feature_detection\nominal_workflow_calibration\debug\eyebox_0_0_0_side_right_color_red\opened_img.png: The system cannot find the path specified.
+2026/08/05 00:27:49 ERROR : 20260805_000524/feature_detection/nominal_workflow_calibration/debug/eyebox_-2_0_0_side_right_color_red/after_medianblur.png: Failed to copy: failed to open source object: GetFileAttributesEx \\?\D:\logs\S6A67340005M\Robocal\DGC\20260805_000524\feature_detection\nominal_workflow_calibration\debug\eyebox_-2_0_0_side_right_color_red\after_medianblur.png: The system cannot find the path specified.
+2026/08/05 00:27:49 ERROR : 20260805_000524/feature_detection/nominal_workflow_calibration/debug/eyebox_-2_0_0_side_right_color_red/bfs.png: Failed to copy: failed to open source object: GetFileAttributesEx \\?\D:\logs\S6A67340005M\Robocal\DGC\20260805_000524\feature_detection\nominal_workflow_calibration\debug\eyebox_-2_0_0_side_right_color_red\bfs.png: The system cannot find the path specified.
+2026/08/05 00:27:49 ERROR : 20260805_000524/feature_detection/nominal_workflow_calibration/debug/eyebox_-2_0_0_side_right_color_red/binary_img.png: Failed to copy: failed to open source object: GetFileAttributesEx \\?\D:\logs\S6A67340005M\Robocal\DGC\20260805_000524\feature_detection\nominal_workflow_calibration\debug\eyebox_-2_0_0_side_right_color_red\binary_img.png: The system cannot find the path specified.
+2026/08/05 00:27:49 ERROR : 20260805_000524/feature_detection/nominal_workflow_calibration/debug/eyebox_-2_0_0_side_right_color_red/detected_fiducials.png: Failed to copy: failed to open source object: GetFileAttributesEx \\?\D:\logs\S6A67340005M\Robocal\DGC\20260805_000524\feature_detection\nominal_workflow_calibration\debug\eyebox_-2_0_0_side_right_color_red\detected_fiducials.png: The system cannot find the path specified.
+2026/08/05 00:27:49 ERROR : 20260805_000524/feature_detection/nominal_workflow_calibration/debug/eyebox_-2_0_0_side_right_color_red/input.png: Failed to copy: failed to open source object: GetFileAttributesEx \\?\D:\logs\S6A67340005M\Robocal\DGC\20260805_000524\feature_detection\nominal_workflow_calibration\debug\eyebox_-2_0_0_side_right_color_red\input.png: The system cannot find the path specified.
+2026/08/05 00:27:49 ERROR : 20260805_000524/feature_detection/nominal_workflow_calibration/debug/eyebox_-2_0_0_side_right_color_red/labels1.svg: Failed to copy: failed to open source object: GetFileAttributesEx \\?\D:\logs\S6A67340005M\Robocal\DGC\20260805_000524\feature_detection\nominal_workflow_calibration\debug\eyebox_-2_0_0_side_right_color_red\labels1.svg: The system cannot find the path specified.
+2026/08/05 00:27:49 ERROR : 20260805_000524/feature_detection/nominal_workflow_calibration/debug/eyebox_-2_0_0_side_right_color_red/labels2.svg: Failed to copy: failed to open source object: GetFileAttributesEx \\?\D:\logs\S6A67340005M\Robocal\DGC\20260805_000524\feature_detection\nominal_workflow_calibration\debug\eyebox_-2_0_0_side_right_color_red\labels2.svg: The system cannot find the path specified.
+2026/08/05 00:27:49 ERROR : 20260805_000524/feature_detection/nominal_workflow_calibration/debug/eyebox_-2_0_0_side_right_color_red/opened_img.png: Failed to copy: failed to open source object: GetFileAttributesEx \\?\D:\logs\S6A67340005M\Robocal\DGC\20260805_000524\feature_detection\nominal_workflow_calibration\debug\eyebox_-2_0_0_side_right_color_red\opened_img.png: The system cannot find the path specified.
+2026/08/05 00:27:49 ERROR : 20260805_000524/feature_detection/nominal_workflow_calibration/debug/eyebox_-2_0_0_side_right_color_blue/after_medianblur.png: Failed to copy: failed to open source object: GetFileAttributesEx \\?\D:\logs\S6A67340005M\Robocal\DGC\20260805_000524\feature_detection\nominal_workflow_calibration\debug\eyebox_-2_0_0_side_right_color_blue\after_medianblur.png: The system cannot find the path specified.
+2026/08/05 00:27:49 ERROR : 20260805_000524/feature_detection/nominal_workflow_calibration/debug/eyebox_-2_0_0_side_right_color_blue/bfs.png: Failed to copy: failed to open source object: GetFileAttributesEx \\?\D:\logs\S6A67340005M\Robocal\DGC\20260805_000524\feature_detection\nominal_workflow_calibration\debug\eyebox_-2_0_0_side_right_color_blue\bfs.png: The system cannot find the path specified.
+2026/08/05 00:27:49 ERROR : 20260805_000524/feature_detection/nominal_workflow_calibration/debug/eyebox_-2_0_0_side_right_color_blue/binary_img.png: Failed to copy: failed to open source object: GetFileAttributesEx \\?\D:\logs\S6A67340005M\Robocal\DGC\20260805_000524\feature_detection\nominal_workflow_calibration\debug\eyebox_-2_0_0_side_right_color_blue\binary_img.png: The system cannot find the path specified.
+2026/08/05 00:27:49 ERROR : 20260805_000524/feature_detection/nominal_workflow_calibration/debug/eyebox_-2_0_0_side_right_color_blue/detected_fiducials.png: Failed to copy: failed to open source object: GetFileAttributesEx \\?\D:\logs\S6A67340005M\Robocal\DGC\20260805_000524\feature_detection\nominal_workflow_calibration\debug\eyebox_-2_0_0_side_right_color_blue\detected_fiducials.png: The system cannot find the path specified.
+2026/08/05 00:27:49 ERROR : 20260805_000524/feature_detection/nominal_workflow_calibration/debug/eyebox_-2_0_0_side_right_color_blue/input.png: Failed to copy: failed to open source object: GetFileAttributesEx \\?\D:\logs\S6A67340005M\Robocal\DGC\20260805_000524\feature_detection\nominal_workflow_calibration\debug\eyebox_-2_0_0_side_right_color_blue\input.png: The system cannot find the path specified.
+2026/08/05 00:27:49 ERROR : 20260805_000524/feature_detection/nominal_workflow_calibration/debug/eyebox_-2_0_0_side_right_color_blue/labels1.svg: Failed to copy: failed to open source object: GetFileAttributesEx \\?\D:\logs\S6A67340005M\Robocal\DGC\20260805_000524\feature_detection\nominal_workflow_calibration\debug\eyebox_-2_0_0_side_right_color_blue\labels1.svg: The system cannot find the path specified.
+2026/08/05 00:27:49 ERROR : 20260805_000524/feature_detection/nominal_workflow_calibration/debug/eyebox_-2_0_0_side_right_color_blue/labels2.svg: Failed to copy: failed to open source object: GetFileAttributesEx \\?\D:\logs\S6A67340005M\Robocal\DGC\20260805_000524\feature_detection\nominal_workflow_calibration\debug\eyebox_-2_0_0_side_right_color_blue\labels2.svg: The system cannot find the path specified.
+2026/08/05 00:27:49 ERROR : 20260805_000524/feature_detection/nominal_workflow_calibration/debug/eyebox_-2_0_0_side_right_color_blue/opened_img.png: Failed to copy: failed to open source object: GetFileAttributesEx \\?\D:\logs\S6A67340005M\Robocal\DGC\20260805_000524\feature_detection\nominal_workflow_calibration\debug\eyebox_-2_0_0_side_right_color_blue\opened_img.png: The system cannot find the path specified.
+2026/08/05 00:27:49 ERROR : 20260805_000524/feature_detection/nominal_workflow_calibration/debug/eyebox_-2_0_0_side_right_color_green/after_medianblur.png: Failed to copy: failed to open source object: GetFileAttributesEx \\?\D:\logs\S6A67340005M\Robocal\DGC\20260805_000524\feature_detection\nominal_workflow_calibration\debug\eyebox_-2_0_0_side_right_color_green\after_medianblur.png: The system cannot find the path specified.
+2026/08/05 00:27:49 ERROR : 20260805_000524/feature_detection/nominal_workflow_calibration/debug/eyebox_-2_0_0_side_right_color_green/bfs.png: Failed to copy: failed to open source object: GetFileAttributesEx \\?\D:\logs\S6A67340005M\Robocal\DGC\20260805_000524\feature_detection\nominal_workflow_calibration\debug\eyebox_-2_0_0_side_right_color_green\bfs.png: The system cannot find the path specified.
+2026/08/05 00:27:49 ERROR : 20260805_000524/feature_detection/nominal_workflow_calibration/debug/eyebox_-2_0_0_side_right_color_green/binary_img.png: Failed to copy: failed to open source object: GetFileAttributesEx \\?\D:\logs\S6A67340005M\Robocal\DGC\20260805_000524\feature_detection\nominal_workflow_calibration\debug\eyebox_-2_0_0_side_right_color_green\binary_img.png: The system cannot find the path specified.
+2026/08/05 00:27:49 ERROR : 20260805_000524/feature_detection/nominal_workflow_calibration/debug/eyebox_-2_0_0_side_right_color_green/detected_fiducials.png: Failed to copy: failed to open source object: GetFileAttributesEx \\?\D:\logs\S6A67340005M\Robocal\DGC\20260805_000524\feature_detection\nominal_workflow_calibration\debug\eyebox_-2_0_0_side_right_color_green\detected_fiducials.png: The system cannot find the path specified.
+2026/08/05 00:27:49 ERROR : 20260805_000524/feature_detection/nominal_workflow_calibration/debug/eyebox_-2_0_0_side_right_color_green/input.png: Failed to copy: failed to open source object: GetFileAttributesEx \\?\D:\logs\S6A67340005M\Robocal\DGC\20260805_000524\feature_detection\nominal_workflow_calibration\debug\eyebox_-2_0_0_side_right_color_green\input.png: The system cannot find the path specified.
+2026/08/05 00:27:49 ERROR : 20260805_000524/feature_detection/nominal_workflow_calibration/debug/eyebox_-2_0_0_side_right_color_green/labels1.svg: Failed to copy: failed to open source object: GetFileAttributesEx \\?\D:\logs\S6A67340005M\Robocal\DGC\20260805_000524\feature_detection\nominal_workflow_calibration\debug\eyebox_-2_0_0_side_right_color_green\labels1.svg: The system cannot find the path specified.
+2026/08/05 00:27:49 ERROR : 20260805_000524/feature_detection/nominal_workflow_calibration/debug/eyebox_-2_0_0_side_right_color_green/labels2.svg: Failed to copy: failed to open source object: GetFileAttributesEx \\?\D:\logs\S6A67340005M\Robocal\DGC\20260805_000524\feature_detection\nominal_workflow_calibration\debug\eyebox_-2_0_0_side_right_color_green\labels2.svg: The system cannot find the path specified.
+2026/08/05 00:27:49 ERROR : 20260805_000524/feature_detection/nominal_workflow_calibration/debug/eyebox_-2_0_0_side_right_color_green/opened_img.png: Failed to copy: failed to open source object: GetFileAttributesEx \\?\D:\logs\S6A67340005M\Robocal\DGC\20260805_000524\feature_detection\nominal_workflow_calibration\debug\eyebox_-2_0_0_side_right_color_green\opened_img.png: The system cannot find the path specified.
+2026/08/05 00:27:52 INFO  : 20260805_000524/verification_assets/nominal_workflow_calibration/left_0_0_0_right_0_0_0/undistorted_red_calibu_4512x4512_80_80_11_16_1.png: Copied (new)
+2026/08/05 00:27:52 ERROR : 20260805_000524/feature_detection/nominal_workflow_calibration/debug/eyebox_0_0_0_side_right_color_blue: Failed to update directory timestamp or metadata: directory not found
+2026/08/05 00:27:53 ERROR : 20260805_000524/feature_detection/nominal_workflow_calibration/debug/eyebox_0_0_0_side_right_color_green: Failed to update directory timestamp or metadata: directory not found
+2026/08/05 00:27:53 ERROR : 20260805_000524/feature_detection/nominal_workflow_calibration/debug/eyebox_-2_0_0_side_right_color_green: Failed to update directory timestamp or metadata: directory not found
+2026/08/05 00:27:54 ERROR : 20260805_000524/feature_detection/nominal_workflow_calibration/debug/eyebox_-2_0_0_side_right_color_blue: Failed to update directory timestamp or metadata: directory not found
+2026/08/05 00:27:54 ERROR : 20260805_000524/feature_detection/nominal_workflow_calibration/debug/eyebox_-2_0_0_side_right_color_red: Failed to update directory timestamp or metadata: directory not found
+2026/08/05 00:27:55 ERROR : 20260805_000524/feature_detection/nominal_workflow_calibration/debug/eyebox_0_0_0_side_right_color_red: Failed to update directory timestamp or metadata: directory not found
+2026/08/05 00:27:55 ERROR : 20260805_000524/verification_captures/nominal/left_0_0_3_right_0_0_3: Failed to update directory timestamp or metadata: directory not found
+2026/08/05 00:27:55 ERROR : 20260805_000524/verification_captures/nominal/left_0_0_6_right_0_0_6: Failed to update directory timestamp or metadata: directory not found
+2026/08/05 00:27:56 ERROR : 20260805_000524/verification_captures/nominal/left_0_0_0_right_0_0_0: Failed to update directory timestamp or metadata: directory not found
+2026/08/05 00:27:56 INFO  : 20260805_000524/verification_assets/nominal_workflow_calibration/left_0_0_0_right_0_0_0: Set directory modification time (using DirSetModTime)
+2026/08/05 00:27:56 ERROR : 20260805_000524/verification_captures/nominal/left_-3_0_0_right_3_0_0: Failed to update directory timestamp or metadata: directory not found
+2026/08/05 00:27:57 ERROR : 20260805_000524/verification_captures/nominal/left_2_0_0_right_-2_0_0: Failed to update directory timestamp or metadata: directory not found
+2026/08/05 00:27:57 ERROR : 20260805_000524/feature_detection/nominal_workflow_calibration/debug: Failed to update directory timestamp or metadata: directory not found
+2026/08/05 00:27:58 ERROR : 20260805_000524/device_to_station_extrinsic_calibration/station_camera_captures/left_0_0_0_right_0_0_0: Failed to update directory timestamp or metadata: directory not found
+2026/08/05 00:27:59 INFO  : 20260805_000524/verification_assets/nominal_workflow_calibration: Set directory modification time (using DirSetModTime)
+2026/08/05 00:27:59 INFO  : 20260805_000524/nominal_workflow_calibration/debug: Set directory modification time (using DirSetModTime)
+2026/08/05 00:27:59 INFO  : 20260805_000524/calibration_captures/left_2_0_0_right_-2_0_0: Set directory modification time (using DirSetModTime)
+2026/08/05 00:27:59 INFO  : 20260805_000524/calibration_captures/left_0_0_0_right_0_0_0: Set directory modification time (using DirSetModTime)
+2026/08/05 00:28:00 ERROR : 20260805_000524/verification_captures/nominal: Failed to update directory timestamp or metadata: directory not found
+2026/08/05 00:28:00 ERROR : 20260805_000524/feature_detection/nominal_workflow_calibration: Failed to update directory timestamp or metadata: directory not found
+2026/08/05 00:28:00 ERROR : 20260805_000524/device_to_station_extrinsic_calibration/station_camera_captures: Failed to update directory timestamp or metadata: directory not found
+2026/08/05 00:28:01 ERROR : 20260805_000524/device_to_station_extrinsic_calibration: Failed to update directory timestamp or metadata: directory not found
+2026/08/05 00:28:01 ERROR : 20260805_000524/feature_detection: Failed to update directory timestamp or metadata: directory not found
+2026/08/05 00:28:02 INFO  : 20260805_000524/verification_assets: Set directory modification time (using DirSetModTime)
+2026/08/05 00:41:09 NOTICE: gdrive{iWtD9}: This remote uses rclone's shared Google Drive client_id, which is being retired and will stop working during 2026. Create your own client_id to avoid interruption: https://rclone.org/drive/#making-your-own-client-id
+2026/08/05 00:41:28 NOTICE: gdrive{iWtD9}: This remote uses rclone's shared Google Drive client_id, which is being retired and will stop working during 2026. Create your own client_id to avoid interruption: https://rclone.org/drive/#making-your-own-client-id
+2026/08/05 00:41:29 INFO  : Google drive root 'S6A67340005M': Making directory
+2026/08/05 00:41:31 NOTICE: gdrive{iWtD9}: This remote uses rclone's shared Google Drive client_id, which is being retired and will stop working during 2026. Create your own client_id to avoid interruption: https://rclone.org/drive/#making-your-own-client-id
+2026/08/05 00:41:34 ERROR : error listing: directory not found
+2026/08/05 00:41:34 NOTICE: Failed to lsf with 2 errors: last error was: error in ListJSON: directory not found
+2026/08/05 00:41:34 NOTICE: gdrive{iWtD9}: This remote uses rclone's shared Google Drive client_id, which is being retired and will stop working during 2026. Create your own client_id to avoid interruption: https://rclone.org/drive/#making-your-own-client-id
+2026/08/05 00:41:38 ERROR : error listing: directory not found
+2026/08/05 00:41:38 NOTICE: Failed to lsf with 2 errors: last error was: error in ListJSON: directory not found
+2026/08/05 00:41:38 NOTICE: gdrive{kbg6m}: This remote uses rclone's shared Google Drive client_id, which is being retired and will stop working during 2026. Create your own client_id to avoid interruption: https://rclone.org/drive/#making-your-own-client-id
+2026/08/05 00:41:51 INFO  : 20260805_003231/nominal_workflow_calibration_capture_set.yaml: Copied (new)
+2026/08/05 00:41:54 INFO  : 20260805_003231/station_id.yaml: Copied (new)
+2026/08/05 00:41:57 INFO  : 20260805_003231/stereo.textproto: Copied (new)
+2026/08/05 00:42:02 INFO  : 20260805_003231/nominal_workflow_calibration/calibration_specs.yaml: Copied (new)
+2026/08/05 00:42:11 INFO  :   614.578 MiB / 2.088 GiB, 29%, 21.721 MiB/s, ETA 1m10s (xfr#4/90)
+2026/08/05 00:42:27 INFO  : 20260805_003231/nominal_workflow_calibration/display_geometry_calibrator.log: Copied (new)
+2026/08/05 00:42:29 INFO  : 20260805_003231.zip: Copied (new)
+2026/08/05 00:42:34 INFO  : 20260805_003231/nominal_workflow_calibration/display_profile.textproto: Copied (new)
+2026/08/05 00:42:41 INFO  :     1.106 GiB / 2.088 GiB, 53%, 14.881 MiB/s, ETA 1m7s (xfr#7/90)
+2026/08/05 00:42:41 INFO  : 20260805_003231/calibration_captures/left_0_0_0_right_0_0_0/right_grid_blue.png: Copied (new)
+2026/08/05 00:42:42 INFO  : 20260805_003231/calibration_captures/left_0_0_0_right_0_0_0/right_grid_green.png: Copied (new)
+2026/08/05 00:42:47 INFO  : 20260805_003231/calibration_captures/left_0_0_0_right_0_0_0/right_grid_red.png: Copied (new)
+2026/08/05 00:42:53 INFO  : 20260805_003231/calibration_captures/left_2_0_0_right_-2_0_0/right_grid_blue.png: Copied (new)
+2026/08/05 00:42:54 INFO  : 20260805_003231/calibration_captures/left_2_0_0_right_-2_0_0/right_grid_green.png: Copied (new)
+2026/08/05 00:43:01 INFO  : 20260805_003231/calibration_captures/left_2_0_0_right_-2_0_0/right_grid_red.png: Copied (new)
+2026/08/05 00:43:11 INFO  :     1.279 GiB / 2.089 GiB, 61%, 5.137 MiB/s, ETA 2m41s (xfr#13/90)
+2026/08/05 00:43:35 INFO  : 20260805_003231/feature_detection/nominal_workflow_calibration/feature_detection.log: Copied (new)
+2026/08/05 00:43:37 INFO  : 20260805_003231/feature_detection/nominal_workflow_calibration/device_feature_set.textproto: Copied (new)
+2026/08/05 00:43:41 INFO  :     1.280 GiB / 2.090 GiB, 61%, 792.361 KiB/s, ETA 17m51s (xfr#15/90)
+2026/08/05 00:43:46 INFO  : 20260805_003231/verification_assets/nominal_workflow_calibration/left_0_0_0_right_0_0_0/undistorted_blue_calibu_4512x4512_80_80_11_16_1.png: Copied (new)
+2026/08/05 00:43:49 INFO  : 20260805_003231/verification_assets/nominal_workflow_calibration/virtual_image_position.yaml: Copied (new)
+2026/08/05 00:43:49 INFO  : 20260805_003231/verification_assets/nominal_workflow_calibration/left_0_0_0_right_0_0_0/undistorted_green_calibu_4512x4512_80_80_11_16_1.png: Copied (new)
+2026/08/05 00:43:52 INFO  : 20260805_003231/verification_assets/nominal_workflow_calibration/left_0_0_0_right_0_0_0/undistorted_red_calibu_4512x4512_80_80_11_16_1.png: Copied (new)
+2026/08/05 00:44:02 INFO  : 20260805_003231/verification_captures/nominal/left_0_0_0_right_0_0_0/right_ver_blue.png: Copied (new)
+2026/08/05 00:44:02 INFO  : 20260805_003231/verification_captures/nominal/left_0_0_0_right_0_0_0/right_ver_green.png: Copied (new)
+2026/08/05 00:44:11 INFO  :     1.366 GiB / 2.090 GiB, 65%, 2.636 MiB/s, ETA 4m41s (xfr#21/90)
+2026/08/05 00:44:41 INFO  :     1.385 GiB / 2.090 GiB, 66%, 393.200 KiB/s, ETA 31m18s (xfr#21/90)
+2026/08/05 00:44:45 INFO  : 20260805_003231/verification_captures/nominal/left_-3_0_0_right_3_0_0/right_ver_blue.png: Copied (new)
+2026/08/05 00:44:47 INFO  : 20260805_003231/verification_captures/nominal/left_0_0_0_right_0_0_0/right_ver_red.png: Copied (new)
+2026/08/05 00:44:54 INFO  : 20260805_003231/verification_captures/nominal/left_-3_0_0_right_3_0_0/right_ver_red.png: Copied (new)
+2026/08/05 00:44:55 INFO  : 20260805_003231/verification_captures/nominal/left_-3_0_0_right_3_0_0/right_ver_green.png: Copied (new)
+2026/08/05 00:45:04 INFO  : 20260805_003231/verification_captures/nominal/left_0_0_3_right_0_0_3/right_ver_blue.png: Copied (new)
+2026/08/05 00:45:04 INFO  : 20260805_003231/verification_captures/nominal/left_0_0_3_right_0_0_3/right_ver_green.png: Copied (new)
+2026/08/05 00:45:11 INFO  :     1.623 GiB / 2.090 GiB, 78%, 5.067 MiB/s, ETA 1m34s (xfr#27/90)
+2026/08/05 00:45:34 INFO  : 20260805_003231/verification_captures/nominal/left_2_0_0_right_-2_0_0/right_ver_blue.png: Copied (new)
+2026/08/05 00:45:35 INFO  : 20260805_003231/verification_captures/nominal/left_0_0_3_right_0_0_3/right_ver_red.png: Copied (new)
+2026/08/05 00:45:41 INFO  :     1.794 GiB / 2.090 GiB, 86%, 8.311 MiB/s, ETA 36s (xfr#29/90)
+2026/08/05 00:45:41 INFO  : 20260805_003231/verification_captures/nominal/left_2_0_0_right_-2_0_0/right_ver_green.png: Copied (new)
+2026/08/05 00:45:42 INFO  : 20260805_003231/verification_captures/nominal/left_2_0_0_right_-2_0_0/right_ver_red.png: Copied (new)
+2026/08/05 00:45:50 INFO  : 20260805_003231/verification_captures/nominal/left_0_0_6_right_0_0_6/right_ver_blue.png: Copied (new)
+2026/08/05 00:45:51 INFO  : 20260805_003231/verification_captures/nominal/left_0_0_6_right_0_0_6/right_ver_green.png: Copied (new)
+2026/08/05 00:46:11 INFO  :     1.992 GiB / 2.090 GiB, 95%, 6.187 MiB/s, ETA 16s (xfr#33/90)
+2026/08/05 00:46:41 INFO  :     1.992 GiB / 2.090 GiB, 95%, 913.961 KiB/s, ETA 1m51s (xfr#33/90)
+2026/08/05 00:47:11 INFO  :     1.992 GiB / 2.090 GiB, 95%, 131.846 KiB/s, ETA 12m51s (xfr#33/90)
+2026/08/05 00:47:41 INFO  :     1.992 GiB / 2.090 GiB, 95%, 19.020 KiB/s, ETA 1h29m9s (xfr#33/90)
+2026/08/05 00:48:11 INFO  :     1.992 GiB / 2.090 GiB, 95%, 2.743 KiB/s, ETA 10h18m3s (xfr#33/90)
+2026/08/05 00:48:41 INFO  :     1.992 GiB / 2.090 GiB, 95%, 405 B/s, ETA 2d23h24m (xfr#33/90)
+2026/08/05 00:49:11 INFO  :     1.992 GiB / 2.132 GiB, 93%, 58 B/s, ETA 4w1d17h (xfr#33/90)
+2026/08/05 00:49:41 INFO  :     1.992 GiB / 2.132 GiB, 93%, 8 B/s, ETA 29w2d22h (xfr#33/90)
+2026/08/05 00:49:56 INFO  : 20260805_003231/verification_captures/nominal/left_0_0_6_right_0_0_6/right_ver_red.png: Copied (new)
+2026/08/05 00:50:04 INFO  : 20260805_003231/device_to_station_extrinsic_calibration/station_camera_captures/left_0_0_0_right_0_0_0/right_station.png: Copied (new)
+2026/08/05 00:50:11 INFO  :     2.107 GiB / 2.203 GiB, 96%, 3.066 MiB/s, ETA 31s (xfr#35/90)
+2026/08/05 00:50:37 INFO  : 20260805_003231/nominal_workflow_calibration/debug/side_right_channel_blue_depth_grid.csv: Copied (new)
+2026/08/05 00:50:40 INFO  : 20260805_003231/nominal_workflow_calibration/debug/side_right_channel_blue_display_pixel_depth_grid.csv: Copied (new)
+2026/08/05 00:50:41 INFO  :     2.178 GiB / 2.203 GiB, 99%, 4.014 MiB/s, ETA 6s (xfr#37/90)
+2026/08/05 00:50:43 INFO  : 20260805_003231/nominal_workflow_calibration/debug/side_right_channel_green_depth_grid.csv: Copied (new)
+2026/08/05 00:50:44 INFO  : 20260805_003231/device_to_station_extrinsic_calibration/station_camera_captures/left_0_0_0_right_0_0_0/left_station.png: Copied (new)
+2026/08/05 00:50:46 INFO  : 20260805_003231/nominal_workflow_calibration/debug/side_right_channel_green_display_pixel_depth_grid.csv: Copied (new)
+2026/08/05 00:50:46 INFO  : 20260805_003231/nominal_workflow_calibration/debug/side_right_channel_red_depth_grid.csv: Copied (new)
+2026/08/05 00:50:55 INFO  : 20260805_003231/nominal_workflow_calibration/debug/side_right_channel_red_display_pixel_depth_grid.csv: Copied (new)
+2026/08/05 00:50:55 INFO  : 20260805_003231/feature_detection/nominal_workflow_calibration/debug/eyebox_-2_0_0_side_right_color_green/after_medianblur.png: Copied (new)
+2026/08/05 00:50:58 INFO  : 20260805_003231/feature_detection/nominal_workflow_calibration/debug/eyebox_-2_0_0_side_right_color_green/bfs.png: Copied (new)
+2026/08/05 00:51:00 INFO  : 20260805_003231/feature_detection/nominal_workflow_calibration/debug/eyebox_-2_0_0_side_right_color_green/binary_img.png: Copied (new)
+2026/08/05 00:51:02 INFO  : 20260805_003231/feature_detection/nominal_workflow_calibration/debug/eyebox_-2_0_0_side_right_color_green/detected_fiducials.png: Copied (new)
+2026/08/05 00:51:11 INFO  :     2.182 GiB / 2.206 GiB, 99%, 720.342 KiB/s, ETA 34s (xfr#46/90)
+2026/08/05 00:51:31 INFO  : 20260805_003231/feature_detection/nominal_workflow_calibration/debug/eyebox_-2_0_0_side_right_color_green/labels1.svg: Copied (new)
+2026/08/05 00:51:35 INFO  : 20260805_003231/feature_detection/nominal_workflow_calibration/debug/eyebox_-2_0_0_side_right_color_green/labels2.svg: Copied (new)
+2026/08/05 00:51:36 INFO  : 20260805_003231/feature_detection/nominal_workflow_calibration/debug/eyebox_-2_0_0_side_right_color_green/input.png: Copied (new)
+2026/08/05 00:51:38 INFO  : 20260805_003231/feature_detection/nominal_workflow_calibration/debug/eyebox_-2_0_0_side_right_color_green/opened_img.png: Copied (new)
+2026/08/05 00:51:41 INFO  :     2.191 GiB / 2.212 GiB, 99%, 373.112 KiB/s, ETA 56s (xfr#50/90)
+2026/08/05 00:51:42 INFO  : 20260805_003231/feature_detection/nominal_workflow_calibration/debug/eyebox_-2_0_0_side_right_color_red/bfs.png: Copied (new)
+2026/08/05 00:51:42 INFO  : 20260805_003231/feature_detection/nominal_workflow_calibration/debug/eyebox_-2_0_0_side_right_color_red/after_medianblur.png: Copied (new)
+2026/08/05 00:51:46 INFO  : 20260805_003231/feature_detection/nominal_workflow_calibration/debug/eyebox_-2_0_0_side_right_color_red/binary_img.png: Copied (new)
+2026/08/05 00:51:47 INFO  : 20260805_003231/feature_detection/nominal_workflow_calibration/debug/eyebox_-2_0_0_side_right_color_red/detected_fiducials.png: Copied (new)
+2026/08/05 00:51:50 INFO  : 20260805_003231/feature_detection/nominal_workflow_calibration/debug/eyebox_-2_0_0_side_right_color_red/input.png: Copied (new)
+2026/08/05 00:51:50 INFO  : 20260805_003231/feature_detection/nominal_workflow_calibration/debug/eyebox_-2_0_0_side_right_color_red/labels1.svg: Copied (new)
+2026/08/05 00:51:54 INFO  : 20260805_003231/feature_detection/nominal_workflow_calibration/debug/eyebox_-2_0_0_side_right_color_red/labels2.svg: Copied (new)
+2026/08/05 00:51:58 INFO  : 20260805_003231/feature_detection/nominal_workflow_calibration/debug/eyebox_-2_0_0_side_right_color_red/opened_img.png: Copied (new)
+2026/08/05 00:52:00 INFO  : 20260805_003231/feature_detection/nominal_workflow_calibration/debug/eyebox_-2_0_0_side_right_color_blue/after_medianblur.png: Copied (new)
+2026/08/05 00:52:03 INFO  : 20260805_003231/feature_detection/nominal_workflow_calibration/debug/eyebox_-2_0_0_side_right_color_blue/bfs.png: Copied (new)
+2026/08/05 00:52:03 INFO  : 20260805_003231/feature_detection/nominal_workflow_calibration/debug/eyebox_-2_0_0_side_right_color_blue/binary_img.png: Copied (new)
+2026/08/05 00:52:11 INFO  :     2.196 GiB / 2.212 GiB, 99%, 122.654 KiB/s, ETA 2m15s (xfr#61/90)
+2026/08/05 00:52:28 INFO  : 20260805_003231/feature_detection/nominal_workflow_calibration/debug/eyebox_-2_0_0_side_right_color_blue/detected_fiducials.png: Copied (new)
+2026/08/05 00:52:32 INFO  : 20260805_003231/feature_detection/nominal_workflow_calibration/debug/eyebox_-2_0_0_side_right_color_blue/labels1.svg: Copied (new)
+2026/08/05 00:52:36 INFO  : 20260805_003231/feature_detection/nominal_workflow_calibration/debug/eyebox_-2_0_0_side_right_color_blue/labels2.svg: Copied (new)
+2026/08/05 00:52:39 INFO  : 20260805_003231/feature_detection/nominal_workflow_calibration/debug/eyebox_-2_0_0_side_right_color_blue/opened_img.png: Copied (new)
+2026/08/05 00:52:41 INFO  :     2.199 GiB / 2.212 GiB, 99%, 191.191 KiB/s, ETA 1m8s (xfr#65/90)
+2026/08/05 00:52:43 INFO  : 20260805_003231/feature_detection/nominal_workflow_calibration/debug/eyebox_-2_0_0_side_right_color_blue/input.png: Copied (new)
+2026/08/05 00:52:45 INFO  : 20260805_003231/feature_detection/nominal_workflow_calibration/debug/eyebox_0_0_0_side_right_color_red/after_medianblur.png: Copied (new)
+2026/08/05 00:52:47 INFO  : 20260805_003231/feature_detection/nominal_workflow_calibration/debug/eyebox_0_0_0_side_right_color_red/bfs.png: Copied (new)
+2026/08/05 00:52:49 INFO  : 20260805_003231/feature_detection/nominal_workflow_calibration/debug/eyebox_0_0_0_side_right_color_red/binary_img.png: Copied (new)
+2026/08/05 00:52:51 INFO  : 20260805_003231/feature_detection/nominal_workflow_calibration/debug/eyebox_0_0_0_side_right_color_red/detected_fiducials.png: Copied (new)
+2026/08/05 00:52:53 INFO  : 20260805_003231/feature_detection/nominal_workflow_calibration/debug/eyebox_0_0_0_side_right_color_red/input.png: Copied (new)
+2026/08/05 00:52:55 INFO  : 20260805_003231/feature_detection/nominal_workflow_calibration/debug/eyebox_0_0_0_side_right_color_red/labels1.svg: Copied (new)
+2026/08/05 00:52:57 INFO  : 20260805_003231/feature_detection/nominal_workflow_calibration/debug/eyebox_0_0_0_side_right_color_red/labels2.svg: Copied (new)
+2026/08/05 00:52:59 INFO  : 20260805_003231/feature_detection/nominal_workflow_calibration/debug/eyebox_0_0_0_side_right_color_red/opened_img.png: Copied (new)
+2026/08/05 00:53:03 INFO  : 20260805_003231/feature_detection/nominal_workflow_calibration/debug/eyebox_0_0_0_side_right_color_blue/after_medianblur.png: Copied (new)
+2026/08/05 00:53:11 INFO  :     2.204 GiB / 2.212 GiB, 100%, 133.218 KiB/s, ETA 1m (xfr#75/90)
+2026/08/05 00:53:31 INFO  : 20260805_003231/feature_detection/nominal_workflow_calibration/debug/eyebox_0_0_0_side_right_color_blue/bfs.png: Copied (new)
+2026/08/05 00:53:35 INFO  : 20260805_003231/feature_detection/nominal_workflow_calibration/debug/eyebox_0_0_0_side_right_color_blue/detected_fiducials.png: Copied (new)
+2026/08/05 00:53:39 INFO  : 20260805_003231/feature_detection/nominal_workflow_calibration/debug/eyebox_0_0_0_side_right_color_blue/input.png: Copied (new)
+2026/08/05 00:53:41 INFO  :     2.207 GiB / 2.212 GiB, 100%, 158.472 KiB/s, ETA 32s (xfr#78/90)
+2026/08/05 00:53:48 INFO  : 20260805_003231/feature_detection/nominal_workflow_calibration/debug/eyebox_0_0_0_side_right_color_blue/binary_img.png: Copied (new)
+2026/08/05 00:53:49 INFO  : 20260805_003231/feature_detection/nominal_workflow_calibration/debug/eyebox_0_0_0_side_right_color_blue/labels1.svg: Copied (new)
+2026/08/05 00:53:51 INFO  : 20260805_003231/feature_detection/nominal_workflow_calibration/debug/eyebox_0_0_0_side_right_color_blue/labels2.svg: Copied (new)
+2026/08/05 00:53:53 INFO  : 20260805_003231/feature_detection/nominal_workflow_calibration/debug/eyebox_0_0_0_side_right_color_blue/opened_img.png: Copied (new)
+2026/08/05 00:53:57 INFO  : 20260805_003231/feature_detection/nominal_workflow_calibration/debug/eyebox_0_0_0_side_right_color_green/after_medianblur.png: Copied (new)
+2026/08/05 00:53:58 INFO  : 20260805_003231/feature_detection/nominal_workflow_calibration/debug/eyebox_0_0_0_side_right_color_green/bfs.png: Copied (new)
+2026/08/05 00:54:01 INFO  : 20260805_003231/feature_detection/nominal_workflow_calibration/debug/eyebox_0_0_0_side_right_color_green/binary_img.png: Copied (new)
+2026/08/05 00:54:02 INFO  : 20260805_003231/feature_detection/nominal_workflow_calibration/debug/eyebox_0_0_0_side_right_color_green/detected_fiducials.png: Copied (new)
+2026/08/05 00:54:11 INFO  :     2.215 GiB / 2.218 GiB, 100%, 290.816 KiB/s, ETA 12s (xfr#86/90)
+2026/08/05 00:54:32 INFO  : 20260805_003231/feature_detection/nominal_workflow_calibration/debug/eyebox_0_0_0_side_right_color_green/input.png: Copied (new)
+2026/08/05 00:54:37 INFO  : 20260805_003231/feature_detection/nominal_workflow_calibration/debug/eyebox_0_0_0_side_right_color_green/labels2.svg: Copied (new)
+2026/08/05 00:54:40 INFO  : 20260805_003231/feature_detection/nominal_workflow_calibration/debug/eyebox_0_0_0_side_right_color_green/opened_img.png: Copied (new)
+2026/08/05 00:54:41 INFO  :     2.218 GiB / 2.218 GiB, 100%, 145.504 KiB/s, ETA 0s
+2026/08/05 00:54:48 INFO  : 20260805_003231/feature_detection/nominal_workflow_calibration/debug/eyebox_0_0_0_side_right_color_green/labels1.svg: Copied (new)
+2026/08/05 00:54:49 INFO  : 20260805_003231/feature_detection/nominal_workflow_calibration/debug/eyebox_-2_0_0_side_right_color_green: Set directory modification time (using DirSetModTime)
+2026/08/05 00:54:49 INFO  : 20260805_003231/feature_detection/nominal_workflow_calibration/debug/eyebox_-2_0_0_side_right_color_blue: Set directory modification time (using DirSetModTime)
+2026/08/05 00:54:49 INFO  : 20260805_003231/feature_detection/nominal_workflow_calibration/debug/eyebox_-2_0_0_side_right_color_red: Set directory modification time (using DirSetModTime)
+2026/08/05 00:54:49 INFO  : 20260805_003231/feature_detection/nominal_workflow_calibration/debug/eyebox_0_0_0_side_right_color_blue: Set directory modification time (using DirSetModTime)
+2026/08/05 00:54:50 INFO  : 20260805_003231/feature_detection/nominal_workflow_calibration/debug/eyebox_0_0_0_side_right_color_red: Set directory modification time (using DirSetModTime)
+2026/08/05 00:54:50 INFO  : 20260805_003231/feature_detection/nominal_workflow_calibration/debug/eyebox_0_0_0_side_right_color_green: Set directory modification time (using DirSetModTime)
+2026/08/05 00:54:51 INFO  : 20260805_003231/verification_captures/nominal/left_-3_0_0_right_3_0_0: Set directory modification time (using DirSetModTime)
+2026/08/05 00:54:51 INFO  : 20260805_003231/verification_captures/nominal/left_0_0_0_right_0_0_0: Set directory modification time (using DirSetModTime)
+2026/08/05 00:54:51 INFO  : 20260805_003231/feature_detection/nominal_workflow_calibration/debug: Set directory modification time (using DirSetModTime)
+2026/08/05 00:54:51 INFO  : 20260805_003231/verification_assets/nominal_workflow_calibration/left_0_0_0_right_0_0_0: Set directory modification time (using DirSetModTime)
+2026/08/05 00:54:52 INFO  : 20260805_003231/verification_captures/nominal/left_0_0_3_right_0_0_3: Set directory modification time (using DirSetModTime)
+2026/08/05 00:54:52 INFO  : 20260805_003231/verification_captures/nominal/left_0_0_6_right_0_0_6: Set directory modification time (using DirSetModTime)
+2026/08/05 00:54:53 INFO  : 20260805_003231/device_to_station_extrinsic_calibration/station_camera_captures/left_0_0_0_right_0_0_0: Set directory modification time (using DirSetModTime)
+2026/08/05 00:54:53 INFO  : 20260805_003231/verification_captures/nominal/left_2_0_0_right_-2_0_0: Set directory modification time (using DirSetModTime)
+2026/08/05 00:54:54 INFO  : 20260805_003231/nominal_workflow_calibration/debug: Set directory modification time (using DirSetModTime)
+2026/08/05 00:54:54 INFO  : 20260805_003231/calibration_captures/left_2_0_0_right_-2_0_0: Set directory modification time (using DirSetModTime)
+2026/08/05 00:54:54 INFO  : 20260805_003231/feature_detection/nominal_workflow_calibration: Set directory modification time (using DirSetModTime)
+2026/08/05 00:54:55 INFO  : 20260805_003231/calibration_captures/left_0_0_0_right_0_0_0: Set directory modification time (using DirSetModTime)
+2026/08/05 00:54:55 INFO  : 20260805_003231/verification_captures/nominal: Set directory modification time (using DirSetModTime)
+2026/08/05 00:54:55 INFO  : 20260805_003231/verification_assets/nominal_workflow_calibration: Set directory modification time (using DirSetModTime)
+2026/08/05 00:54:55 INFO  : 20260805_003231/device_to_station_extrinsic_calibration/station_camera_captures: Set directory modification time (using DirSetModTime)
+2026/08/05 00:54:56 INFO  : 20260805_003231/feature_detection: Set directory modification time (using DirSetModTime)
+2026/08/05 00:54:56 INFO  : 20260805_003231/device_to_station_extrinsic_calibration: Set directory modification time (using DirSetModTime)
+2026/08/05 00:54:56 INFO  : 20260805_003231/calibration_captures: Set directory modification time (using DirSetModTime)
+2026/08/05 00:54:56 INFO  : 20260805_003231/nominal_workflow_calibration: Set directory modification time (using DirSetModTime)
+2026/08/05 00:54:57 INFO  : 20260805_003231/verification_assets: Set directory modification time (using DirSetModTime)
+2026/08/05 00:54:57 INFO  : 20260805_003231/verification_captures: Set directory modification time (using DirSetModTime)
+2026/08/05 00:54:59 INFO  : 20260805_003231: Set directory modification time (using DirSetModTime)
+2026/08/05 00:54:59 INFO  :     2.218 GiB / 2.218 GiB, 100%, 99.392 KiB/s, ETA 0s
+2026/08/05 00:54:59 NOTICE: gdrive{kbg6m}: This remote uses rclone's shared Google Drive client_id, which is being retired and will stop working during 2026. Create your own client_id to avoid interruption: https://rclone.org/drive/#making-your-own-client-id
+2026/08/05 00:56:24 INFO  :           0 B / 0 B, -, 0 B/s, ETA -
+2026/08/05 00:56:35 INFO  : 20260805_003231/dcc_capture.zip: Copied (new)
+2026/08/05 00:56:36 INFO  : 20260805_003231/dcc_apply_color_cal.zip: Copied (new)
+2026/08/05 00:56:38 INFO  : 20260805_003231/dcc_config.json: Copied (new)
+2026/08/05 00:56:39 INFO  : 20260805_003231/dcc_uniformity.zip: Copied (new)
+2026/08/05 00:56:41 INFO  : 20260805_003231/dcc_uniformity_validation.zip: Copied (new)
+2026/08/05 00:56:43 INFO  : 20260805_003231/dcc_white_point.zip: Copied (new)
+2026/08/05 00:56:44 INFO  : 20260805_003231/whitepoint_ok2cal_capture.zip: Copied (new)
+2026/08/05 00:56:47 INFO  : 20260805_003231/capture/right_irradiance.cal: Copied (new)
+2026/08/05 00:56:47 INFO  : 20260805_003231/capture/right_mask_scaling_factor.yaml: Copied (new)
+2026/08/05 00:56:54 INFO  :    21.060 MiB / 2.778 GiB, 1%, 722.637 KiB/s, ETA 1h6m41s (xfr#9/290)
+2026/08/05 00:56:56 INFO  : 20260805_003231/high_freq_mura_calibration/uniformity/right_correction_map.png: Copied (new)
+2026/08/05 00:56:57 INFO  : 20260805_003231/high_freq_mura_calibration/uniformity/right_correction_map.tiff: Copied (new)
+2026/08/05 00:57:24 INFO  :    32.944 MiB / 2.778 GiB, 1%, 221.323 KiB/s, ETA 3h36m51s (xfr#11/290)
+2026/08/05 00:57:44 INFO  : 20260805_003231/high_freq_mura_capture/geometry/image_capture_metadata.yaml: Copied (new)
+2026/08/05 00:57:51 INFO  : 20260805_003231/autoexposure_debug/ae_right_iter_00_it_66664_max_36565.0.csv: Copied (new)
+2026/08/05 00:57:54 INFO  :    32.997 MiB / 2.778 GiB, 1%, 34.063 KiB/s, ETA 23h28m54s (xfr#13/290)
+2026/08/05 00:57:58 INFO  : 20260805_003231/white_point_calibration/corrected_rgb_primaries/blue.png: Copied (new)
+2026/08/05 00:58:01 INFO  : 20260805_003231/white_point_calibration/corrected_rgb_primaries/green.png: Copied (new)
+2026/08/05 00:58:24 INFO  :    33.124 MiB / 2.778 GiB, 1%, 6.461 KiB/s, ETA 5d3h46m (xfr#15/290)
+2026/08/05 00:58:29 INFO  : 20260805_003231/white_point_calibration/corrected_rgb_primaries/macbeth20.png: Copied (new)
+2026/08/05 00:58:32 INFO  : 20260805_003231/white_point_calibration/corrected_rgb_primaries/macbeth22.png: Copied (new)
+2026/08/05 00:58:35 INFO  : 20260805_003231/white_point_calibration/corrected_rgb_primaries/red.png: Copied (new)
+2026/08/05 00:58:41 INFO  : 20260805_003231/white_point_calibration/corrected_rgb_primaries/white.png: Copied (new)
+2026/08/05 00:58:47 INFO  : 20260805_003231/high_freq_mura_capture/geometry/dataset.yaml: Copied (new)
+2026/08/05 00:58:48 INFO  : 20260805_003231/high_freq_mura_calibration/geometry/right/geometry_map.tiff: Copied (new)
+2026/08/05 00:58:54 INFO  :    41.664 MiB / 2.778 GiB, 1%, 341.672 KiB/s, ETA 2h20m1s (xfr#21/290)
+2026/08/05 00:58:54 INFO  : 20260805_003231/uniformity_validation/capture/image_capture_metadata.yaml: Copied (new)
+2026/08/05 00:58:57 INFO  : 20260805_003231/white_point_calibration/post_cal_capture/right_irradiance.cal: Copied (new)
+2026/08/05 00:58:57 INFO  : 20260805_003231/white_point_calibration/post_cal_capture/right_mask_scaling_factor.yaml: Copied (new)
+2026/08/05 00:59:24 INFO  :    43.339 MiB / 2.780 GiB, 2%, 76.605 KiB/s, ETA 10h24m33s (xfr#24/290)
+2026/08/05 00:59:42 INFO  : 20260805_003231/whitepoint_ok2cal/capture/right_irradiance.cal: Copied (new)
+2026/08/05 00:59:42 INFO  : 20260805_003231/apply_color_cal/uniformity/062P0141_cal.hdf5: Copied (new)
+2026/08/05 00:59:54 INFO  :    45.015 MiB / 2.780 GiB, 2%, 54.542 KiB/s, ETA 14h36m40s (xfr#26/290)
+2026/08/05 00:59:55 INFO  : 20260805_003231/white_point_calibration/correction/right/color_correction.textproto: Copied (new)
+2026/08/05 00:59:55 INFO  : 20260805_003231/whitepoint_ok2cal/capture/right_mask_scaling_factor.yaml: Copied (new)
+2026/08/05 01:00:24 INFO  :    45.015 MiB / 2.780 GiB, 2%, 7.867 KiB/s, ETA 4d5h17m (xfr#28/290)
+2026/08/05 02:08:13 NOTICE: gdrive{iWtD9}: This remote uses rclone's shared Google Drive client_id, which is being retired and will stop working during 2026. Create your own client_id to avoid interruption: https://rclone.org/drive/#making-your-own-client-id
+2026/08/05 02:08:47 NOTICE: gdrive{iWtD9}: This remote uses rclone's shared Google Drive client_id, which is being retired and will stop working during 2026. Create your own client_id to avoid interruption: https://rclone.org/drive/#making-your-own-client-id
+2026/08/05 02:08:48 INFO  : Google drive root 'S6A67340005M': Making directory
+2026/08/05 02:09:04 DEBUG : rclone: Version "v1.75.0" starting with parameters ["rclone" "copyto" "D:\\logs\\.upload-temp\\S6A67340005M_Robocal_4884_23042.zip" "gdrive:S6A67340005M/Robocal.zip" "--drive-root-folder-id" "1VuN9N7JXBBuHByXVgUjm1jEw18wSW_N6" "--progress" "--stats" "30s" "--drive-chunk-size" "64M" "--contimeout" "30s" "--timeout" "15m" "--retries" "1" "--low-level-retries" "3" "--log-file" "D:\\ML_Robocal\\ML_Robocal_1.00a_20260804\\Tools\\logs\\rclone-upload-S6A67340005M.log" "--log-level" "DEBUG"]
+2026/08/05 02:09:04 DEBUG : Creating backend with remote "D:\\logs\\.upload-temp\\S6A67340005M_Robocal_4884_23042.zip"
+2026/08/05 02:09:04 DEBUG : Using config file from "C:\\Users\\User\\AppData\\Roaming\\rclone\\rclone.conf"
+2026/08/05 02:09:04 DEBUG : fs cache: renaming child cache item "D:\\logs\\.upload-temp\\S6A67340005M_Robocal_4884_23042.zip" to be canonical for parent "//?/D:/logs/.upload-temp"
+2026/08/05 02:09:04 DEBUG : Creating backend with remote "gdrive:S6A67340005M/"
+2026/08/05 02:09:04 DEBUG : gdrive: detected overridden config - adding "{hcGEi}" suffix to name
+2026/08/05 02:09:04 NOTICE: gdrive{hcGEi}: This remote uses rclone's shared Google Drive client_id, which is being retired and will stop working during 2026. Create your own client_id to avoid interruption: https://rclone.org/drive/#making-your-own-client-id
+2026/08/05 02:09:04 DEBUG : pacer: low level retry 1/3 (error googleapi: Error 403: Quota exceeded for quota metric 'Queries' and limit 'Queries per minute' of service 'drive.googleapis.com' for consumer 'project_number:202264815644'.
+Details:
+[
+  {
+    "@type": "type.googleapis.com/google.rpc.ErrorInfo",
+    "domain": "googleapis.com",
+    "metadata": {
+      "consumer": "projects/202264815644",
+      "quota_limit": "defaultPerMinutePerProject",
+      "quota_limit_value": "840000",
+      "quota_location": "global",
+      "quota_metric": "drive.googleapis.com/default",
+      "quota_unit": "1/min/{project}",
+      "service": "drive.googleapis.com"
+    },
+    "reason": "RATE_LIMIT_EXCEEDED"
+  },
+  {
+    "@type": "type.googleapis.com/google.rpc.Help",
+    "links": [
+      {
+        "description": "Request a higher quota limit.",
+        "url": "https://cloud.google.com/docs/quotas/help/request_increase"
+      }
+    ]
+  }
+]
+, rateLimitExceeded)
+2026/08/05 02:09:04 DEBUG : pacer: Rate limited, increasing sleep to 1.615522878s
+2026/08/05 02:09:04 DEBUG : pacer: low level retry 2/3 (error googleapi: Error 403: Quota exceeded for quota metric 'Queries' and limit 'Queries per minute' of service 'drive.googleapis.com' for consumer 'project_number:202264815644'.
+Details:
+[
+  {
+    "@type": "type.googleapis.com/google.rpc.ErrorInfo",
+    "domain": "googleapis.com",
+    "metadata": {
+      "consumer": "projects/202264815644",
+      "quota_limit": "defaultPerMinutePerProject",
+      "quota_limit_value": "840000",
+      "quota_location": "global",
+      "quota_metric": "drive.googleapis.com/default",
+      "quota_unit": "1/min/{project}",
+      "service": "drive.googleapis.com"
+    },
+    "reason": "RATE_LIMIT_EXCEEDED"
+  },
+  {
+    "@type": "type.googleapis.com/google.rpc.Help",
+    "links": [
+      {
+        "description": "Request a higher quota limit.",
+        "url": "https://cloud.google.com/docs/quotas/help/request_increase"
+      }
+    ]
+  }
+]
+, rateLimitExceeded)
+2026/08/05 02:09:04 DEBUG : pacer: Rate limited, increasing sleep to 2.182450666s
+2026/08/05 02:09:06 DEBUG : pacer: low level retry 3/3 (error googleapi: Error 403: Quota exceeded for quota metric 'Queries' and limit 'Queries per minute' of service 'drive.googleapis.com' for consumer 'project_number:202264815644'.
+Details:
+[
+  {
+    "@type": "type.googleapis.com/google.rpc.ErrorInfo",
+    "domain": "googleapis.com",
+    "metadata": {
+      "consumer": "projects/202264815644",
+      "quota_limit": "defaultPerMinutePerProject",
+      "quota_limit_value": "840000",
+      "quota_location": "global",
+      "quota_metric": "drive.googleapis.com/default",
+      "quota_unit": "1/min/{project}",
+      "service": "drive.googleapis.com"
+    },
+    "reason": "RATE_LIMIT_EXCEEDED"
+  },
+  {
+    "@type": "type.googleapis.com/google.rpc.Help",
+    "links": [
+      {
+        "description": "Request a higher quota limit.",
+        "url": "https://cloud.google.com/docs/quotas/help/request_increase"
+      }
+    ]
+  }
+]
+, rateLimitExceeded)
+2026/08/05 02:09:06 DEBUG : pacer: Rate limited, increasing sleep to 4.112297814s
+2026/08/05 02:09:08 DEBUG : pacer: low level retry 1/3 (error googleapi: Error 403: Quota exceeded for quota metric 'Queries' and limit 'Queries per minute' of service 'drive.googleapis.com' for consumer 'project_number:202264815644'.
+Details:
+[
+  {
+    "@type": "type.googleapis.com/google.rpc.ErrorInfo",
+    "domain": "googleapis.com",
+    "metadata": {
+      "consumer": "projects/202264815644",
+      "quota_limit": "defaultPerMinutePerProject",
+      "quota_limit_value": "840000",
+      "quota_location": "global",
+      "quota_metric": "drive.googleapis.com/default",
+      "quota_unit": "1/min/{project}",
+      "service": "drive.googleapis.com"
+    },
+    "reason": "RATE_LIMIT_EXCEEDED"
+  },
+  {
+    "@type": "type.googleapis.com/google.rpc.Help",
+    "links": [
+      {
+        "description": "Request a higher quota limit.",
+        "url": "https://cloud.google.com/docs/quotas/help/request_increase"
+      }
+    ]
+  }
+]
+, rateLimitExceeded)
+2026/08/05 02:09:08 DEBUG : pacer: Rate limited, increasing sleep to 8.002244352s
+2026/08/05 02:09:12 DEBUG : pacer: low level retry 2/3 (error googleapi: Error 403: Quota exceeded for quota metric 'Queries' and limit 'Queries per minute' of service 'drive.googleapis.com' for consumer 'project_number:202264815644'.
+Details:
+[
+  {
+    "@type": "type.googleapis.com/google.rpc.ErrorInfo",
+    "domain": "googleapis.com",
+    "metadata": {
+      "consumer": "projects/202264815644",
+      "quota_limit": "defaultPerMinutePerProject",
+      "quota_limit_value": "840000",
+      "quota_location": "global",
+      "quota_metric": "drive.googleapis.com/default",
+      "quota_unit": "1/min/{project}",
+      "service": "drive.googleapis.com"
+    },
+    "reason": "RATE_LIMIT_EXCEEDED"
+  },
+  {
+    "@type": "type.googleapis.com/google.rpc.Help",
+    "links": [
+      {
+        "description": "Request a higher quota limit.",
+        "url": "https://cloud.google.com/docs/quotas/help/request_increase"
+      }
+    ]
+  }
+]
+, rateLimitExceeded)
+2026/08/05 02:09:12 DEBUG : pacer: Rate limited, increasing sleep to 16.717278297s
+2026/08/05 02:09:20 DEBUG : pacer: low level retry 3/3 (error googleapi: Error 403: Quota exceeded for quota metric 'Queries' and limit 'Queries per minute' of service 'drive.googleapis.com' for consumer 'project_number:202264815644'.
+Details:
+[
+  {
+    "@type": "type.googleapis.com/google.rpc.ErrorInfo",
+    "domain": "googleapis.com",
+    "metadata": {
+      "consumer": "projects/202264815644",
+      "quota_limit": "defaultPerMinutePerProject",
+      "quota_limit_value": "840000",
+      "quota_location": "global",
+      "quota_metric": "drive.googleapis.com/default",
+      "quota_unit": "1/min/{project}",
+      "service": "drive.googleapis.com"
+    },
+    "reason": "RATE_LIMIT_EXCEEDED"
+  },
+  {
+    "@type": "type.googleapis.com/google.rpc.Help",
+    "links": [
+      {
+        "description": "Request a higher quota limit.",
+        "url": "https://cloud.google.com/docs/quotas/help/request_increase"
+      }
+    ]
+  }
+]
+, rateLimitExceeded)
+2026/08/05 02:09:20 DEBUG : pacer: Rate limited, increasing sleep to 16.891737659s
+2026/08/05 02:09:20 DEBUG : fs cache: renaming cache item "gdrive:S6A67340005M/" to be canonical "gdrive{hcGEi}:S6A67340005M"
+2026/08/05 02:09:37 DEBUG : pacer: Reducing sleep to 0s
+2026/08/05 02:09:38 DEBUG : S6A67340005M_Robocal_4884_23042.zip: Need to transfer - File not found at Destination
+2026/08/05 02:09:40 DEBUG : Robocal.zip: Sending chunk 0 length 67108864
+2026/08/05 02:09:41 DEBUG : Robocal.zip: Sending chunk 67108864 length 67108864
+2026/08/05 02:09:43 DEBUG : Robocal.zip: Sending chunk 134217728 length 67108864
+2026/08/05 02:09:45 DEBUG : Robocal.zip: Sending chunk 201326592 length 67108864
+2026/08/05 02:09:46 DEBUG : Robocal.zip: Sending chunk 268435456 length 67108864
+2026/08/05 02:09:47 DEBUG : Robocal.zip: Sending chunk 335544320 length 67108864
+2026/08/05 02:09:49 DEBUG : Robocal.zip: Sending chunk 402653184 length 67108864
+2026/08/05 02:09:51 DEBUG : Robocal.zip: Sending chunk 469762048 length 67108864
+2026/08/05 02:09:52 DEBUG : Robocal.zip: Sending chunk 536870912 length 67108864
+2026/08/05 02:09:54 DEBUG : Robocal.zip: Sending chunk 603979776 length 67108864
+2026/08/05 02:09:56 DEBUG : Robocal.zip: Sending chunk 671088640 length 67108864
+2026/08/05 02:09:57 DEBUG : Robocal.zip: Sending chunk 738197504 length 67108864
+2026/08/05 02:09:58 DEBUG : Robocal.zip: Sending chunk 805306368 length 67108864
+2026/08/05 02:10:00 DEBUG : Robocal.zip: Sending chunk 872415232 length 67108864
+2026/08/05 02:10:02 DEBUG : Robocal.zip: Sending chunk 939524096 length 67108864
+2026/08/05 02:10:03 DEBUG : Robocal.zip: Sending chunk 1006632960 length 67108864
+2026/08/05 02:10:05 DEBUG : Robocal.zip: Sending chunk 1073741824 length 67108864
+2026/08/05 02:10:06 DEBUG : Robocal.zip: Sending chunk 1140850688 length 67108864
+2026/08/05 02:10:08 DEBUG : Robocal.zip: Sending chunk 1207959552 length 67108864
+2026/08/05 02:10:09 DEBUG : Robocal.zip: Sending chunk 1275068416 length 67108864
+2026/08/05 02:10:11 DEBUG : Robocal.zip: Sending chunk 1342177280 length 67108864
+2026/08/05 02:10:12 DEBUG : Robocal.zip: Sending chunk 1409286144 length 67108864
+2026/08/05 02:10:14 DEBUG : Robocal.zip: Sending chunk 1476395008 length 67108864
+2026/08/05 02:10:15 DEBUG : Robocal.zip: Sending chunk 1543503872 length 67108864
+2026/08/05 02:10:17 DEBUG : Robocal.zip: Sending chunk 1610612736 length 67108864
+2026/08/05 02:10:19 DEBUG : Robocal.zip: Sending chunk 1677721600 length 67108864
+2026/08/05 02:10:20 DEBUG : Robocal.zip: Sending chunk 1744830464 length 67108864
+2026/08/05 02:10:22 DEBUG : Robocal.zip: Sending chunk 1811939328 length 67108864
+2026/08/05 02:10:24 DEBUG : Robocal.zip: Sending chunk 1879048192 length 67108864
+2026/08/05 02:10:25 DEBUG : Robocal.zip: Sending chunk 1946157056 length 67108864
+2026/08/05 02:10:27 DEBUG : Robocal.zip: Sending chunk 2013265920 length 67108864
+2026/08/05 02:10:28 DEBUG : Robocal.zip: Sending chunk 2080374784 length 67108864
+2026/08/05 02:10:30 DEBUG : Robocal.zip: Sending chunk 2147483648 length 67108864
+2026/08/05 02:10:31 DEBUG : Robocal.zip: Sending chunk 2214592512 length 67108864
+2026/08/05 02:10:33 DEBUG : Robocal.zip: Sending chunk 2281701376 length 67108864
+2026/08/05 02:10:34 DEBUG : Robocal.zip: Sending chunk 2348810240 length 67108864
+2026/08/05 02:10:36 DEBUG : Robocal.zip: Sending chunk 2415919104 length 67108864
+2026/08/05 02:10:37 DEBUG : Robocal.zip: Sending chunk 2483027968 length 67108864
+2026/08/05 02:10:40 DEBUG : Robocal.zip: Sending chunk 2550136832 length 67108864
+2026/08/05 02:10:41 DEBUG : Robocal.zip: Sending chunk 2617245696 length 67108864
+2026/08/05 02:10:43 DEBUG : Robocal.zip: Sending chunk 2684354560 length 67108864
+2026/08/05 02:10:44 DEBUG : Robocal.zip: Sending chunk 2751463424 length 67108864
+2026/08/05 02:10:46 DEBUG : Robocal.zip: Sending chunk 2818572288 length 67108864
+2026/08/05 02:10:48 DEBUG : Robocal.zip: Sending chunk 2885681152 length 67108864
+2026/08/05 02:10:50 DEBUG : Robocal.zip: Sending chunk 2952790016 length 67108864
+2026/08/05 02:10:51 DEBUG : Robocal.zip: Sending chunk 3019898880 length 67108864
+2026/08/05 02:10:53 DEBUG : Robocal.zip: Sending chunk 3087007744 length 67108864
+2026/08/05 02:10:55 DEBUG : Robocal.zip: Sending chunk 3154116608 length 67108864
+2026/08/05 02:10:56 DEBUG : Robocal.zip: Sending chunk 3221225472 length 67108864
+2026/08/05 02:10:57 DEBUG : Robocal.zip: Sending chunk 3288334336 length 67108864
+2026/08/05 02:10:59 DEBUG : Robocal.zip: Sending chunk 3355443200 length 67108864
+2026/08/05 02:11:00 DEBUG : Robocal.zip: Sending chunk 3422552064 length 67108864
+2026/08/05 02:11:02 DEBUG : Robocal.zip: Sending chunk 3489660928 length 67108864
+2026/08/05 02:11:03 DEBUG : Robocal.zip: Sending chunk 3556769792 length 67108864
+2026/08/05 02:11:05 DEBUG : Robocal.zip: Sending chunk 3623878656 length 67108864
+2026/08/05 02:11:06 DEBUG : Robocal.zip: Sending chunk 3690987520 length 67108864
+2026/08/05 02:11:08 DEBUG : Robocal.zip: Sending chunk 3758096384 length 67108864
+2026/08/05 02:11:10 DEBUG : Robocal.zip: Sending chunk 3825205248 length 67108864
+2026/08/05 02:11:11 DEBUG : Robocal.zip: Sending chunk 3892314112 length 67108864
+2026/08/05 02:11:13 DEBUG : Robocal.zip: Sending chunk 3959422976 length 67108864
+2026/08/05 02:11:15 DEBUG : Robocal.zip: Sending chunk 4026531840 length 67108864
+2026/08/05 02:11:16 DEBUG : Robocal.zip: Sending chunk 4093640704 length 67108864
+2026/08/05 02:11:18 DEBUG : Robocal.zip: Sending chunk 4160749568 length 67108864
+2026/08/05 02:11:20 DEBUG : Robocal.zip: Sending chunk 4227858432 length 67108864
+2026/08/05 02:11:21 DEBUG : Robocal.zip: Sending chunk 4294967296 length 67108864
+2026/08/05 02:11:23 DEBUG : Robocal.zip: Sending chunk 4362076160 length 67108864
+2026/08/05 02:11:25 DEBUG : Robocal.zip: Sending chunk 4429185024 length 67108864
+2026/08/05 02:11:26 DEBUG : Robocal.zip: Sending chunk 4496293888 length 67108864
+2026/08/05 02:11:28 DEBUG : Robocal.zip: Sending chunk 4563402752 length 67108864
+2026/08/05 02:11:29 DEBUG : Robocal.zip: Sending chunk 4630511616 length 67108864
+2026/08/05 02:11:31 DEBUG : Robocal.zip: Sending chunk 4697620480 length 67108864
+2026/08/05 02:11:32 DEBUG : Robocal.zip: Sending chunk 4764729344 length 67108864
+2026/08/05 02:11:34 DEBUG : Robocal.zip: Sending chunk 4831838208 length 67108864
+2026/08/05 02:11:35 DEBUG : Robocal.zip: Sending chunk 4898947072 length 67108864
+2026/08/05 02:11:37 DEBUG : Robocal.zip: Sending chunk 4966055936 length 67108864
+2026/08/05 02:11:38 DEBUG : Robocal.zip: Sending chunk 5033164800 length 67108864
+2026/08/05 02:11:40 DEBUG : Robocal.zip: Sending chunk 5100273664 length 67108864
+2026/08/05 02:11:41 DEBUG : Robocal.zip: Sending chunk 5167382528 length 58354405
+2026/08/05 02:11:45 DEBUG : Robocal.zip: size = 5225736933 OK
+2026/08/05 02:11:45 DEBUG : S6A67340005M_Robocal_4884_23042.zip: md5 = 07fdbf1edb4159931f39538f24c8c7a6 OK
+2026/08/05 02:11:45 INFO  : S6A67340005M_Robocal_4884_23042.zip: Copied (new) to: Robocal.zip
+2026/08/05 02:11:45 INFO  : 
+Transferred:   	    4.867 GiB / 4.867 GiB, 100%, 37.483 MiB/s, ETA 0s
+Transferred:            1 / 1, 100%
+Elapsed time:       2m6.6s
+
+2026/08/05 02:11:45 DEBUG : 3 go routines active
+2026/08/05 02:11:45 NOTICE: gdrive{hcGEi}: This remote uses rclone's shared Google Drive client_id, which is being retired and will stop working during 2026. Create your own client_id to avoid interruption: https://rclone.org/drive/#making-your-own-client-id
+2026/08/05 02:11:46 INFO  : There was nothing to transfer
+2026/08/05 02:11:46 INFO  : 
+Transferred:   	          0 B / 0 B, -, 0 B/s, ETA -
+Checks:                 0 / 0, -, Listed 1
+Elapsed time:         0.0s
+
