@@ -389,3 +389,54 @@ Elapsed time:        39.7s
 2026/08/04 21:15:54 INFO  : Robocal/DGC/20260804_210056/calibration_captures/left_0_0_0_right_0_0_0/right_grid_green.png: Copied (new)
 2026/08/04 21:15:56 INFO  : Robocal/DGC/20260804_210056/device_to_station_extrinsic_calibration/station_camera_captures/left_0_0_0_right_0_0_0/right_station.png: Copied (new)
 2026/08/04 21:16:03 INFO  : Robocal/DGC/20260804_210056/calibration_captures/left_2_0_0_right_-2_0_0/right_grid_blue.png: Copied (new)
+2026/08/04 21:53:36 NOTICE: gdrive{iWtD9}: This remote uses rclone's shared Google Drive client_id, which is being retired and will stop working during 2026. Create your own client_id to avoid interruption: https://rclone.org/drive/#making-your-own-client-id
+2026/08/04 21:53:37 NOTICE: gdrive{iWtD9}: This remote uses rclone's shared Google Drive client_id, which is being retired and will stop working during 2026. Create your own client_id to avoid interruption: https://rclone.org/drive/#making-your-own-client-id
+2026/08/04 21:53:38 INFO  : Google drive root 'S6A67340005M': Making directory
+2026/08/04 21:53:38 NOTICE: gdrive{iWtD9}: This remote uses rclone's shared Google Drive client_id, which is being retired and will stop working during 2026. Create your own client_id to avoid interruption: https://rclone.org/drive/#making-your-own-client-id
+2026/08/04 21:53:41 ERROR : error listing: directory not found
+2026/08/04 21:53:41 NOTICE: Failed to lsf with 2 errors: last error was: error in ListJSON: directory not found
+2026/08/04 21:53:41 NOTICE: gdrive{iWtD9}: This remote uses rclone's shared Google Drive client_id, which is being retired and will stop working during 2026. Create your own client_id to avoid interruption: https://rclone.org/drive/#making-your-own-client-id
+2026/08/04 21:53:44 ERROR : error listing: directory not found
+2026/08/04 21:53:44 NOTICE: Failed to lsf with 2 errors: last error was: error in ListJSON: directory not found
+2026/08/04 21:53:44 NOTICE: gdrive{5SXnH}: This remote uses rclone's shared Google Drive client_id, which is being retired and will stop working during 2026. Create your own client_id to avoid interruption: https://rclone.org/drive/#making-your-own-client-id
+2026/08/04 21:53:56 INFO  : 20260804_210056/dcc_uniformity_validation.zip: Copied (new)
+2026/08/04 21:54:00 INFO  : 20260804_210056/dcc_config.json: Copied (new)
+2026/08/04 21:54:00 INFO  : 20260804_210056/whitepoint_ok2cal/capture/right_irradiance.cal: Copied (new)
+2026/08/04 21:54:01 INFO  : 20260804_210056/dcc_white_point.zip: Copied (new)
+2026/08/04 21:54:01 INFO  : 20260804_210056/dcc_capture.zip: Copied (new)
+2026/08/04 21:54:01 INFO  : 20260804_210056/whitepoint_ok2cal_capture.zip: Copied (new)
+2026/08/04 21:54:03 INFO  : 20260804_210056/dcc_uniformity.zip: Copied (new)
+2026/08/04 21:54:59 INFO  : 20260804_210056/high_freq_mura_capture/uniformity/uncorrected/image_capture_metadata.yaml: Copied (new)
+2026/08/04 21:55:00 INFO  : 20260804_210056/whitepoint_ok2cal/capture/right_mask_scaling_factor.yaml: Copied (new)
+2026/08/04 21:55:02 INFO  : 20260804_210056/high_freq_mura_capture/geometry/image_capture_metadata.yaml: Copied (new)
+2026/08/04 21:55:03 INFO  : 20260804_210056/autoexposure_debug/ae_right_iter_00_it_66664_max_36470.0.csv: Copied (new)
+2026/08/04 21:55:31 INFO  : 20260804_210056/whitepoint_ok2cal/capture/right/blue.csv: Copied (new)
+2026/08/04 21:55:31 INFO  : 20260804_210056/whitepoint_ok2cal/capture/right/green.csv: Copied (new)
+2026/08/04 21:55:32 INFO  : 20260804_210056/whitepoint_ok2cal/capture/right/background.png: Copied (new)
+2026/08/04 21:55:32 INFO  : 20260804_210056/high_freq_mura_capture/geometry/dataset.yaml: Copied (new)
+2026/08/04 21:55:32 INFO  : 20260804_210056/whitepoint_ok2cal/capture/right/blue.png: Copied (new)
+2026/08/04 21:55:33 INFO  : 20260804_210056/whitepoint_ok2cal/capture/right/background_peak_detection.png: Copied (new)
+2026/08/04 21:55:34 INFO  : 20260804_210056/whitepoint_ok2cal/capture/right/red.csv: Copied (new)
+2026/08/04 21:55:35 INFO  : 20260804_210056/whitepoint_ok2cal/capture/right/background.csv: Copied (new)
+2026/08/04 21:55:35 INFO  : 20260804_210056/whitepoint_ok2cal/capture/right/red.png: Copied (new)
+2026/08/04 21:55:35 INFO  : 20260804_210056/whitepoint_ok2cal/capture/right/white.csv: Copied (new)
+2026/08/04 21:55:42 INFO  : 20260804_210056/uniformity_validation/capture/image_capture_metadata.yaml: Copied (new)
+2026/08/04 21:55:47 INFO  : 20260804_210056/whitepoint_ok2cal/capture/right/green.png: Copied (new)
+2026/08/04 21:55:53 INFO  : 20260804_210056/capture/right_irradiance.cal: Copied (new)
+2026/08/04 21:55:54 INFO  : 20260804_210056/high_freq_mura_capture/uniformity/uncorrected/green/right/right_white_sRGB.png: Copied (new)
+2026/08/04 21:55:55 INFO  : 20260804_210056/high_freq_mura_capture/uniformity/uncorrected/green/right/right_white.png: Copied (new)
+2026/08/04 21:55:58 INFO  : 20260804_210056/white_point_calibration/corrected_rgb_primaries/blue.png: Copied (new)
+2026/08/04 21:55:58 INFO  : 20260804_210056/white_point_calibration/corrected_rgb_primaries/macbeth20.png: Copied (new)
+2026/08/04 21:55:58 INFO  : 20260804_210056/dcc_apply_color_cal.zip: Copied (new)
+2026/08/04 21:55:59 INFO  : 20260804_210056/capture/right_mask_scaling_factor.yaml: Copied (new)
+2026/08/04 21:55:59 INFO  : 20260804_210056/white_point_calibration/corrected_rgb_primaries/green.png: Copied (new)
+2026/08/04 21:56:00 INFO  : 20260804_210056/white_point_calibration/corrected_rgb_primaries/red.png: Copied (new)
+2026/08/04 21:56:03 INFO  : 20260804_210056/white_point_calibration/corrected_rgb_primaries/macbeth22.png: Copied (new)
+2026/08/04 21:56:04 INFO  : 20260804_210056/whitepoint_ok2cal/capture/right/white.png: Copied (new)
+2026/08/04 21:56:33 INFO  : 20260804_210056/high_freq_mura_capture/uniformity/uncorrected/red/right/right_white.png: Copied (new)
+2026/08/04 21:56:50 INFO  : 20260804_210056/white_point_calibration/corrected_rgb_primaries/white.png: Copied (new)
+2026/08/04 21:56:53 INFO  : 20260804_210056/apply_color_cal/uniformity/062P0141_cal.hdf5: Copied (new)
+2026/08/04 21:56:55 INFO  : 20260804_210056/high_freq_mura_capture/uniformity/uncorrected/red/right/right_white_sRGB.png: Copied (new)
+2026/08/04 21:56:57 INFO  : 20260804_210056/high_freq_mura_calibration/uniformity/right_correction_map.tiff: Copied (new)
+2026/08/04 21:56:59 INFO  : 20260804_210056/high_freq_mura_calibration/uniformity/right_correction_map.png: Copied (new)
+2026/08/04 21:57:00 INFO  : 20260804_210056/uniformity_validation/cropped/0/blue_right_white.png: Copied (new)

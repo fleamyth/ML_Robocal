@@ -13,7 +13,7 @@ SET MODE=%2
 SET TEST_MODE=Online
 IF "%MODE%" EQU "D" SET TEST_MODE=Offline
 SET PROJECT=ML
-SET SUITE_NAME=ML_Robocal
+SET SUITE_NAME=ML_PostProcess
 SET BUILD=MP
 SET CSV_NAME=%PROJECT%_%TYPE%.csv
 SET CFG_NAME=config.xml
@@ -353,8 +353,17 @@ RD /S /Q "%LOG_ARCHIVE_SOURCE%" 2>nul
 SET "ROBOCAL_OUTPUT_SOURCE=%LOG_ROOT%\robocal_output"
 SET "ROBOCAL_OUTPUT_DESTINATION=%LOG_ARCHIVE_DESTINATION%"
 SET "ROBOCAL_OUTPUT_ARCHIVE_COUNT=0"
+SET "ROBOCAL_OUTPUT_ARCHIVE_COUNT_FILE=%TEMP%\ML_PreProcess_robocal_count_%RANDOM%_%RANDOM%.tmp"
 IF NOT EXIST "%TEST_RUN_MARKER%" EXIT /B 0
-FOR /F "usebackq delims=" %%C IN (`powershell.exe -NoProfile -Command "$marker=(Get-Item -LiteralPath $env:TEST_RUN_MARKER).LastWriteTimeUtc; $source=$env:ROBOCAL_OUTPUT_SOURCE; $destination=$env:ROBOCAL_OUTPUT_DESTINATION; $count=0; if(Test-Path -LiteralPath $source){foreach($file in Get-ChildItem -LiteralPath $source -Recurse -File){if(($file.Name -like 'log_file_*.log' -or $file.Name -like 'log_file_*.txt') -and $file.LastWriteTimeUtc -ge $marker){$relative=$file.FullName.Substring($source.Length).TrimStart('\'); $target=Join-Path $destination $relative; New-Item -ItemType Directory -Path (Split-Path -Parent $target) -Force ^| Out-Null; try{Copy-Item -LiteralPath $file.FullName -Destination $target -Force -ErrorAction Stop; $count++}catch{}}}}; Write-Output $count"`) DO SET "ROBOCAL_OUTPUT_ARCHIVE_COUNT=%%C"
+DEL /Q "%ROBOCAL_OUTPUT_ARCHIVE_COUNT_FILE%" 2>nul
+powershell.exe -NoProfile -Command "$marker=(Get-Item -LiteralPath $env:TEST_RUN_MARKER).LastWriteTimeUtc; $source=$env:ROBOCAL_OUTPUT_SOURCE; $destination=$env:ROBOCAL_OUTPUT_DESTINATION; $count=0; $failed=$false; if(Test-Path -LiteralPath $source){foreach($file in Get-ChildItem -LiteralPath $source -Recurse -File){if(($file.Name -like 'log_file_*.log' -or $file.Name -like 'log_file_*.txt') -and $file.LastWriteTimeUtc -ge $marker){$relative=$file.FullName.Substring($source.Length).TrimStart('\'); $target=Join-Path $destination $relative; try{New-Item -ItemType Directory -Path (Split-Path -Parent $target) -Force -ErrorAction Stop | Out-Null; Copy-Item -LiteralPath $file.FullName -Destination $target -Force -ErrorAction Stop; $archived=Get-Item -LiteralPath $target -ErrorAction Stop; if($archived.Length -ne $file.Length){throw 'Archived file size does not match the source'}; $count++}catch{Write-Error ('Failed to archive ' + $file.FullName + ': ' + $_.Exception.Message); $failed=$true}}}}; Set-Content -LiteralPath $env:ROBOCAL_OUTPUT_ARCHIVE_COUNT_FILE -Value $count -NoNewline; if($failed){exit 1}"
+SET "ROBOCAL_OUTPUT_ARCHIVE_EXITCODE=%ERRORLEVEL%"
+IF EXIST "%ROBOCAL_OUTPUT_ARCHIVE_COUNT_FILE%" SET /P ROBOCAL_OUTPUT_ARCHIVE_COUNT=<"%ROBOCAL_OUTPUT_ARCHIVE_COUNT_FILE%"
+DEL /Q "%ROBOCAL_OUTPUT_ARCHIVE_COUNT_FILE%" 2>nul
+IF NOT "%ROBOCAL_OUTPUT_ARCHIVE_EXITCODE%" EQU "0" (
+	SET "LOG_ARCHIVE_SOURCE=%ROBOCAL_OUTPUT_SOURCE%"
+	EXIT /B 1
+)
 EXIT /B 0
 
 :ARCHIVE_LOG_COMPONENT
