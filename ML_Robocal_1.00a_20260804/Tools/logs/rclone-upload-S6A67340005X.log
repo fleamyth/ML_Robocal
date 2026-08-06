@@ -1,0 +1,691 @@
+2026/08/05 14:14:40 NOTICE: gdrive{iWtD9}: This remote uses rclone's shared Google Drive client_id, which is being retired and will stop working during 2026. Create your own client_id to avoid interruption: https://rclone.org/drive/#making-your-own-client-id
+2026/08/05 14:14:42 NOTICE: gdrive{iWtD9}: This remote uses rclone's shared Google Drive client_id, which is being retired and will stop working during 2026. Create your own client_id to avoid interruption: https://rclone.org/drive/#making-your-own-client-id
+2026/08/05 14:14:43 INFO  : Google drive root 'S6A67340005X': Making directory
+2026/08/05 14:16:04 DEBUG : rclone: Version "v1.75.0" starting with parameters ["rclone" "copyto" "D:\\logs\\.upload-temp\\S6A67340005X_Robocal_16322_9577.zip" "gdrive:S6A67340005X/Robocal.zip" "--drive-root-folder-id" "1VuN9N7JXBBuHByXVgUjm1jEw18wSW_N6" "--progress" "--stats" "30s" "--drive-chunk-size" "64M" "--contimeout" "30s" "--timeout" "15m" "--retries" "1" "--low-level-retries" "3" "--log-file" "D:\\ML_Robocal\\ML_Robocal_1.00a_20260804\\Tools\\logs\\rclone-upload-S6A67340005X.log" "--log-level" "DEBUG"]
+2026/08/05 14:16:04 DEBUG : Creating backend with remote "D:\\logs\\.upload-temp\\S6A67340005X_Robocal_16322_9577.zip"
+2026/08/05 14:16:04 DEBUG : Using config file from "C:\\Users\\User\\AppData\\Roaming\\rclone\\rclone.conf"
+2026/08/05 14:16:04 DEBUG : fs cache: renaming child cache item "D:\\logs\\.upload-temp\\S6A67340005X_Robocal_16322_9577.zip" to be canonical for parent "//?/D:/logs/.upload-temp"
+2026/08/05 14:16:04 DEBUG : Creating backend with remote "gdrive:S6A67340005X/"
+2026/08/05 14:16:04 DEBUG : gdrive: detected overridden config - adding "{hcGEi}" suffix to name
+2026/08/05 14:16:04 NOTICE: gdrive{hcGEi}: This remote uses rclone's shared Google Drive client_id, which is being retired and will stop working during 2026. Create your own client_id to avoid interruption: https://rclone.org/drive/#making-your-own-client-id
+2026/08/05 14:16:04 DEBUG : pacer: low level retry 1/3 (error googleapi: Error 403: Quota exceeded for quota metric 'Queries' and limit 'Queries per minute' of service 'drive.googleapis.com' for consumer 'project_number:202264815644'.
+Details:
+[
+  {
+    "@type": "type.googleapis.com/google.rpc.ErrorInfo",
+    "domain": "googleapis.com",
+    "metadata": {
+      "consumer": "projects/202264815644",
+      "quota_limit": "defaultPerMinutePerProject",
+      "quota_limit_value": "840000",
+      "quota_location": "global",
+      "quota_metric": "drive.googleapis.com/default",
+      "quota_unit": "1/min/{project}",
+      "service": "drive.googleapis.com"
+    },
+    "reason": "RATE_LIMIT_EXCEEDED"
+  },
+  {
+    "@type": "type.googleapis.com/google.rpc.Help",
+    "links": [
+      {
+        "description": "Request a higher quota limit.",
+        "url": "https://cloud.google.com/docs/quotas/help/request_increase"
+      }
+    ]
+  }
+]
+, rateLimitExceeded)
+2026/08/05 14:16:04 DEBUG : pacer: Rate limited, increasing sleep to 1.35781195s
+2026/08/05 14:16:05 DEBUG : pacer: low level retry 2/3 (error googleapi: Error 403: Quota exceeded for quota metric 'Queries' and limit 'Queries per minute' of service 'drive.googleapis.com' for consumer 'project_number:202264815644'.
+Details:
+[
+  {
+    "@type": "type.googleapis.com/google.rpc.ErrorInfo",
+    "domain": "googleapis.com",
+    "metadata": {
+      "consumer": "projects/202264815644",
+      "quota_limit": "defaultPerMinutePerProject",
+      "quota_limit_value": "840000",
+      "quota_location": "global",
+      "quota_metric": "drive.googleapis.com/default",
+      "quota_unit": "1/min/{project}",
+      "service": "drive.googleapis.com"
+    },
+    "reason": "RATE_LIMIT_EXCEEDED"
+  },
+  {
+    "@type": "type.googleapis.com/google.rpc.Help",
+    "links": [
+      {
+        "description": "Request a higher quota limit.",
+        "url": "https://cloud.google.com/docs/quotas/help/request_increase"
+      }
+    ]
+  }
+]
+, rateLimitExceeded)
+2026/08/05 14:16:05 DEBUG : pacer: Rate limited, increasing sleep to 2.24439159s
+2026/08/05 14:16:06 DEBUG : pacer: low level retry 3/3 (error googleapi: Error 403: Quota exceeded for quota metric 'Queries' and limit 'Queries per minute' of service 'drive.googleapis.com' for consumer 'project_number:202264815644'.
+Details:
+[
+  {
+    "@type": "type.googleapis.com/google.rpc.ErrorInfo",
+    "domain": "googleapis.com",
+    "metadata": {
+      "consumer": "projects/202264815644",
+      "quota_limit": "defaultPerMinutePerProject",
+      "quota_limit_value": "840000",
+      "quota_location": "global",
+      "quota_metric": "drive.googleapis.com/default",
+      "quota_unit": "1/min/{project}",
+      "service": "drive.googleapis.com"
+    },
+    "reason": "RATE_LIMIT_EXCEEDED"
+  },
+  {
+    "@type": "type.googleapis.com/google.rpc.Help",
+    "links": [
+      {
+        "description": "Request a higher quota limit.",
+        "url": "https://cloud.google.com/docs/quotas/help/request_increase"
+      }
+    ]
+  }
+]
+, rateLimitExceeded)
+2026/08/05 14:16:06 DEBUG : pacer: Rate limited, increasing sleep to 4.595808363s
+2026/08/05 14:16:08 DEBUG : pacer: low level retry 1/3 (error googleapi: Error 403: Quota exceeded for quota metric 'Queries' and limit 'Queries per minute' of service 'drive.googleapis.com' for consumer 'project_number:202264815644'.
+Details:
+[
+  {
+    "@type": "type.googleapis.com/google.rpc.ErrorInfo",
+    "domain": "googleapis.com",
+    "metadata": {
+      "consumer": "projects/202264815644",
+      "quota_limit": "defaultPerMinutePerProject",
+      "quota_limit_value": "840000",
+      "quota_location": "global",
+      "quota_metric": "drive.googleapis.com/default",
+      "quota_unit": "1/min/{project}",
+      "service": "drive.googleapis.com"
+    },
+    "reason": "RATE_LIMIT_EXCEEDED"
+  },
+  {
+    "@type": "type.googleapis.com/google.rpc.Help",
+    "links": [
+      {
+        "description": "Request a higher quota limit.",
+        "url": "https://cloud.google.com/docs/quotas/help/request_increase"
+      }
+    ]
+  }
+]
+, rateLimitExceeded)
+2026/08/05 14:16:08 DEBUG : pacer: Rate limited, increasing sleep to 8.299699988s
+2026/08/05 14:16:13 DEBUG : pacer: low level retry 2/3 (error googleapi: Error 403: Quota exceeded for quota metric 'Queries' and limit 'Queries per minute' of service 'drive.googleapis.com' for consumer 'project_number:202264815644'.
+Details:
+[
+  {
+    "@type": "type.googleapis.com/google.rpc.ErrorInfo",
+    "domain": "googleapis.com",
+    "metadata": {
+      "consumer": "projects/202264815644",
+      "quota_limit": "defaultPerMinutePerProject",
+      "quota_limit_value": "840000",
+      "quota_location": "global",
+      "quota_metric": "drive.googleapis.com/default",
+      "quota_unit": "1/min/{project}",
+      "service": "drive.googleapis.com"
+    },
+    "reason": "RATE_LIMIT_EXCEEDED"
+  },
+  {
+    "@type": "type.googleapis.com/google.rpc.Help",
+    "links": [
+      {
+        "description": "Request a higher quota limit.",
+        "url": "https://cloud.google.com/docs/quotas/help/request_increase"
+      }
+    ]
+  }
+]
+, rateLimitExceeded)
+2026/08/05 14:16:13 DEBUG : pacer: Rate limited, increasing sleep to 16.644906068s
+2026/08/05 14:16:21 DEBUG : pacer: low level retry 3/3 (error googleapi: Error 403: Quota exceeded for quota metric 'Queries' and limit 'Queries per minute' of service 'drive.googleapis.com' for consumer 'project_number:202264815644'.
+Details:
+[
+  {
+    "@type": "type.googleapis.com/google.rpc.ErrorInfo",
+    "domain": "googleapis.com",
+    "metadata": {
+      "consumer": "projects/202264815644",
+      "quota_limit": "defaultPerMinutePerProject",
+      "quota_limit_value": "840000",
+      "quota_location": "global",
+      "quota_metric": "drive.googleapis.com/default",
+      "quota_unit": "1/min/{project}",
+      "service": "drive.googleapis.com"
+    },
+    "reason": "RATE_LIMIT_EXCEEDED"
+  },
+  {
+    "@type": "type.googleapis.com/google.rpc.Help",
+    "links": [
+      {
+        "description": "Request a higher quota limit.",
+        "url": "https://cloud.google.com/docs/quotas/help/request_increase"
+      }
+    ]
+  }
+]
+, rateLimitExceeded)
+2026/08/05 14:16:21 DEBUG : pacer: Rate limited, increasing sleep to 16.607437494s
+2026/08/05 14:16:21 DEBUG : fs cache: renaming cache item "gdrive:S6A67340005X/" to be canonical "gdrive{hcGEi}:S6A67340005X"
+2026/08/05 14:16:38 DEBUG : pacer: Reducing sleep to 0s
+2026/08/05 14:16:39 DEBUG : S6A67340005X_Robocal_16322_9577.zip: Need to transfer - File not found at Destination
+2026/08/05 14:16:41 DEBUG : Robocal.zip: Sending chunk 0 length 67108864
+2026/08/05 14:16:43 DEBUG : Robocal.zip: Sending chunk 67108864 length 67108864
+2026/08/05 14:16:44 DEBUG : Robocal.zip: Sending chunk 134217728 length 67108864
+2026/08/05 14:16:46 DEBUG : Robocal.zip: Sending chunk 201326592 length 67108864
+2026/08/05 14:16:48 DEBUG : Robocal.zip: Sending chunk 268435456 length 67108864
+2026/08/05 14:16:51 DEBUG : Robocal.zip: Sending chunk 335544320 length 67108864
+2026/08/05 14:16:53 DEBUG : Robocal.zip: Sending chunk 402653184 length 67108864
+2026/08/05 14:16:55 DEBUG : Robocal.zip: Sending chunk 469762048 length 67108864
+2026/08/05 14:16:57 DEBUG : Robocal.zip: Sending chunk 536870912 length 67108864
+2026/08/05 14:16:59 DEBUG : Robocal.zip: Sending chunk 603979776 length 67108864
+2026/08/05 14:17:01 DEBUG : Robocal.zip: Sending chunk 671088640 length 67108864
+2026/08/05 14:17:03 DEBUG : Robocal.zip: Sending chunk 738197504 length 67108864
+2026/08/05 14:17:05 DEBUG : Robocal.zip: Sending chunk 805306368 length 67108864
+2026/08/05 14:17:07 DEBUG : Robocal.zip: Sending chunk 872415232 length 67108864
+2026/08/05 14:17:10 DEBUG : Robocal.zip: Sending chunk 939524096 length 67108864
+2026/08/05 14:17:12 DEBUG : Robocal.zip: Sending chunk 1006632960 length 67108864
+2026/08/05 14:17:14 DEBUG : Robocal.zip: Sending chunk 1073741824 length 67108864
+2026/08/05 14:17:16 DEBUG : Robocal.zip: Sending chunk 1140850688 length 67108864
+2026/08/05 14:17:18 DEBUG : Robocal.zip: Sending chunk 1207959552 length 67108864
+2026/08/05 14:17:20 DEBUG : Robocal.zip: Sending chunk 1275068416 length 67108864
+2026/08/05 14:17:23 DEBUG : Robocal.zip: Sending chunk 1342177280 length 67108864
+2026/08/05 14:17:26 DEBUG : Robocal.zip: Sending chunk 1409286144 length 67108864
+2026/08/05 14:17:28 DEBUG : Robocal.zip: Sending chunk 1476395008 length 67108864
+2026/08/05 14:17:30 DEBUG : Robocal.zip: Sending chunk 1543503872 length 67108864
+2026/08/05 14:17:33 DEBUG : Robocal.zip: Sending chunk 1610612736 length 67108864
+2026/08/05 14:17:34 DEBUG : Robocal.zip: Sending chunk 1677721600 length 67108864
+2026/08/05 14:17:37 DEBUG : Robocal.zip: Sending chunk 1744830464 length 67108864
+2026/08/05 14:17:38 DEBUG : Robocal.zip: Sending chunk 1811939328 length 67108864
+2026/08/05 14:17:40 DEBUG : Robocal.zip: Sending chunk 1879048192 length 67108864
+2026/08/05 14:17:43 DEBUG : Robocal.zip: Sending chunk 1946157056 length 67108864
+2026/08/05 14:17:45 DEBUG : Robocal.zip: Sending chunk 2013265920 length 67108864
+2026/08/05 14:17:47 DEBUG : Robocal.zip: Sending chunk 2080374784 length 67108864
+2026/08/05 14:17:49 DEBUG : Robocal.zip: Sending chunk 2147483648 length 67108864
+2026/08/05 14:17:51 DEBUG : Robocal.zip: Sending chunk 2214592512 length 67108864
+2026/08/05 14:17:55 DEBUG : Robocal.zip: Sending chunk 2281701376 length 67108864
+2026/08/05 14:17:57 DEBUG : Robocal.zip: Sending chunk 2348810240 length 67108864
+2026/08/05 14:17:59 DEBUG : Robocal.zip: Sending chunk 2415919104 length 67108864
+2026/08/05 14:18:01 DEBUG : Robocal.zip: Sending chunk 2483027968 length 67108864
+2026/08/05 14:18:03 DEBUG : Robocal.zip: Sending chunk 2550136832 length 67108864
+2026/08/05 14:18:05 DEBUG : Robocal.zip: Sending chunk 2617245696 length 67108864
+2026/08/05 14:18:07 DEBUG : Robocal.zip: Sending chunk 2684354560 length 67108864
+2026/08/05 14:18:09 DEBUG : Robocal.zip: Sending chunk 2751463424 length 67108864
+2026/08/05 14:18:10 DEBUG : Robocal.zip: Sending chunk 2818572288 length 67108864
+2026/08/05 14:18:12 DEBUG : Robocal.zip: Sending chunk 2885681152 length 67108864
+2026/08/05 14:18:15 DEBUG : Robocal.zip: Sending chunk 2952790016 length 67108864
+2026/08/05 14:18:17 DEBUG : Robocal.zip: Sending chunk 3019898880 length 67108864
+2026/08/05 14:18:19 DEBUG : Robocal.zip: Sending chunk 3087007744 length 67108864
+2026/08/05 14:18:21 DEBUG : Robocal.zip: Sending chunk 3154116608 length 67108864
+2026/08/05 14:18:23 DEBUG : Robocal.zip: Sending chunk 3221225472 length 67108864
+2026/08/05 14:18:25 DEBUG : Robocal.zip: Sending chunk 3288334336 length 67108864
+2026/08/05 14:18:28 DEBUG : Robocal.zip: Sending chunk 3355443200 length 67108864
+2026/08/05 14:18:31 DEBUG : Robocal.zip: Sending chunk 3422552064 length 67108864
+2026/08/05 14:18:34 DEBUG : Robocal.zip: Sending chunk 3489660928 length 67108864
+2026/08/05 14:18:36 DEBUG : Robocal.zip: Sending chunk 3556769792 length 67108864
+2026/08/05 14:18:38 DEBUG : Robocal.zip: Sending chunk 3623878656 length 67108864
+2026/08/05 14:18:40 DEBUG : Robocal.zip: Sending chunk 3690987520 length 67108864
+2026/08/05 14:18:42 DEBUG : Robocal.zip: Sending chunk 3758096384 length 67108864
+2026/08/05 14:18:44 DEBUG : Robocal.zip: Sending chunk 3825205248 length 67108864
+2026/08/05 14:18:47 DEBUG : Robocal.zip: Sending chunk 3892314112 length 67108864
+2026/08/05 14:18:49 DEBUG : Robocal.zip: Sending chunk 3959422976 length 67108864
+2026/08/05 14:18:50 DEBUG : Robocal.zip: Sending chunk 4026531840 length 67108864
+2026/08/05 14:18:53 DEBUG : Robocal.zip: Sending chunk 4093640704 length 67108864
+2026/08/05 14:18:55 DEBUG : Robocal.zip: Sending chunk 4160749568 length 67108864
+2026/08/05 14:18:57 DEBUG : Robocal.zip: Sending chunk 4227858432 length 67108864
+2026/08/05 14:18:59 DEBUG : Robocal.zip: Sending chunk 4294967296 length 67108864
+2026/08/05 14:19:02 DEBUG : Robocal.zip: Sending chunk 4362076160 length 67108864
+2026/08/05 14:19:03 DEBUG : Robocal.zip: Sending chunk 4429185024 length 67108864
+2026/08/05 14:19:05 DEBUG : Robocal.zip: Sending chunk 4496293888 length 67108864
+2026/08/05 14:19:06 DEBUG : Robocal.zip: Sending chunk 4563402752 length 67108864
+2026/08/05 14:19:09 DEBUG : Robocal.zip: Sending chunk 4630511616 length 67108864
+2026/08/05 14:19:10 DEBUG : Robocal.zip: Sending chunk 4697620480 length 67108864
+2026/08/05 14:19:12 DEBUG : Robocal.zip: Sending chunk 4764729344 length 67108864
+2026/08/05 14:19:14 DEBUG : Robocal.zip: Sending chunk 4831838208 length 67108864
+2026/08/05 14:19:16 DEBUG : Robocal.zip: Sending chunk 4898947072 length 67108864
+2026/08/05 14:19:18 DEBUG : Robocal.zip: Sending chunk 4966055936 length 67108864
+2026/08/05 14:19:20 DEBUG : Robocal.zip: Sending chunk 5033164800 length 67108864
+2026/08/05 14:19:22 DEBUG : Robocal.zip: Sending chunk 5100273664 length 67108864
+2026/08/05 14:19:26 DEBUG : Robocal.zip: Sending chunk 5167382528 length 67108864
+2026/08/05 14:19:28 DEBUG : Robocal.zip: Sending chunk 5234491392 length 67108864
+2026/08/05 14:19:31 DEBUG : Robocal.zip: Sending chunk 5301600256 length 67108864
+2026/08/05 14:19:33 DEBUG : Robocal.zip: Sending chunk 5368709120 length 67108864
+2026/08/05 14:19:35 DEBUG : Robocal.zip: Sending chunk 5435817984 length 67108864
+2026/08/05 14:19:37 DEBUG : Robocal.zip: Sending chunk 5502926848 length 67108864
+2026/08/05 14:19:39 DEBUG : Robocal.zip: Sending chunk 5570035712 length 67108864
+2026/08/05 14:19:41 DEBUG : Robocal.zip: Sending chunk 5637144576 length 67108864
+2026/08/05 14:19:43 DEBUG : Robocal.zip: Sending chunk 5704253440 length 67108864
+2026/08/05 14:19:45 DEBUG : Robocal.zip: Sending chunk 5771362304 length 67108864
+2026/08/05 14:19:48 DEBUG : Robocal.zip: Sending chunk 5838471168 length 67108864
+2026/08/05 14:19:49 DEBUG : Robocal.zip: Sending chunk 5905580032 length 67108864
+2026/08/05 14:19:52 DEBUG : Robocal.zip: Sending chunk 5972688896 length 67108864
+2026/08/05 14:19:53 DEBUG : Robocal.zip: Sending chunk 6039797760 length 67108864
+2026/08/05 14:19:55 DEBUG : Robocal.zip: Sending chunk 6106906624 length 67108864
+2026/08/05 14:19:57 DEBUG : Robocal.zip: Sending chunk 6174015488 length 67108864
+2026/08/05 14:19:59 DEBUG : Robocal.zip: Sending chunk 6241124352 length 67108864
+2026/08/05 14:20:01 DEBUG : Robocal.zip: Sending chunk 6308233216 length 67108864
+2026/08/05 14:20:10 DEBUG : Robocal.zip: Sending chunk 6375342080 length 67108864
+2026/08/05 14:20:11 DEBUG : Robocal.zip: Sending chunk 6442450944 length 67108864
+2026/08/05 14:20:13 DEBUG : Robocal.zip: Sending chunk 6509559808 length 67108864
+2026/08/05 14:20:15 DEBUG : Robocal.zip: Sending chunk 6576668672 length 67108864
+2026/08/05 14:20:17 DEBUG : Robocal.zip: Sending chunk 6643777536 length 67108864
+2026/08/05 14:20:19 DEBUG : Robocal.zip: Sending chunk 6710886400 length 67108864
+2026/08/05 14:20:20 DEBUG : Robocal.zip: Sending chunk 6777995264 length 67108864
+2026/08/05 14:20:22 DEBUG : Robocal.zip: Sending chunk 6845104128 length 67108864
+2026/08/05 14:20:24 DEBUG : Robocal.zip: Sending chunk 6912212992 length 67108864
+2026/08/05 14:20:26 DEBUG : Robocal.zip: Sending chunk 6979321856 length 67108864
+2026/08/05 14:20:28 DEBUG : Robocal.zip: Sending chunk 7046430720 length 67108864
+2026/08/05 14:20:30 DEBUG : Robocal.zip: Sending chunk 7113539584 length 67108864
+2026/08/05 14:20:31 DEBUG : Robocal.zip: Sending chunk 7180648448 length 67108864
+2026/08/05 14:20:34 DEBUG : Robocal.zip: Sending chunk 7247757312 length 67108864
+2026/08/05 14:20:36 DEBUG : Robocal.zip: Sending chunk 7314866176 length 67108864
+2026/08/05 14:20:38 DEBUG : Robocal.zip: Sending chunk 7381975040 length 67108864
+2026/08/05 14:20:40 DEBUG : Robocal.zip: Sending chunk 7449083904 length 67108864
+2026/08/05 14:20:42 DEBUG : Robocal.zip: Sending chunk 7516192768 length 67108864
+2026/08/05 14:20:44 DEBUG : Robocal.zip: Sending chunk 7583301632 length 67108864
+2026/08/05 14:20:46 DEBUG : Robocal.zip: Sending chunk 7650410496 length 67108864
+2026/08/05 14:20:49 DEBUG : Robocal.zip: Sending chunk 7717519360 length 67108864
+2026/08/05 14:20:51 DEBUG : Robocal.zip: Sending chunk 7784628224 length 67108864
+2026/08/05 14:20:53 DEBUG : Robocal.zip: Sending chunk 7851737088 length 67108864
+2026/08/05 14:20:55 DEBUG : Robocal.zip: Sending chunk 7918845952 length 67108864
+2026/08/05 14:20:57 DEBUG : Robocal.zip: Sending chunk 7985954816 length 67108864
+2026/08/05 14:20:59 DEBUG : Robocal.zip: Sending chunk 8053063680 length 67108864
+2026/08/05 14:21:01 DEBUG : Robocal.zip: Sending chunk 8120172544 length 67108864
+2026/08/05 14:21:03 DEBUG : Robocal.zip: Sending chunk 8187281408 length 67108864
+2026/08/05 14:21:05 DEBUG : Robocal.zip: Sending chunk 8254390272 length 67108864
+2026/08/05 14:21:07 DEBUG : Robocal.zip: Sending chunk 8321499136 length 67108864
+2026/08/05 14:21:09 DEBUG : Robocal.zip: Sending chunk 8388608000 length 67108864
+2026/08/05 14:21:11 DEBUG : Robocal.zip: Sending chunk 8455716864 length 67108864
+2026/08/05 14:21:13 DEBUG : Robocal.zip: Sending chunk 8522825728 length 67108864
+2026/08/05 14:21:14 DEBUG : Robocal.zip: Sending chunk 8589934592 length 67108864
+2026/08/05 14:21:17 DEBUG : Robocal.zip: Sending chunk 8657043456 length 67108864
+2026/08/05 14:21:19 DEBUG : Robocal.zip: Sending chunk 8724152320 length 67108864
+2026/08/05 14:21:20 DEBUG : Robocal.zip: Sending chunk 8791261184 length 67108864
+2026/08/05 14:21:22 DEBUG : Robocal.zip: Sending chunk 8858370048 length 67108864
+2026/08/05 14:21:24 DEBUG : Robocal.zip: Sending chunk 8925478912 length 67108864
+2026/08/05 14:21:26 DEBUG : Robocal.zip: Sending chunk 8992587776 length 67108864
+2026/08/05 14:21:28 DEBUG : Robocal.zip: Sending chunk 9059696640 length 67108864
+2026/08/05 14:21:30 DEBUG : Robocal.zip: Sending chunk 9126805504 length 67108864
+2026/08/05 14:21:32 DEBUG : Robocal.zip: Sending chunk 9193914368 length 67108864
+2026/08/05 14:21:34 DEBUG : Robocal.zip: Sending chunk 9261023232 length 67108864
+2026/08/05 14:21:36 DEBUG : Robocal.zip: Sending chunk 9328132096 length 67108864
+2026/08/05 14:21:37 DEBUG : Robocal.zip: Sending chunk 9395240960 length 67108864
+2026/08/05 14:21:39 DEBUG : Robocal.zip: Sending chunk 9462349824 length 67108864
+2026/08/05 14:21:41 DEBUG : Robocal.zip: Sending chunk 9529458688 length 67108864
+2026/08/05 14:21:43 DEBUG : Robocal.zip: Sending chunk 9596567552 length 67108864
+2026/08/05 14:21:45 DEBUG : Robocal.zip: Sending chunk 9663676416 length 67108864
+2026/08/05 14:21:47 DEBUG : Robocal.zip: Sending chunk 9730785280 length 67108864
+2026/08/05 14:21:49 DEBUG : Robocal.zip: Sending chunk 9797894144 length 67108864
+2026/08/05 14:21:51 DEBUG : Robocal.zip: Sending chunk 9865003008 length 67108864
+2026/08/05 14:21:53 DEBUG : Robocal.zip: Sending chunk 9932111872 length 67108864
+2026/08/05 14:21:55 DEBUG : Robocal.zip: Sending chunk 9999220736 length 67108864
+2026/08/05 14:21:57 DEBUG : Robocal.zip: Sending chunk 10066329600 length 67108864
+2026/08/05 14:21:59 DEBUG : Robocal.zip: Sending chunk 10133438464 length 67108864
+2026/08/05 14:22:02 DEBUG : Robocal.zip: Sending chunk 10200547328 length 67108864
+2026/08/05 14:22:04 DEBUG : Robocal.zip: Sending chunk 10267656192 length 67108864
+2026/08/05 14:22:06 DEBUG : Robocal.zip: Sending chunk 10334765056 length 67108864
+2026/08/05 14:22:08 DEBUG : Robocal.zip: Sending chunk 10401873920 length 50304042
+2026/08/05 14:22:10 DEBUG : pacer: low level retry 1/3 (error googleapi: Error 403: Quota exceeded for quota metric 'Queries' and limit 'Queries per minute' of service 'drive.googleapis.com' for consumer 'project_number:202264815644'.
+Details:
+[
+  {
+    "@type": "type.googleapis.com/google.rpc.ErrorInfo",
+    "domain": "googleapis.com",
+    "metadata": {
+      "consumer": "projects/202264815644",
+      "quota_limit": "defaultPerMinutePerProject",
+      "quota_limit_value": "840000",
+      "quota_location": "global",
+      "quota_metric": "drive.googleapis.com/default",
+      "quota_unit": "1/min/{project}",
+      "service": "drive.googleapis.com"
+    },
+    "reason": "RATE_LIMIT_EXCEEDED"
+  },
+  {
+    "@type": "type.googleapis.com/google.rpc.Help",
+    "links": [
+      {
+        "description": "Request a higher quota limit.",
+        "url": "https://cloud.google.com/docs/quotas/help/request_increase"
+      }
+    ]
+  }
+]
+, rateLimitExceeded)
+2026/08/05 14:22:10 DEBUG : pacer: Rate limited, increasing sleep to 1.258391525s
+2026/08/05 14:22:10 DEBUG : Robocal.zip: Sending chunk 10401873920 length 50304042
+2026/08/05 14:22:11 DEBUG : pacer: low level retry 2/3 (error googleapi: Error 403: Quota exceeded for quota metric 'Queries' and limit 'Queries per minute' of service 'drive.googleapis.com' for consumer 'project_number:202264815644'.
+Details:
+[
+  {
+    "@type": "type.googleapis.com/google.rpc.ErrorInfo",
+    "domain": "googleapis.com",
+    "metadata": {
+      "consumer": "projects/202264815644",
+      "quota_limit": "defaultPerMinutePerProject",
+      "quota_limit_value": "840000",
+      "quota_location": "global",
+      "quota_metric": "drive.googleapis.com/default",
+      "quota_unit": "1/min/{project}",
+      "service": "drive.googleapis.com"
+    },
+    "reason": "RATE_LIMIT_EXCEEDED"
+  },
+  {
+    "@type": "type.googleapis.com/google.rpc.Help",
+    "links": [
+      {
+        "description": "Request a higher quota limit.",
+        "url": "https://cloud.google.com/docs/quotas/help/request_increase"
+      }
+    ]
+  }
+]
+, rateLimitExceeded)
+2026/08/05 14:22:11 DEBUG : pacer: Rate limited, increasing sleep to 2.560899797s
+2026/08/05 14:22:12 DEBUG : Robocal.zip: Sending chunk 10401873920 length 50304042
+2026/08/05 14:22:16 DEBUG : pacer: low level retry 3/3 (error googleapi: Error 403: Quota exceeded for quota metric 'Queries' and limit 'Queries per minute' of service 'drive.googleapis.com' for consumer 'project_number:202264815644'.
+Details:
+[
+  {
+    "@type": "type.googleapis.com/google.rpc.ErrorInfo",
+    "domain": "googleapis.com",
+    "metadata": {
+      "consumer": "projects/202264815644",
+      "quota_limit": "defaultPerMinutePerProject",
+      "quota_limit_value": "840000",
+      "quota_location": "global",
+      "quota_metric": "drive.googleapis.com/default",
+      "quota_unit": "1/min/{project}",
+      "service": "drive.googleapis.com"
+    },
+    "reason": "RATE_LIMIT_EXCEEDED"
+  },
+  {
+    "@type": "type.googleapis.com/google.rpc.Help",
+    "links": [
+      {
+        "description": "Request a higher quota limit.",
+        "url": "https://cloud.google.com/docs/quotas/help/request_increase"
+      }
+    ]
+  }
+]
+, rateLimitExceeded)
+2026/08/05 14:22:16 DEBUG : pacer: Rate limited, increasing sleep to 4.663818043s
+2026/08/05 14:22:16 DEBUG : S6A67340005X_Robocal_16322_9577.zip: Received error: googleapi: Error 403: Quota exceeded for quota metric 'Queries' and limit 'Queries per minute' of service 'drive.googleapis.com' for consumer 'project_number:202264815644'.
+Details:
+[
+  {
+    "@type": "type.googleapis.com/google.rpc.ErrorInfo",
+    "domain": "googleapis.com",
+    "metadata": {
+      "consumer": "projects/202264815644",
+      "quota_limit": "defaultPerMinutePerProject",
+      "quota_limit_value": "840000",
+      "quota_location": "global",
+      "quota_metric": "drive.googleapis.com/default",
+      "quota_unit": "1/min/{project}",
+      "service": "drive.googleapis.com"
+    },
+    "reason": "RATE_LIMIT_EXCEEDED"
+  },
+  {
+    "@type": "type.googleapis.com/google.rpc.Help",
+    "links": [
+      {
+        "description": "Request a higher quota limit.",
+        "url": "https://cloud.google.com/docs/quotas/help/request_increase"
+      }
+    ]
+  }
+]
+, rateLimitExceeded - low level retry 0/3
+2026/08/05 14:22:17 DEBUG : pacer: low level retry 1/3 (error googleapi: Error 403: Quota exceeded for quota metric 'Queries' and limit 'Queries per minute' of service 'drive.googleapis.com' for consumer 'project_number:202264815644'.
+Details:
+[
+  {
+    "@type": "type.googleapis.com/google.rpc.ErrorInfo",
+    "domain": "googleapis.com",
+    "metadata": {
+      "consumer": "projects/202264815644",
+      "quota_limit": "defaultPerMinutePerProject",
+      "quota_limit_value": "840000",
+      "quota_location": "global",
+      "quota_metric": "drive.googleapis.com/default",
+      "quota_unit": "1/min/{project}",
+      "service": "drive.googleapis.com"
+    },
+    "reason": "RATE_LIMIT_EXCEEDED"
+  },
+  {
+    "@type": "type.googleapis.com/google.rpc.Help",
+    "links": [
+      {
+        "description": "Request a higher quota limit.",
+        "url": "https://cloud.google.com/docs/quotas/help/request_increase"
+      }
+    ]
+  }
+]
+, rateLimitExceeded)
+2026/08/05 14:22:17 DEBUG : pacer: Rate limited, increasing sleep to 8.336308677s
+2026/08/05 14:22:21 DEBUG : pacer: low level retry 2/3 (error googleapi: Error 403: Quota exceeded for quota metric 'Queries' and limit 'Queries per minute' of service 'drive.googleapis.com' for consumer 'project_number:202264815644'.
+Details:
+[
+  {
+    "@type": "type.googleapis.com/google.rpc.ErrorInfo",
+    "domain": "googleapis.com",
+    "metadata": {
+      "consumer": "projects/202264815644",
+      "quota_limit": "defaultPerMinutePerProject",
+      "quota_limit_value": "840000",
+      "quota_location": "global",
+      "quota_metric": "drive.googleapis.com/default",
+      "quota_unit": "1/min/{project}",
+      "service": "drive.googleapis.com"
+    },
+    "reason": "RATE_LIMIT_EXCEEDED"
+  },
+  {
+    "@type": "type.googleapis.com/google.rpc.Help",
+    "links": [
+      {
+        "description": "Request a higher quota limit.",
+        "url": "https://cloud.google.com/docs/quotas/help/request_increase"
+      }
+    ]
+  }
+]
+, rateLimitExceeded)
+2026/08/05 14:22:21 DEBUG : pacer: Rate limited, increasing sleep to 16.288585975s
+2026/08/05 14:22:30 DEBUG : pacer: Reducing sleep to 0s
+2026/08/05 14:22:31 DEBUG : Robocal.zip: Sending chunk 0 length 67108864
+2026/08/05 14:22:33 DEBUG : Robocal.zip: Sending chunk 67108864 length 67108864
+2026/08/05 14:22:35 DEBUG : Robocal.zip: Sending chunk 134217728 length 67108864
+2026/08/05 14:22:37 DEBUG : Robocal.zip: Sending chunk 201326592 length 67108864
+2026/08/05 14:22:38 DEBUG : Robocal.zip: Sending chunk 268435456 length 67108864
+2026/08/05 14:22:40 DEBUG : Robocal.zip: Sending chunk 335544320 length 67108864
+2026/08/05 14:22:42 DEBUG : Robocal.zip: Sending chunk 402653184 length 67108864
+2026/08/05 14:22:43 DEBUG : Robocal.zip: Sending chunk 469762048 length 67108864
+2026/08/05 14:22:45 DEBUG : Robocal.zip: Sending chunk 536870912 length 67108864
+2026/08/05 14:22:47 DEBUG : Robocal.zip: Sending chunk 603979776 length 67108864
+2026/08/05 14:22:49 DEBUG : Robocal.zip: Sending chunk 671088640 length 67108864
+2026/08/05 14:22:51 DEBUG : Robocal.zip: Sending chunk 738197504 length 67108864
+2026/08/05 14:22:53 DEBUG : Robocal.zip: Sending chunk 805306368 length 67108864
+2026/08/05 14:22:55 DEBUG : Robocal.zip: Sending chunk 872415232 length 67108864
+2026/08/05 14:22:57 DEBUG : Robocal.zip: Sending chunk 939524096 length 67108864
+2026/08/05 14:22:58 DEBUG : Robocal.zip: Sending chunk 1006632960 length 67108864
+2026/08/05 14:23:00 DEBUG : Robocal.zip: Sending chunk 1073741824 length 67108864
+2026/08/05 14:23:02 DEBUG : Robocal.zip: Sending chunk 1140850688 length 67108864
+2026/08/05 14:23:03 DEBUG : Robocal.zip: Sending chunk 1207959552 length 67108864
+2026/08/05 14:23:05 DEBUG : Robocal.zip: Sending chunk 1275068416 length 67108864
+2026/08/05 14:23:07 DEBUG : Robocal.zip: Sending chunk 1342177280 length 67108864
+2026/08/05 14:23:09 DEBUG : Robocal.zip: Sending chunk 1409286144 length 67108864
+2026/08/05 14:23:11 DEBUG : Robocal.zip: Sending chunk 1476395008 length 67108864
+2026/08/05 14:23:13 DEBUG : Robocal.zip: Sending chunk 1543503872 length 67108864
+2026/08/05 14:23:14 DEBUG : Robocal.zip: Sending chunk 1610612736 length 67108864
+2026/08/05 14:23:16 DEBUG : Robocal.zip: Sending chunk 1677721600 length 67108864
+2026/08/05 14:23:18 DEBUG : Robocal.zip: Sending chunk 1744830464 length 67108864
+2026/08/05 14:23:20 DEBUG : Robocal.zip: Sending chunk 1811939328 length 67108864
+2026/08/05 14:23:22 DEBUG : Robocal.zip: Sending chunk 1879048192 length 67108864
+2026/08/05 14:23:24 DEBUG : Robocal.zip: Sending chunk 1946157056 length 67108864
+2026/08/05 14:23:25 DEBUG : Robocal.zip: Sending chunk 2013265920 length 67108864
+2026/08/05 14:23:27 DEBUG : Robocal.zip: Sending chunk 2080374784 length 67108864
+2026/08/05 14:23:29 DEBUG : Robocal.zip: Sending chunk 2147483648 length 67108864
+2026/08/05 14:23:31 DEBUG : Robocal.zip: Sending chunk 2214592512 length 67108864
+2026/08/05 14:23:33 DEBUG : Robocal.zip: Sending chunk 2281701376 length 67108864
+2026/08/05 14:23:35 DEBUG : Robocal.zip: Sending chunk 2348810240 length 67108864
+2026/08/05 14:23:37 DEBUG : Robocal.zip: Sending chunk 2415919104 length 67108864
+2026/08/05 14:23:40 DEBUG : Robocal.zip: Sending chunk 2483027968 length 67108864
+2026/08/05 14:23:42 DEBUG : Robocal.zip: Sending chunk 2550136832 length 67108864
+2026/08/05 14:23:44 DEBUG : Robocal.zip: Sending chunk 2617245696 length 67108864
+2026/08/05 14:23:45 DEBUG : Robocal.zip: Sending chunk 2684354560 length 67108864
+2026/08/05 14:23:48 DEBUG : Robocal.zip: Sending chunk 2751463424 length 67108864
+2026/08/05 14:23:50 DEBUG : Robocal.zip: Sending chunk 2818572288 length 67108864
+2026/08/05 14:23:52 DEBUG : Robocal.zip: Sending chunk 2885681152 length 67108864
+2026/08/05 14:23:54 DEBUG : Robocal.zip: Sending chunk 2952790016 length 67108864
+2026/08/05 14:23:56 DEBUG : Robocal.zip: Sending chunk 3019898880 length 67108864
+2026/08/05 14:23:58 DEBUG : Robocal.zip: Sending chunk 3087007744 length 67108864
+2026/08/05 14:24:00 DEBUG : Robocal.zip: Sending chunk 3154116608 length 67108864
+2026/08/05 14:24:02 DEBUG : Robocal.zip: Sending chunk 3221225472 length 67108864
+2026/08/05 14:24:04 DEBUG : Robocal.zip: Sending chunk 3288334336 length 67108864
+2026/08/05 14:24:06 DEBUG : Robocal.zip: Sending chunk 3355443200 length 67108864
+2026/08/05 14:24:07 DEBUG : Robocal.zip: Sending chunk 3422552064 length 67108864
+2026/08/05 14:24:10 DEBUG : Robocal.zip: Sending chunk 3489660928 length 67108864
+2026/08/05 14:24:12 DEBUG : Robocal.zip: Sending chunk 3556769792 length 67108864
+2026/08/05 14:24:15 DEBUG : Robocal.zip: Sending chunk 3623878656 length 67108864
+2026/08/05 14:24:17 DEBUG : Robocal.zip: Sending chunk 3690987520 length 67108864
+2026/08/05 14:24:18 DEBUG : Robocal.zip: Sending chunk 3758096384 length 67108864
+2026/08/05 14:24:20 DEBUG : Robocal.zip: Sending chunk 3825205248 length 67108864
+2026/08/05 14:24:22 DEBUG : Robocal.zip: Sending chunk 3892314112 length 67108864
+2026/08/05 14:24:24 DEBUG : Robocal.zip: Sending chunk 3959422976 length 67108864
+2026/08/05 14:24:26 DEBUG : Robocal.zip: Sending chunk 4026531840 length 67108864
+2026/08/05 14:24:28 DEBUG : Robocal.zip: Sending chunk 4093640704 length 67108864
+2026/08/05 14:24:30 DEBUG : Robocal.zip: Sending chunk 4160749568 length 67108864
+2026/08/05 14:24:32 DEBUG : Robocal.zip: Sending chunk 4227858432 length 67108864
+2026/08/05 14:24:34 DEBUG : Robocal.zip: Sending chunk 4294967296 length 67108864
+2026/08/05 14:24:35 DEBUG : Robocal.zip: Sending chunk 4362076160 length 67108864
+2026/08/05 14:24:37 DEBUG : Robocal.zip: Sending chunk 4429185024 length 67108864
+2026/08/05 14:24:39 DEBUG : Robocal.zip: Sending chunk 4496293888 length 67108864
+2026/08/05 14:24:41 DEBUG : Robocal.zip: Sending chunk 4563402752 length 67108864
+2026/08/05 14:24:43 DEBUG : Robocal.zip: Sending chunk 4630511616 length 67108864
+2026/08/05 14:24:45 DEBUG : Robocal.zip: Sending chunk 4697620480 length 67108864
+2026/08/05 14:24:47 DEBUG : Robocal.zip: Sending chunk 4764729344 length 67108864
+2026/08/05 14:24:49 DEBUG : Robocal.zip: Sending chunk 4831838208 length 67108864
+2026/08/05 14:24:51 DEBUG : Robocal.zip: Sending chunk 4898947072 length 67108864
+2026/08/05 14:24:52 DEBUG : Robocal.zip: Sending chunk 4966055936 length 67108864
+2026/08/05 14:24:55 DEBUG : Robocal.zip: Sending chunk 5033164800 length 67108864
+2026/08/05 14:24:57 DEBUG : Robocal.zip: Sending chunk 5100273664 length 67108864
+2026/08/05 14:24:59 DEBUG : Robocal.zip: Sending chunk 5167382528 length 67108864
+2026/08/05 14:25:01 DEBUG : Robocal.zip: Sending chunk 5234491392 length 67108864
+2026/08/05 14:25:03 DEBUG : Robocal.zip: Sending chunk 5301600256 length 67108864
+2026/08/05 14:25:04 DEBUG : Robocal.zip: Sending chunk 5368709120 length 67108864
+2026/08/05 14:25:06 DEBUG : Robocal.zip: Sending chunk 5435817984 length 67108864
+2026/08/05 14:25:08 DEBUG : Robocal.zip: Sending chunk 5502926848 length 67108864
+2026/08/05 14:25:10 DEBUG : Robocal.zip: Sending chunk 5570035712 length 67108864
+2026/08/05 14:25:13 DEBUG : Robocal.zip: Sending chunk 5637144576 length 67108864
+2026/08/05 14:25:14 DEBUG : Robocal.zip: Sending chunk 5704253440 length 67108864
+2026/08/05 14:25:16 DEBUG : Robocal.zip: Sending chunk 5771362304 length 67108864
+2026/08/05 14:25:18 DEBUG : Robocal.zip: Sending chunk 5838471168 length 67108864
+2026/08/05 14:25:20 DEBUG : Robocal.zip: Sending chunk 5905580032 length 67108864
+2026/08/05 14:25:22 DEBUG : Robocal.zip: Sending chunk 5972688896 length 67108864
+2026/08/05 14:25:24 DEBUG : Robocal.zip: Sending chunk 6039797760 length 67108864
+2026/08/05 14:25:26 DEBUG : Robocal.zip: Sending chunk 6106906624 length 67108864
+2026/08/05 14:25:27 DEBUG : Robocal.zip: Sending chunk 6174015488 length 67108864
+2026/08/05 14:25:29 DEBUG : Robocal.zip: Sending chunk 6241124352 length 67108864
+2026/08/05 14:25:31 DEBUG : Robocal.zip: Sending chunk 6308233216 length 67108864
+2026/08/05 14:25:33 DEBUG : Robocal.zip: Sending chunk 6375342080 length 67108864
+2026/08/05 14:25:35 DEBUG : Robocal.zip: Sending chunk 6442450944 length 67108864
+2026/08/05 14:25:37 DEBUG : Robocal.zip: Sending chunk 6509559808 length 67108864
+2026/08/05 14:25:39 DEBUG : Robocal.zip: Sending chunk 6576668672 length 67108864
+2026/08/05 14:25:41 DEBUG : Robocal.zip: Sending chunk 6643777536 length 67108864
+2026/08/05 14:25:42 DEBUG : Robocal.zip: Sending chunk 6710886400 length 67108864
+2026/08/05 14:25:44 DEBUG : Robocal.zip: Sending chunk 6777995264 length 67108864
+2026/08/05 14:25:46 DEBUG : Robocal.zip: Sending chunk 6845104128 length 67108864
+2026/08/05 14:25:52 DEBUG : Robocal.zip: Sending chunk 6912212992 length 67108864
+2026/08/05 14:25:54 DEBUG : Robocal.zip: Sending chunk 6979321856 length 67108864
+2026/08/05 14:25:55 DEBUG : Robocal.zip: Sending chunk 7046430720 length 67108864
+2026/08/05 14:25:57 DEBUG : Robocal.zip: Sending chunk 7113539584 length 67108864
+2026/08/05 14:25:59 DEBUG : Robocal.zip: Sending chunk 7180648448 length 67108864
+2026/08/05 14:26:01 DEBUG : Robocal.zip: Sending chunk 7247757312 length 67108864
+2026/08/05 14:26:02 DEBUG : Robocal.zip: Sending chunk 7314866176 length 67108864
+2026/08/05 14:26:04 DEBUG : Robocal.zip: Sending chunk 7381975040 length 67108864
+2026/08/05 14:26:06 DEBUG : Robocal.zip: Sending chunk 7449083904 length 67108864
+2026/08/05 14:26:09 DEBUG : Robocal.zip: Sending chunk 7516192768 length 67108864
+2026/08/05 14:26:10 DEBUG : Robocal.zip: Sending chunk 7583301632 length 67108864
+2026/08/05 14:26:12 DEBUG : Robocal.zip: Sending chunk 7650410496 length 67108864
+2026/08/05 14:26:14 DEBUG : Robocal.zip: Sending chunk 7717519360 length 67108864
+2026/08/05 14:26:16 DEBUG : Robocal.zip: Sending chunk 7784628224 length 67108864
+2026/08/05 14:26:18 DEBUG : Robocal.zip: Sending chunk 7851737088 length 67108864
+2026/08/05 14:26:20 DEBUG : Robocal.zip: Sending chunk 7918845952 length 67108864
+2026/08/05 14:26:22 DEBUG : Robocal.zip: Sending chunk 7985954816 length 67108864
+2026/08/05 14:26:24 DEBUG : Robocal.zip: Sending chunk 8053063680 length 67108864
+2026/08/05 14:26:26 DEBUG : Robocal.zip: Sending chunk 8120172544 length 67108864
+2026/08/05 14:26:28 DEBUG : Robocal.zip: Sending chunk 8187281408 length 67108864
+2026/08/05 14:26:29 DEBUG : Robocal.zip: Sending chunk 8254390272 length 67108864
+2026/08/05 14:26:31 DEBUG : Robocal.zip: Sending chunk 8321499136 length 67108864
+2026/08/05 14:26:33 DEBUG : Robocal.zip: Sending chunk 8388608000 length 67108864
+2026/08/05 14:26:35 DEBUG : Robocal.zip: Sending chunk 8455716864 length 67108864
+2026/08/05 14:26:37 DEBUG : Robocal.zip: Sending chunk 8522825728 length 67108864
+2026/08/05 14:26:39 DEBUG : Robocal.zip: Sending chunk 8589934592 length 67108864
+2026/08/05 14:26:40 DEBUG : Robocal.zip: Sending chunk 8657043456 length 67108864
+2026/08/05 14:26:42 DEBUG : Robocal.zip: Sending chunk 8724152320 length 67108864
+2026/08/05 14:26:43 DEBUG : Robocal.zip: Sending chunk 8791261184 length 67108864
+2026/08/05 14:26:45 DEBUG : Robocal.zip: Sending chunk 8858370048 length 67108864
+2026/08/05 14:26:47 DEBUG : Robocal.zip: Sending chunk 8925478912 length 67108864
+2026/08/05 14:26:49 DEBUG : Robocal.zip: Sending chunk 8992587776 length 67108864
+2026/08/05 14:26:51 DEBUG : Robocal.zip: Sending chunk 9059696640 length 67108864
+2026/08/05 14:26:52 DEBUG : Robocal.zip: Sending chunk 9126805504 length 67108864
+2026/08/05 14:26:54 DEBUG : Robocal.zip: Sending chunk 9193914368 length 67108864
+2026/08/05 14:26:55 DEBUG : Robocal.zip: Sending chunk 9261023232 length 67108864
+2026/08/05 14:26:58 DEBUG : Robocal.zip: Sending chunk 9328132096 length 67108864
+2026/08/05 14:27:00 DEBUG : Robocal.zip: Sending chunk 9395240960 length 67108864
+2026/08/05 14:27:03 DEBUG : Robocal.zip: Sending chunk 9462349824 length 67108864
+2026/08/05 14:27:05 DEBUG : Robocal.zip: Sending chunk 9529458688 length 67108864
+2026/08/05 14:27:07 DEBUG : Robocal.zip: Sending chunk 9596567552 length 67108864
+2026/08/05 14:27:08 DEBUG : Robocal.zip: Sending chunk 9663676416 length 67108864
+2026/08/05 14:27:10 DEBUG : Robocal.zip: Sending chunk 9730785280 length 67108864
+2026/08/05 14:27:12 DEBUG : Robocal.zip: Sending chunk 9797894144 length 67108864
+2026/08/05 14:27:15 DEBUG : Robocal.zip: Sending chunk 9865003008 length 67108864
+2026/08/05 14:27:17 DEBUG : Robocal.zip: Sending chunk 9932111872 length 67108864
+2026/08/05 14:27:19 DEBUG : Robocal.zip: Sending chunk 9999220736 length 67108864
+2026/08/05 14:27:20 DEBUG : Robocal.zip: Sending chunk 10066329600 length 67108864
+2026/08/05 14:27:22 DEBUG : Robocal.zip: Sending chunk 10133438464 length 67108864
+2026/08/05 14:27:24 DEBUG : Robocal.zip: Sending chunk 10200547328 length 67108864
+2026/08/05 14:27:26 DEBUG : Robocal.zip: Sending chunk 10267656192 length 67108864
+2026/08/05 14:27:30 DEBUG : Robocal.zip: Sending chunk 10334765056 length 67108864
+2026/08/05 14:27:31 DEBUG : Robocal.zip: Sending chunk 10401873920 length 50304042
+2026/08/05 14:27:35 DEBUG : Robocal.zip: size = 10452177962 OK
+2026/08/05 14:27:35 DEBUG : S6A67340005X_Robocal_16322_9577.zip: md5 = 9b3fb618a4a2c64fd685dc665f8be53b OK
+2026/08/05 14:27:35 INFO  : S6A67340005X_Robocal_16322_9577.zip: Copied (new) to: Robocal.zip
+2026/08/05 14:27:35 INFO  : 
+Transferred:   	   19.469 GiB / 19.469 GiB, 100%, 26.846 MiB/s, ETA 0s
+Transferred:            1 / 1, 100%
+Elapsed time:     10m56.7s
+
+2026/08/05 14:27:35 DEBUG : 3 go routines active
+2026/08/05 14:27:36 NOTICE: gdrive{hcGEi}: This remote uses rclone's shared Google Drive client_id, which is being retired and will stop working during 2026. Create your own client_id to avoid interruption: https://rclone.org/drive/#making-your-own-client-id
+2026/08/05 14:27:37 INFO  : There was nothing to transfer
+2026/08/05 14:27:37 INFO  : 
+Transferred:   	          0 B / 0 B, -, 0 B/s, ETA -
+Checks:                 0 / 0, -, Listed 1
+Elapsed time:         0.0s
+
