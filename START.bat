@@ -171,6 +171,7 @@ ECHO Interupt Error
 GOTO START
 
 :TestFail
+powershell.exe -NoProfile -ExecutionPolicy Bypass -File ".\generate_ml_robocal.ps1" -sn %SN% -OverwriteTemplate
 find /i "%PROJECT%,80" %CSV_NAME%
 IF %ERRORLEVEL% equ 0 goto ShowFail
 find /i "%PROJECT%,8F" %CSV_NAME%
@@ -194,6 +195,7 @@ CALL :UPLOAD_GRR_AND_WAIT_DUT_DISCONNECT
 GOTO jigup
 
 :TestPass
+powershell.exe -NoProfile -ExecutionPolicy Bypass -File ".\generate_ml_robocal.ps1" -sn %SN% -OverwriteTemplate
 cd %~dp0
 cd %FOLDER%
 SET Result=PASS
