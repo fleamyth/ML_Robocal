@@ -50,9 +50,19 @@ DiagPGM\Chopper-diag.exe /SB "^[Ss][0-9]{2}[0-9,AaBbCc][0-9]{5}$" -SIF op.jpg -E
 IF %ERRORLEVEL% NEQ 0 GOTO START_OP
 
 :START
+CD /D "%~dp0"
+SET "SHARED_WIFI_CONNECT="
+FOR /F "usebackq delims=" %%D IN (`dir /b /ad /o-n "D:\ML_Audio\ML_Audio_*" 2^>nul`) DO IF NOT DEFINED SHARED_WIFI_CONNECT IF EXIST "D:\ML_Audio\%%D\Tools\wifi_connect_fast.bat" SET "SHARED_WIFI_CONNECT=D:\ML_Audio\%%D\Tools\wifi_connect_fast.bat"
+IF NOT DEFINED SHARED_WIFI_CONNECT GOTO WifiConnectToolMissing
+adb kill-server
 DiagPGM\Screen-diag.exe -nl -enter /SS 55 "<br>Please connect the device.<br> <br>Press [Enter] to start the test." 0xFFFFFF -bg 0x223366
 
 adb get-state 2>nul | findstr /X /C:"device" >nul
+IF %ERRORLEVEL% NEQ 0 GOTO START
+adb root
+adb shell aflags disable com.android.microxr.flags.enable_wifi_connection_access_point
+adb shell setprop persist.microxr.internetaccess.disable_wifi_control true
+adb reboot
 IF %ERRORLEVEL% NEQ 0 GOTO START
 
 SET ScanTime=0
@@ -153,6 +163,31 @@ set /p SN=<SN.dat
 
 echo %SN%>SN.DAT
 cd %~dp0%FOLDER%
+SET /A connectRetry=0
+adb wait-for-device
+
+:WifiConnectToDut
+CALL "%SHARED_WIFI_CONNECT%"
+SET "wifiResult=%ERRORLEVEL%"
+SET /A connectRetry+=1
+IF "%wifiResult%"=="0" GOTO WifiConnected
+IF %connectRetry% LSS 5 GOTO WifiConnectToDut
+GOTO START
+
+:WifiConnectToolMissing
+CD /D "%~dp0"
+DiagPGM\Screen-diag.exe -nl -enter /SS 45 "Shared Wi-Fi connector was not found.<br>D:\ML_Audio\ML_Audio_*\Tools\wifi_connect_fast.bat<br><br>Press [Enter] to retry." 0xFFFFFF -bg 0x882222
+GOTO START
+
+:WifiConnected
+Screen-diag.exe -nl -enter /SS 55 "<br>Please remove cable and put the device to the fixture.<br> <br>Press [Enter] to start the test." 0xFFFFFF -bg 0x224466
+adb get-state 2>nul | findstr /X /C:"device" >nul
+IF %ERRORLEVEL% NEQ 0 GOTO START
+SET "WIRELESS_DUT_SN="
+FOR /F "usebackq delims=" %%S IN (`adb shell getprop ro.serialno 2^>nul`) DO SET "WIRELESS_DUT_SN=%%S"
+IF NOT DEFINED WIRELESS_DUT_SN GOTO START
+IF /I NOT "%WIRELESS_DUT_SN%"=="%SN%" GOTO START
+
 IF DEFINED TEST_RUN_MARKER DEL /Q "%TEST_RUN_MARKER%" 2>nul
 SET "TEST_RUN_MARKER=%TEMP%\ML_Robocal_run_%RANDOM%_%RANDOM%.tmp"
 TYPE NUL >"%TEST_RUN_MARKER%"
