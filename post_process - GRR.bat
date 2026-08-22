@@ -135,8 +135,9 @@ if not exist "!NETWORK_DESTINATION_DIR!\" (
   exit /b 10
 )
 
-xcopy "!DESTINATION_DIR!\*" "!NETWORK_DESTINATION_DIR!\" /E /I /Y /Q >nul
-if errorlevel 1 (
+robocopy "!DESTINATION_DIR!" "!NETWORK_DESTINATION_DIR!" /E /COPY:DAT /DCOPY:DAT /R:2 /W:1 /NFL /NDL /NJH /NJS /NP >nul
+set "NETWORK_COPY_EXITCODE=!ERRORLEVEL!"
+if !NETWORK_COPY_EXITCODE! GEQ 8 (
   echo ERROR: Failed to back up post-process data to "!NETWORK_DESTINATION_DIR!".
   exit /b 10
 )
