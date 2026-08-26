@@ -375,6 +375,7 @@ EXIT /B 1
 
 :WAIT_DUT_DISCONNECT
 START "" Tools\Screen-diag.exe -nl /SS 55 "Please disconnect the device from the computer.<br><br>Waiting for ADB device disconnection..." 0xFFFFFF -bg 0xFF7F25
+adb disconnect
 TIMEOUT /T 1 /NOBREAK >nul
 
 :WAIT_DUT_DISCONNECT_CHECK
