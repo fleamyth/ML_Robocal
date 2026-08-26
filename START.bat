@@ -51,9 +51,8 @@ IF %ERRORLEVEL% NEQ 0 GOTO START_OP
 
 :START
 CD /D "%~dp0"
-SET "SHARED_WIFI_CONNECT="
-FOR /F "usebackq delims=" %%D IN (`dir /b /ad /o-n "D:\ML_Audio\ML_Audio_*" 2^>nul`) DO IF NOT DEFINED SHARED_WIFI_CONNECT IF EXIST "D:\ML_Audio\%%D\Tools\wifi_connect_fast.bat" SET "SHARED_WIFI_CONNECT=D:\ML_Audio\%%D\Tools\wifi_connect_fast.bat"
-IF NOT DEFINED SHARED_WIFI_CONNECT GOTO WifiConnectToolMissing
+SET "SHARED_WIFI_CONNECT=%~dp0%FOLDER%\Tools\wifi_connect_fast.bat"
+IF NOT EXIST "%SHARED_WIFI_CONNECT%" GOTO WifiConnectToolMissing
 adb kill-server
 DiagPGM\Screen-diag.exe -nl -enter /SS 55 "<br>Please connect the device.<br> <br>Press [Enter] to start the test." 0xFFFFFF -bg 0x223366
 
@@ -176,7 +175,7 @@ GOTO START
 
 :WifiConnectToolMissing
 CD /D "%~dp0"
-DiagPGM\Screen-diag.exe -nl -enter /SS 45 "Shared Wi-Fi connector was not found.<br>D:\ML_Audio\ML_Audio_*\Tools\wifi_connect_fast.bat<br><br>Press [Enter] to retry." 0xFFFFFF -bg 0x882222
+DiagPGM\Screen-diag.exe -nl -enter /SS 45 "Shared Wi-Fi connector was not found.<br>%SHARED_WIFI_CONNECT%<br><br>Press [Enter] to retry." 0xFFFFFF -bg 0x882222
 GOTO START
 
 :WifiConnected
