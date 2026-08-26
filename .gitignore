@@ -18,3 +18,13 @@ venv/
 # Runtime logs
 /ML_Robocal_1.00a_20260804/.chopper/
 /ML_Robocal_1.00a_20260804/Tools/logs/rclone-upload-*.log
+
+# Machine-specific runtime data
+/DiagPGM/SN.dat
+/MISClog.dat
+/OP.dat
+/ML_Robocal_1.00a_20260804/SN.dat
+/ML_Robocal_1.00a_20260804/TSRID.dat
+/ML_Robocal_1.00a_20260804/Tools/MISCLog.zip
+/ML_Robocal_1.00a_20260804/right_dark_roi.tif
+/ML_Robocal_1.00a_20260804/right_mid_roi.tif
