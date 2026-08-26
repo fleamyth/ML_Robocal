@@ -5,10 +5,12 @@ REM Retrieve the hostname
 for /f "tokens=*" %%i in ('hostname') do set HOSTNAME=%%i
 
 REM Remove the "DESKTOP-" prefix
-set WIFI_NAME="L89VJIQ_5G"
+set "WIFI_NAME=%HOSTNAME%"
+if /i "%HOSTNAME:~0,8%"=="DESKTOP-" set "WIFI_NAME=%HOSTNAME:~8%"
+set "WIFI_NAME=%WIFI_NAME%_5G"
 
 REM -- Configuration --
-SET WIFI_SSID=%WIFI_NAME%
+SET "WIFI_SSID=%WIFI_NAME%"
 SET WIFI_PROTOCOL=wpa2
 SET WIFI_PASSWORD=google123
 SET ADB_PORT=5555
@@ -56,8 +58,8 @@ timeout /t 2 >nul
 adb shell cmd wifi start-scan
 timeout /t 3 >nul
 
-echo [+] Connecting to SSID: %WIFI_SSID%
-adb shell "cmd wifi connect-network %WIFI_SSID% %WIFI_PROTOCOL% %WIFI_PASSWORD%"
+echo [+] Connecting to SSID: "%WIFI_SSID%"
+adb shell "cmd wifi connect-network \"%WIFI_SSID%\" %WIFI_PROTOCOL% %WIFI_PASSWORD%"
 
 echo [+] Waiting for the device to receive an IP address...
 SET "IP_POLL_ATTEMPTS=0"
