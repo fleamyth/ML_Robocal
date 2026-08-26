@@ -15,5 +15,6 @@ venv/
 # Generated CSV data
 *.csv
 
-# Local rclone upload log
-/ML_Robocal_1.00a_20260804/Tools/logs/rclone-upload-S6A67340005M.log
+# Runtime logs
+/ML_Robocal_1.00a_20260804/.chopper/
+/ML_Robocal_1.00a_20260804/Tools/logs/rclone-upload-*.log

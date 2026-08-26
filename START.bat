@@ -58,11 +58,11 @@ DiagPGM\Screen-diag.exe -nl -enter /SS 55 "<br>Please connect the device.<br> <b
 
 adb get-state 2>nul | findstr /X /C:"device" >nul
 IF %ERRORLEVEL% NEQ 0 GOTO START
-adb root
-adb shell aflags disable com.android.microxr.flags.enable_wifi_connection_access_point
-adb shell setprop persist.microxr.internetaccess.disable_wifi_control true
-adb reboot
-IF %ERRORLEVEL% NEQ 0 GOTO START
+rem adb root
+rem adb shell aflags disable com.android.microxr.flags.enable_wifi_connection_access_point
+rem adb shell setprop persist.microxr.internetaccess.disable_wifi_control true
+rem adb reboot
+rem IF %ERRORLEVEL% NEQ 0 GOTO START
 
 SET ScanTime=0
 
