@@ -193,12 +193,12 @@ TYPE NUL >"%TEST_RUN_MARKER%"
 Chopper-diag.exe -NoHotKey -LD TcsTestSuiteDuration %PROJECT% -c -si -CGV -opf op.dat -SNF SN.dat -sip -TSRID -lock -RL -f %CFG_NAME% -as -ae -SNP "^[0-9,A-Z]{%SN_LEN%}$" -tidf tid.dat -lf ..\DiagPGM\tidlog.xml /r
 IF %ERRORLEVEL% EQU 0 GOTO TestPass
 IF %ERRORLEVEL% EQU 255 GOTO TestFail
-IF %ERRORLEVEL% NEQ 0 pause
 IF %ERRORLEVEL% EQU 250 GOTO InteruptErr
 IF %ERRORLEVEL% EQU 251 GOTO InteruptErr
 IF %ERRORLEVEL% EQU 252 GOTO InteruptErr
 IF %ERRORLEVEL% EQU 253 GOTO InteruptErr
 IF %ERRORLEVEL% EQU 254 GOTO InteruptErr
+IF %ERRORLEVEL% NEQ 0 GOTO TestFail
 
 :InteruptErr
 ECHO Interupt Error
