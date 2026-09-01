@@ -8,28 +8,28 @@
 		</ErrorTransform>
 	</Test>
 	<Test Name="Robocal" Variation="ML" Class="" Front="False" Loop="1" Mode="Sequential" Hold="0" Timeout="0" Check="True">
-		<Exec PreWait="0" Wait="3.0" Retry="0" Ask4Retry="False" File="Tools\run_robocal_single_no_audio.bat" Action="" ShowTerminal="True" FailStop="False" Rebase="False" Log="" />
+		<Exec PreWait="0" Wait="3.0" Retry="0" Ask4Retry="False" File="Tools\run_robocal_single_no_audio - Copy.bat" Action="" ShowTerminal="True" FailStop="False" Rebase="False" Log="" />
 		<ErrorTransform>
 			<Replace Source="0" To="0" PEGA="" String="Success" />
-			<Replace Source="64" To="" PEGA="" String="!- ROBOCAL -! Unable to connect to robot interface." />
-			<Replace Source="68" To="" PEGA="" String="!- ROBOCAL -! Robot response timed out." />
-			<Replace Source="69" To="" PEGA="" String="!- ROBOCAL -! Robot is in an unexpected state." />
-			<Replace Source="C9" To="" PEGA="" String="!- ROBOCAL_WFSC -! Data collection failed due to a critical error." />
-			<Replace Source="CA" To="" PEGA="" String="!- ROBOCAL_UFSC -! Data collection failed due to a critical error." />
-			<Replace Source="CB" To="" PEGA="" String="!- ROBOCAL_DGC_DCC -! Data collection failed due to a critical error." />
-			<Replace Source="CC" To="" PEGA="" String="!- ROBOCAL_AUDIO -! Calibration or OK2CAL test failed." />
-			<Replace Source="CF" To="" PEGA="" String="!- ROBOCAL_DGV -! Data collection failed due to a critical error." />
-			<Replace Source="FF" To="" PEGA="" String="!- ROBOCAL -! Unnumbered unknown exception (Windows displays 255)." />
-			<Replace Source="12E" To="" PEGA="" String="!- ROBOCAL_OK2CAL -! Device-side OK2CAL validation failed." />
-			<Replace Source="190" To="" PEGA="" String="!- ROBOCAL_CONFIG -! Initialization failed due to a configuration problem." />
-			<Replace Source="1F4" To="" PEGA="" String="!- ROBOCAL_OPERATOR -! Procedure or environment condition was not satisfied." />
-			<Replace Source="26D" To="" PEGA="" String="!- ROBOCAL_DGC -! Motor position does not match the smoke-test nominal position." />
-			<Replace Source="2BF" To="" PEGA="" String="!- ROBOCAL_DCC -! Workflow processing failed." />
-			<Replace Source="2C0" To="" PEGA="" String="!- ROBOCAL_DCC -! File could not be read or has an invalid format." />
-			<Replace Source="2C2" To="" PEGA="" String="!- ROBOCAL_DCC -! Unable to connect to or read from the spectrometer." />
-			<Replace Source="2C4" To="" PEGA="" String="!- ROBOCAL_DCC -! One or more spectra are saturated." />
-			<Replace Source="2C7" To="" PEGA="" String="!- ROBOCAL_DCC -! Camera auto-exposure failed or capture could not be saved correctly." />
-			<Replace Source="321" To="" PEGA="" String="!- ROBOCAL_AUDIO -! Audio OK2CAL validation failed." />
+			<Replace Source="64" To="64" PEGA="" String="!- ROBOCAL -! Unable to connect to robot interface." />
+			<Replace Source="68" To="68" PEGA="" String="!- ROBOCAL -! Robot response timed out." />
+			<Replace Source="69" To="69" PEGA="" String="!- ROBOCAL -! Robot is in an unexpected state." />
+			<Replace Source="C9" To="C9" PEGA="" String="!- ROBOCAL_WFSC -! Data collection failed due to a critical error." />
+			<Replace Source="CA" To="CA" PEGA="" String="!- ROBOCAL_UFSC -! Data collection failed due to a critical error." />
+			<Replace Source="CB" To="CB" PEGA="" String="!- ROBOCAL_DGC_DCC -! Data collection failed due to a critical error." />
+			<Replace Source="CC" To="CC" PEGA="" String="!- ROBOCAL_AUDIO -! Calibration or OK2CAL test failed." />
+			<Replace Source="CF" To="CF" PEGA="" String="!- ROBOCAL_DGV -! Data collection failed due to a critical error." />
+			<Replace Source="FF" To="FF" PEGA="" String="!- ROBOCAL -! Unnumbered unknown exception (Windows displays 255)." />
+			<Replace Source="12E" To="12E" PEGA="" String="!- ROBOCAL_OK2CAL -! Device-side OK2CAL validation failed." />
+			<Replace Source="190" To="190" PEGA="" String="!- ROBOCAL_CONFIG -! Initialization failed due to a configuration problem." />
+			<Replace Source="1F4" To="1F4" PEGA="" String="!- ROBOCAL_OPERATOR -! Procedure or environment condition was not satisfied." />
+			<Replace Source="26D" To="26D" PEGA="" String="!- ROBOCAL_DGC -! Motor position does not match the smoke-test nominal position." />
+			<Replace Source="2BF" To="2BF" PEGA="" String="!- ROBOCAL_DCC -! Workflow processing failed." />
+			<Replace Source="2C0" To="2C0" PEGA="" String="!- ROBOCAL_DCC -! File could not be read or has an invalid format." />
+			<Replace Source="2C2" To="2C2" PEGA="" String="!- ROBOCAL_DCC -! Unable to connect to or read from the spectrometer." />
+			<Replace Source="2C4" To="2C4" PEGA="" String="!- ROBOCAL_DCC -! One or more spectra are saturated." />
+			<Replace Source="2C7" To="2C7" PEGA="" String="!- ROBOCAL_DCC -! Camera auto-exposure failed or capture could not be saved correctly." />
+			<Replace Source="321" To="321" PEGA="" String="!- ROBOCAL_AUDIO -! Audio OK2CAL validation failed." />
 		</ErrorTransform>
 	</Test>
 </Diagnostic>
