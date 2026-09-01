@@ -21,7 +21,7 @@ SET "STATUS="
 echo.
 echo ########## Android Wi-Fi ADB Setup (Optimized) ##########
 echo.
-
+:start
 echo [+] Resetting ADB server for a clean start...
 adb kill-server >nul
 REM The 'timeout /t 1' was removed as it's not needed. The next adb command will start the server if required.
@@ -122,9 +122,9 @@ if "%STATUS%"=="device" (
     echo ^| Could not verify a stable wireless connection.
     echo ^| Try running the script again.
     echo +--------------------------------------------------+
+    goto start
 )
 echo.
-
 :end
 echo ########## Script Finished ##########
 endlocal
