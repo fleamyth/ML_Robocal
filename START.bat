@@ -206,19 +206,11 @@ GOTO START
 
 :TestFail
 powershell.exe -NoProfile -ExecutionPolicy Bypass -File ".\generate_ml_robocal.ps1" -sn %SN% -OverwriteTemplate
-find /i "%PROJECT%,80" %CSV_NAME%
-IF %ERRORLEVEL% equ 0 goto ShowFail
-find /i "%PROJECT%,8F" %CSV_NAME%
-IF %ERRORLEVEL% equ 0 goto ShowFail
-find /i "%PROJECT%,C" %CSV_NAME%
-IF %ERRORLEVEL% equ 0 goto ShowFail
-find /i "%PROJECT%,N" %CSV_NAME%
-IF %ERRORLEVEL% equ 0 goto ShowFail
-find /i "%PROJECT%,M" %CSV_NAME%
-IF %ERRORLEVEL% equ 0 goto ShowFail
-cls
+rem find /i "%PROJECT%,8F" %CSV_NAME%
+rem IF %ERRORLEVEL% equ 0 goto ShowFail
+goto ShowFail
 call Screen-diag.exe -enter /ss 70 "unexpected exit or unknow error code happens." 0xFFFFFF -bg 0xBB2222
-goto START
+goto ShowFail
 
 :ShowFail
 SET Result=FAIL

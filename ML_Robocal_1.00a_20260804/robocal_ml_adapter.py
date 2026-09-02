@@ -18,7 +18,7 @@ SOURCE_ALIASES = {
     "minimum": {"minimumspec", "minspec", "minimum", "min", "lowerlimit", "lowerbound", "lsl"},
     "maximum": {"maximumspec", "maxspec", "maximum", "max", "upperlimit", "upperbound", "usl"},
 }
-ML_COLUMNS = ("TestName", "Value", "LowerLimit", "UpperLimit")
+ML_COLUMNS = ("TestName", "Value", "LowerLimit", "UpperLimit", "ErrorCode", "ErrorDescription")
 
 
 def normalize_header(value: str) -> str:
@@ -105,6 +105,8 @@ def append_report(
         row[ml_columns["Value"]] = source_row[source_columns["reading"]].strip()
         row[ml_columns["LowerLimit"]] = source_row[source_columns["minimum"]].strip()
         row[ml_columns["UpperLimit"]] = source_row[source_columns["maximum"]].strip()
+        row[ml_columns["ErrorCode"]] = ""
+        row[ml_columns["ErrorDescription"]] = ""
         if serial_number_column is not None:
             row[serial_number_column] = serial_number
         ml_rows.append(row)

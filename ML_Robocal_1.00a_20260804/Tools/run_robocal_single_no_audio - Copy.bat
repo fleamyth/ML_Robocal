@@ -41,5 +41,6 @@ if defined log_file (
 
 rem Remove spaces that may surround the extracted number.
 set "return_code=!return_code: =!"
+set errorlevel=!return_code!
 echo Return code: !return_code!
 exit /b !return_code!
