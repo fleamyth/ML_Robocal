@@ -275,7 +275,7 @@ Tools\LogTransfer-auto.exe -nl  -tester -F FAIL /L %CSV_NAME%
 SET SFISerror=0
 
 :SFIS
-python RESTSFIS-diag.py /UP -log %CSV_NAME%
+python RESTSFIS-diag.py /UP -log %CSV_NAME% --append-error-description
 IF %ERRORLEVEL% NEQ 0 GOTO SFIS_fail
 GOTO END
 
