@@ -23,7 +23,8 @@ SET FOLDER=%SUITE_NAME%_%Ver%_%DateVer%
 SET on_Drive=N:
 SET SFIS_IP=172.24.248.128
 SET Connect=FALSE
-SET "GOOGLE_DRIVE_URL=https://drive.google.com/drive/folders/1VuN9N7JXBBuHByXVgUjm1jEw18wSW_N6"
+SET "GOOGLE_DRIVE_URL=https://drive.google.com/drive/u/2/folders/1U9hKoGkFsbvxEMnuKuYXAAUKrL1CcUBn"
+REM https://drive.google.com/drive/u/2/folders/1U9hKoGkFsbvxEMnuKuYXAAUKrL1CcUBn DVT data
 SET "GOOGLE_DRIVE_UPLOAD_BAT=%~dp0%FOLDER%\Tools\upload_Folder_to_google_drive.bat"
 FOR /F "usebackq delims=" %%P IN (`powershell.exe -NoProfile -Command "[Environment]::GetEnvironmentVariable('Path','Machine')+';'+[Environment]::GetEnvironmentVariable('Path','User')"`) DO SET "PATH=%%P"
 SET "DESKTOP_DIR="
@@ -416,9 +417,4 @@ cd %~dp0
 IF "%MODE%" EQU "D" GOTO START
 
 :chk2Aroute
-IF "%Result%" EQU "PASS" GOTO START
-Start DiagPGM\Screen-diag.exe -enter /SS 55 "Checking SN %SN% SFIS 2A status<br>Please wait... <br> <br>Checking 2A Status from SFIS<br>Please wait a moment..." 0xFFFFFF -bg 0x223366
-python RESTSFIS-diag\RESTSFIS-diag.py /C -sn %SN%
-IF %ERRORLEVEL% EQU 0 DiagPGM\Screen-diag.exe -enter /SS 40 "SN (2A) not allowed!!<br> <br>Please change another tester to do SN (2A) test!!<br><br>Press [ENTER] to continue..." 0xFFFFFF -bg 0x773399
-taskkill /IM Screen-diag.exe
 GOTO START
