@@ -23,7 +23,7 @@ SET FOLDER=%SUITE_NAME%_%Ver%_%DateVer%
 SET on_Drive=N:
 SET SFIS_IP=172.24.248.128
 SET Connect=FALSE
-SET "GOOGLE_DRIVE_URL=https://drive.google.com/drive/u/2/folders/1U9hKoGkFsbvxEMnuKuYXAAUKrL1CcUBn"
+SET "GOOGLE_DRIVE_URL=1U9hKoGkFsbvxEMnuKuYXAAUKrL1CcUBn"
 REM https://drive.google.com/drive/u/2/folders/1U9hKoGkFsbvxEMnuKuYXAAUKrL1CcUBn DVT data
 SET "GOOGLE_DRIVE_UPLOAD_BAT=%~dp0%FOLDER%\Tools\upload_Folder_to_google_drive.bat"
 FOR /F "usebackq delims=" %%P IN (`powershell.exe -NoProfile -Command "[Environment]::GetEnvironmentVariable('Path','Machine')+';'+[Environment]::GetEnvironmentVariable('Path','User')"`) DO SET "PATH=%%P"

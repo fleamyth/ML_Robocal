@@ -22,11 +22,17 @@ for %%I in ("%SOURCE%") do set "DESTINATION_FOLDER=%%~nxI"
 set "DESTINATION_PATH=%~4"
 if "%DESTINATION_PATH%"=="" set "DESTINATION_PATH=%DESTINATION_FOLDER%"
 
-set "ROOT_FOLDER_ID=%DRIVE_URL:https://drive.google.com/drive/folders/=%"
-for /f "tokens=1 delims=?/" %%I in ("%ROOT_FOLDER_ID%") do set "ROOT_FOLDER_ID=%%I"
-
-if "%ROOT_FOLDER_ID%"=="" (
+if "%DRIVE_URL%"=="" (
   echo ERROR: A Google Drive folder URL or folder ID is required.
+  exit /b 1
+)
+
+set "ROOT_FOLDER_ID=%DRIVE_URL%"
+if /i "%DRIVE_URL:~0,25%"=="https://drive.google.com/" set "ROOT_FOLDER_ID=%DRIVE_URL:*folders/=%"
+for /f "tokens=1 delims=?/#" %%I in ("%ROOT_FOLDER_ID%") do set "ROOT_FOLDER_ID=%%I"
+echo(%ROOT_FOLDER_ID%| findstr /R /X "[A-Za-z0-9_-][A-Za-z0-9_-]*" >nul
+if errorlevel 1 (
+  echo ERROR: Invalid Google Drive folder URL or folder ID.
   exit /b 1
 )
 
@@ -148,6 +154,7 @@ echo   %~nx0 "LOCAL_FOLDER" "GOOGLE_DRIVE_FOLDER_URL_OR_ID" [RCLONE_REMOTE] [DES
 echo.
 echo Examples:
 echo   %~nx0 "D:\RoboGRR\S6A67340005X" "https://drive.google.com/drive/folders/1PLmAKzagiYLUTX2Eqh8S_fDR1nE6tC5E"
+echo   %~nx0 "D:\RoboGRR\S6A67340005X" "https://drive.google.com/drive/u/2/folders/1PLmAKzagiYLUTX2Eqh8S_fDR1nE6tC5E"
 echo   %~nx0 "D:\RoboGRR\S6A67340005X" "1PLmAKzagiYLUTX2Eqh8S_fDR1nE6tC5E" "gdrive"
 echo.
 echo Run without arguments to enter the local folder and Google Drive URL interactively.
