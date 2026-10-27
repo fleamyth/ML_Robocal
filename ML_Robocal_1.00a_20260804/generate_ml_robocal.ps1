@@ -68,7 +68,8 @@ try {
         "--output",
         $outputPath,
         "--serial-number",
-        $SN
+        $SN,
+        "--exclude-dcc-post-calibration"
     )
     if ($OverwriteTemplate) {
         $adapterArguments += "--replace-tests"

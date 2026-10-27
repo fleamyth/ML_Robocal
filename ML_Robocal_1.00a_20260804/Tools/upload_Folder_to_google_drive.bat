@@ -58,6 +58,8 @@ echo Checking access to the Google Drive destination...
 rclone lsd "%REMOTE%:" --drive-root-folder-id "%ROOT_FOLDER_ID%" --log-file "%LOG_FILE%" --log-level INFO
 if errorlevel 1 (
   echo ERROR: Cannot access the Google Drive destination.
+  echo Review "%LOG_FILE%" for the Google API error.
+  echo For rateLimitExceeded, use a dedicated OAuth client for this remote.
   echo Complete "rclone config" and authorize the "%REMOTE%" remote, then retry.
   exit /b 4
 )
@@ -107,8 +109,9 @@ exit /b 0
 
 :UPLOAD_FOLDER_ZIP
 set "ZIP_FOLDER_NAME=%~1"
-for %%I in ("%SOURCE%") do set "ZIP_TEMP_DIR=%%~dpI.upload-temp"
-set "ZIP_FILE=%ZIP_TEMP_DIR%\%DESTINATION_FOLDER%_%ZIP_FOLDER_NAME%_%RANDOM%_%RANDOM%.zip"
+for %%I in ("%SOURCE%") do set "ZIP_TEMP_ROOT=%%~dpI.upload-temp"
+set "ZIP_TEMP_DIR=%ZIP_TEMP_ROOT%\%DESTINATION_FOLDER%_%ZIP_FOLDER_NAME%_%RANDOM%_%RANDOM%"
+set "ZIP_FILE=%ZIP_TEMP_DIR%\%ZIP_FOLDER_NAME%.zip"
 if not exist "%ZIP_TEMP_DIR%\" mkdir "%ZIP_TEMP_DIR%" 2>nul
 if not exist "%ZIP_TEMP_DIR%\" (
   echo ERROR: Could not create ZIP temporary directory: "%ZIP_TEMP_DIR%"
@@ -117,6 +120,7 @@ if not exist "%ZIP_TEMP_DIR%\" (
 
 echo Packaging "%SOURCE%\%ZIP_FOLDER_NAME%" as %ZIP_FOLDER_NAME%.zip...
 pushd "%SOURCE%"
+if errorlevel 1 goto :ZIP_FAIL
 "%~dp07z\7za.exe" a -tzip -mx=0 "%ZIP_FILE%" "%ZIP_FOLDER_NAME%"
 set "ZIP_EXITCODE=%ERRORLEVEL%"
 popd
@@ -133,14 +137,37 @@ rclone copyto "%ZIP_FILE%" "%REMOTE%:%DESTINATION_PATH%/%ZIP_FOLDER_NAME%.zip" ^
   --drive-chunk-size 64M ^
   --contimeout 30s ^
   --timeout 15m ^
-  --retries 1 ^
-  --low-level-retries 3 ^
+  --retries 10 ^
+  --retries-sleep 30s ^
+  --low-level-retries 20 ^
   --log-file "%LOG_FILE%" ^
-  --log-level DEBUG
-set "ZIP_EXITCODE=%ERRORLEVEL%"
+  --log-level INFO
+if errorlevel 1 goto :ZIP_UPLOAD_FAIL
+
+echo Verifying uploaded %ZIP_FOLDER_NAME%.zip...
+rclone check "%ZIP_TEMP_DIR%" "%REMOTE%:%DESTINATION_PATH%" ^
+  --include "/%ZIP_FOLDER_NAME%.zip" ^
+  --one-way ^
+  --drive-root-folder-id "%ROOT_FOLDER_ID%" ^
+  --contimeout 30s ^
+  --timeout 15m ^
+  --retries 10 ^
+  --retries-sleep 30s ^
+  --low-level-retries 20 ^
+  --log-file "%LOG_FILE%" ^
+  --log-level INFO
+if errorlevel 1 goto :ZIP_UPLOAD_FAIL
+
 del /q "%ZIP_FILE%" 2>nul
 rmdir "%ZIP_TEMP_DIR%" 2>nul
-exit /b %ZIP_EXITCODE%
+exit /b 0
+
+:ZIP_UPLOAD_FAIL
+echo ERROR: Upload or remote verification failed for %ZIP_FOLDER_NAME%.zip.
+echo ZIP retained for recovery: "%ZIP_FILE%"
+echo Review "%LOG_FILE%" and retry this upload after fixing access or quota.
+echo Retry: call "%~f0" "%SOURCE%" "%ROOT_FOLDER_ID%" "%REMOTE%" "%DESTINATION_PATH%"
+exit /b 1
 
 :ZIP_FAIL
 echo ERROR: Could not create or verify %ZIP_FOLDER_NAME%.zip.

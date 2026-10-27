@@ -108,6 +108,16 @@ The input template must contain at least one data row to use as the inherited va
 
 `generate_ml_robocal.ps1` runs both Python tools and resolves the input directory as `C:\Users\User\Desktop\logs\<SN>`. Change only the `-SN` argument for each machine:
 
+This RoboCal-stage wrapper excludes all `DCC.post_calibration.*` rows, including
+matching rows already present in the ML template. Those measurements belong to
+DCC post-processing and are not reported by this stage, even when a summary is
+available. Pre-calibration readings, DGC results, diagnostics, and final log rows
+are preserved.
+
+The standalone Python tools retain their default behavior for post-process
+reports. To apply the same exclusion when calling `robocal_ml_adapter.py`
+directly, pass `--exclude-dcc-post-calibration`.
+
 ```powershell
 .\generate_ml_robocal.ps1 -SN S6A67340005M
 ```
@@ -149,3 +159,9 @@ Set-Location D:\logparser
 ```
 
 This updates `D:\logparser\ML_Robocal.csv` in place.
+
+Run the adapter regression tests from the repository root:
+
+```powershell
+python -m unittest discover -s tests -p test_robocal_ml_adapter.py
+```

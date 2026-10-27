@@ -62,6 +62,7 @@ def append_report(
     output: Path,
     replace_tests: bool = False,
     serial_number: str | None = None,
+    exclude_dcc_post_calibration: bool = False,
 ) -> int:
     ml_headers, ml_rows = read_csv(template)
     if not ml_rows:
@@ -86,7 +87,12 @@ def append_report(
         if serial_number_column is None:
             raise ValueError("ML template is missing column: SerialNumber")
     generated_rows = [
-        row for row in source_rows if row[source_columns["name"]].strip()
+        row for row in source_rows
+        if row[source_columns["name"]].strip()
+        and not (
+            exclude_dcc_post_calibration
+            and row[source_columns["name"]].strip().startswith("DCC.post_calibration.")
+        )
     ]
     generated_names = {row[source_columns["name"]].strip() for row in generated_rows}
     if replace_tests:
@@ -96,6 +102,12 @@ def append_report(
     else:
         inherited_row = body_rows[-1].copy()
         ml_rows = body_rows
+
+    if exclude_dcc_post_calibration:
+        ml_rows = [
+            row for row in ml_rows
+            if not row[ml_columns["TestName"]].strip().startswith("DCC.post_calibration.")
+        ]
 
     appended = 0
     for source_row in generated_rows:
@@ -144,13 +156,21 @@ def build_parser() -> argparse.ArgumentParser:
     parser.add_argument("--output", required=True, type=Path, help="Output ML-format CSV")
     parser.add_argument("--replace-tests", action="store_true", help="Replace existing rows with matching test names")
     parser.add_argument("--serial-number", help="Serial number to write to generated ML rows")
+    parser.add_argument(
+        "--exclude-dcc-post-calibration",
+        action="store_true",
+        help="Remove DCC.post_calibration.* rows from the template and generated tests",
+    )
     return parser
 
 
 def main(argv: Sequence[str] | None = None) -> int:
     args = build_parser().parse_args(argv)
     try:
-        appended = append_report(args.template, args.report, args.output, args.replace_tests, args.serial_number)
+        appended = append_report(
+            args.template, args.report, args.output, args.replace_tests,
+            args.serial_number, args.exclude_dcc_post_calibration,
+        )
     except (OSError, ValueError) as error:
         print(f"error: {error}", file=sys.stderr)
         return 1
