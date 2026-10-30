@@ -94,6 +94,7 @@ rclone copy "%SOURCE%" "%REMOTE%:%DESTINATION_PATH%" ^
   --retries 10 ^
   --low-level-retries 20 ^
   --exclude "/Robocal/**" ^
+  --exclude "/Robocal_*.zip" ^
   --exclude "/PostProcess/**" ^
   --log-file "%LOG_FILE%" ^
   --log-level INFO
@@ -109,16 +110,23 @@ exit /b 0
 
 :UPLOAD_FOLDER_ZIP
 set "ZIP_FOLDER_NAME=%~1"
+set "ZIP_NAME=%ZIP_FOLDER_NAME%.zip"
+if /i "%ZIP_FOLDER_NAME%"=="Robocal" (
+  set "ZIP_TIMESTAMP="
+  for /f %%T in ('powershell.exe -NoProfile -Command "Get-Date -Format yyyyMMdd_HHmmss_fff"') do set "ZIP_TIMESTAMP=%%T"
+  call :SET_ROBOCAL_ZIP_NAME
+  if errorlevel 1 exit /b 1
+)
 for %%I in ("%SOURCE%") do set "ZIP_TEMP_ROOT=%%~dpI.upload-temp"
 set "ZIP_TEMP_DIR=%ZIP_TEMP_ROOT%\%DESTINATION_FOLDER%_%ZIP_FOLDER_NAME%_%RANDOM%_%RANDOM%"
-set "ZIP_FILE=%ZIP_TEMP_DIR%\%ZIP_FOLDER_NAME%.zip"
+set "ZIP_FILE=%ZIP_TEMP_DIR%\%ZIP_NAME%"
 if not exist "%ZIP_TEMP_DIR%\" mkdir "%ZIP_TEMP_DIR%" 2>nul
 if not exist "%ZIP_TEMP_DIR%\" (
   echo ERROR: Could not create ZIP temporary directory: "%ZIP_TEMP_DIR%"
   exit /b 1
 )
 
-echo Packaging "%SOURCE%\%ZIP_FOLDER_NAME%" as %ZIP_FOLDER_NAME%.zip...
+echo Packaging "%SOURCE%\%ZIP_FOLDER_NAME%" as %ZIP_NAME%...
 pushd "%SOURCE%"
 if errorlevel 1 goto :ZIP_FAIL
 "%~dp07z\7za.exe" a -tzip -mx=0 "%ZIP_FILE%" "%ZIP_FOLDER_NAME%"
@@ -129,8 +137,8 @@ if not "%ZIP_EXITCODE%"=="0" goto :ZIP_FAIL
 "%~dp07z\7za.exe" t "%ZIP_FILE%" >nul
 if errorlevel 1 goto :ZIP_FAIL
 
-echo Uploading %ZIP_FOLDER_NAME%.zip...
-rclone copyto "%ZIP_FILE%" "%REMOTE%:%DESTINATION_PATH%/%ZIP_FOLDER_NAME%.zip" ^
+echo Uploading %ZIP_NAME%...
+rclone copyto "%ZIP_FILE%" "%REMOTE%:%DESTINATION_PATH%/%ZIP_NAME%" ^
   --drive-root-folder-id "%ROOT_FOLDER_ID%" ^
   --progress ^
   --stats 30s ^
@@ -144,9 +152,9 @@ rclone copyto "%ZIP_FILE%" "%REMOTE%:%DESTINATION_PATH%/%ZIP_FOLDER_NAME%.zip" ^
   --log-level INFO
 if errorlevel 1 goto :ZIP_UPLOAD_FAIL
 
-echo Verifying uploaded %ZIP_FOLDER_NAME%.zip...
+echo Verifying uploaded %ZIP_NAME%...
 rclone check "%ZIP_TEMP_DIR%" "%REMOTE%:%DESTINATION_PATH%" ^
-  --include "/%ZIP_FOLDER_NAME%.zip" ^
+  --include "/%ZIP_NAME%" ^
   --one-way ^
   --drive-root-folder-id "%ROOT_FOLDER_ID%" ^
   --contimeout 30s ^
@@ -158,19 +166,48 @@ rclone check "%ZIP_TEMP_DIR%" "%REMOTE%:%DESTINATION_PATH%" ^
   --log-level INFO
 if errorlevel 1 goto :ZIP_UPLOAD_FAIL
 
+if /i "%ZIP_FOLDER_NAME%"=="Robocal" goto :RETAIN_ROBOCAL_ZIP
 del /q "%ZIP_FILE%" 2>nul
 rmdir "%ZIP_TEMP_DIR%" 2>nul
 exit /b 0
 
+:SET_ROBOCAL_ZIP_NAME
+if not defined ZIP_TIMESTAMP (
+  echo ERROR: Could not generate the Robocal ZIP timestamp.
+  exit /b 1
+)
+set "ZIP_NAME=Robocal_%ZIP_TIMESTAMP%.zip"
+if exist "%SOURCE%\%ZIP_NAME%" (
+  echo ERROR: Robocal ZIP already exists: "%SOURCE%\%ZIP_NAME%"
+  exit /b 1
+)
+exit /b 0
+
+:RETAIN_ROBOCAL_ZIP
+move /-Y "%ZIP_FILE%" "%SOURCE%\%ZIP_NAME%" <nul
+if errorlevel 1 (
+  echo ERROR: Could not retain the verified ZIP in "%SOURCE%".
+  echo ZIP retained for recovery: "%ZIP_FILE%"
+  exit /b 1
+)
+rmdir "%ZIP_TEMP_DIR%" 2>nul
+echo ZIP retained: "%SOURCE%\%ZIP_NAME%"
+rmdir /s /q "%SOURCE%\Robocal"
+if exist "%SOURCE%\Robocal\" (
+  echo ERROR: Could not remove the backed-up Robocal folder. The verified ZIP is retained.
+  exit /b 1
+)
+exit /b 0
+
 :ZIP_UPLOAD_FAIL
-echo ERROR: Upload or remote verification failed for %ZIP_FOLDER_NAME%.zip.
+echo ERROR: Upload or remote verification failed for %ZIP_NAME%.
 echo ZIP retained for recovery: "%ZIP_FILE%"
 echo Review "%LOG_FILE%" and retry this upload after fixing access or quota.
 echo Retry: call "%~f0" "%SOURCE%" "%ROOT_FOLDER_ID%" "%REMOTE%" "%DESTINATION_PATH%"
 exit /b 1
 
 :ZIP_FAIL
-echo ERROR: Could not create or verify %ZIP_FOLDER_NAME%.zip.
+echo ERROR: Could not create or verify %ZIP_NAME%.
 del /q "%ZIP_FILE%" 2>nul
 rmdir "%ZIP_TEMP_DIR%" 2>nul
 exit /b 1

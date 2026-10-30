@@ -20,12 +20,14 @@ FOLDER_ID = "1U9hKoGkFsbvxEMnuKuYXAAUKrL1CcUBn"
 class GoogleDriveUploadTests(unittest.TestCase):
     def run_upload(
         self, destination, rclone_exitcode=0, folders=(), fail_command="",
-        zip_failure=False,
+        zip_failure=False, retention_failure=False, cleanup_failure=False,
     ):
         with tempfile.TemporaryDirectory() as temporary:
             directory = Path(temporary)
             source = directory / "Device logs"
             source.mkdir()
+            old_zip = source / "Robocal_20200101_000000_000.zip"
+            old_zip.write_bytes(b"previous archive")
             for folder in folders:
                 component = source / folder
                 component.mkdir()
@@ -48,6 +50,16 @@ class GoogleDriveUploadTests(unittest.TestCase):
                     r"%~dp07z\7za.exe",
                     str(UPLOADER.parent / "7z" / "7za.exe")
                     if not zip_failure else str(directory / "missing-7za.exe"),
+                )
+                .replace(
+                    'move /-Y "%ZIP_FILE%" "%SOURCE%\\%ZIP_NAME%" <nul',
+                    "cmd /c exit 1" if retention_failure else
+                    'move /-Y "%ZIP_FILE%" "%SOURCE%\\%ZIP_NAME%" <nul',
+                )
+                .replace(
+                    'rmdir /s /q "%SOURCE%\\Robocal"',
+                    "cmd /c exit 1" if cleanup_failure else
+                    'rmdir /s /q "%SOURCE%\\Robocal"',
                 ),
                 encoding="utf-8",
             )
@@ -64,13 +76,22 @@ class GoogleDriveUploadTests(unittest.TestCase):
                 cwd=directory,
                 capture_output=True,
                 text=True,
-                timeout=15,
+                timeout=30,
             )
             recorded = calls.read_text().splitlines() if calls.exists() else []
             self.retained_zips = {}
             for archive in (directory / ".upload-temp").glob("*/*.zip"):
                 with zipfile.ZipFile(archive) as zipped:
                     self.retained_zips[archive.name] = zipped.namelist()
+            self.local_zips = {}
+            for archive in source.glob("Robocal_*.zip"):
+                if archive != old_zip:
+                    with zipfile.ZipFile(archive) as zipped:
+                        self.local_zips[archive.name] = zipped.namelist()
+            self.remaining_folders = [
+                folder for folder in folders if (source / folder).exists()
+            ]
+            self.assertEqual(old_zip.read_bytes(), b"previous archive")
             return result, recorded
 
     def test_supported_folder_formats(self):
@@ -118,13 +139,20 @@ class GoogleDriveUploadTests(unittest.TestCase):
             [call.split()[0] for call in calls],
             ["lsd", "mkdir", "copyto", "check", "copyto", "check", "copy"],
         )
+        self.assertEqual(len(self.local_zips), 1)
+        name = next(iter(self.local_zips))
+        self.assertRegex(name, r"^Robocal_\d{8}_\d{6}_\d{3}\.zip$")
+        self.assertEqual(self.local_zips[name], ["Robocal/", "Robocal/result.txt"])
         for index, folder in ((2, "Robocal"), (4, "PostProcess")):
-            self.assertIn(f'"gdrive:20261025/DEVICE/{folder}.zip"', calls[index])
+            zip_name = name if folder == "Robocal" else "PostProcess.zip"
+            self.assertIn(f'"gdrive:20261025/DEVICE/{zip_name}"', calls[index])
             self.assertIn("--retries 10", calls[index])
             self.assertIn("--retries-sleep 30s", calls[index])
-            self.assertIn(f'--include "/{folder}.zip"', calls[index + 1])
+            self.assertIn(f'--include "/{zip_name}"', calls[index + 1])
             self.assertIn("--one-way", calls[index + 1])
         self.assertEqual(self.retained_zips, {})
+        self.assertEqual(self.remaining_folders, ["PostProcess"])
+        self.assertIn('--exclude "/Robocal_*.zip"', calls[-1])
 
     def test_failed_zip_upload_or_verification_keeps_recovery_archive(self):
         for command in ("copyto", "check"):
@@ -137,19 +165,48 @@ class GoogleDriveUploadTests(unittest.TestCase):
                 self.assertIn("Retry: call", result.stdout)
                 self.assertNotIn("Upload completed successfully", result.stdout)
                 self.assertEqual(calls[-1].split()[0], command)
+                self.assertEqual(len(self.retained_zips), 1)
+                name = next(iter(self.retained_zips))
+                self.assertRegex(name, r"^Robocal_\d{8}_\d{6}_\d{3}\.zip$")
                 self.assertEqual(
-                    self.retained_zips,
-                    {"Robocal.zip": ["Robocal/", "Robocal/result.txt"]},
+                    self.retained_zips[name], ["Robocal/", "Robocal/result.txt"]
                 )
+                self.assertEqual(self.local_zips, {})
+                self.assertEqual(self.remaining_folders, ["Robocal"])
 
     def test_zip_packaging_failure_stops_before_upload(self):
         result, calls = self.run_upload(
             FOLDER_ID, folders=("Robocal",), zip_failure=True
         )
         self.assertEqual(result.returncode, 6, result.stdout + result.stderr)
-        self.assertIn("Could not create or verify Robocal.zip", result.stdout)
+        self.assertRegex(
+            result.stdout, r"Could not create or verify Robocal_\d{8}_\d{6}_\d{3}\.zip"
+        )
         self.assertEqual(len(calls), 2)
         self.assertEqual(self.retained_zips, {})
+        self.assertEqual(self.remaining_folders, ["Robocal"])
+
+    def test_retention_failure_preserves_folder_and_recovery_zip(self):
+        result, calls = self.run_upload(
+            FOLDER_ID, folders=("Robocal",), retention_failure=True
+        )
+        self.assertEqual(result.returncode, 6, result.stdout + result.stderr)
+        self.assertIn("Could not retain the verified ZIP", result.stdout)
+        self.assertEqual(self.remaining_folders, ["Robocal"])
+        self.assertEqual(len(self.retained_zips), 1)
+        self.assertEqual(self.local_zips, {})
+        self.assertEqual(calls[-1].split()[0], "check")
+
+    def test_cleanup_failure_reports_error_and_keeps_verified_zip(self):
+        result, calls = self.run_upload(
+            FOLDER_ID, folders=("Robocal",), cleanup_failure=True
+        )
+        self.assertEqual(result.returncode, 6, result.stdout + result.stderr)
+        self.assertIn("Could not remove the backed-up Robocal folder", result.stdout)
+        self.assertEqual(self.remaining_folders, ["Robocal"])
+        self.assertEqual(len(self.local_zips), 1)
+        self.assertEqual(self.retained_zips, {})
+        self.assertEqual(calls[-1].split()[0], "check")
 
     def test_remaining_file_failure_is_not_success(self):
         result, calls = self.run_upload(FOLDER_ID, fail_command="copy")

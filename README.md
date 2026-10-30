@@ -4,7 +4,14 @@
 
 `START.bat` uploads archived logs from `D:\logs\<device serial>` to the
 configured Google Drive folder under `yyyyMMdd/<device serial>`.
-The `Robocal` subfolder is uploaded as `Robocal.zip`.
+The `Robocal` subfolder is uploaded as `Robocal_yyyyMMdd_HHmmss_fff.zip`,
+using the local packaging time (including milliseconds). After upload and remote
+verification succeed, the ZIP is retained in `D:\logs\<device serial>\` and only
+the backed-up `Robocal` subfolder is deleted. A local ZIP retention failure leaves
+the folder intact and reports an error; a folder cleanup failure also reports an
+error while keeping the verified ZIP. Previous timestamped ZIPs are preserved
+and excluded from the remaining-file upload, so they are not uploaded again.
+`PostProcess` packaging and cleanup behavior is unchanged.
 ZIP uploads retry transient failures and are checked against the destination
 using rclone's size/hash comparison before being reported as successful.
 Failed uploads or remote checks retain the ZIP under
@@ -12,6 +19,7 @@ Failed uploads or remote checks retain the ZIP under
 The console prints the retained path and a command to retry the original upload.
 A successful retry builds and checks a fresh ZIP from the archived source;
 older retained recovery ZIPs are not automatically deleted.
+Upload or remote verification failures do not delete the backed-up folder.
 Background upload failures display an operator notification; a missing
 `Robocal` archive is an error, not a successful skipped upload.
 
